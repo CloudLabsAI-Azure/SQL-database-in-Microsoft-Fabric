@@ -1,0 +1,40 @@
+[
+  {
+    "Name": "Fabcon_Workshop",
+    "Language": "English",
+    "Files": [
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/NIREEKSHITH45/Fabcon_Workshop/refs/heads/main/Workshop_Exercises/01%20-%20Loading%20Data%20into%20SQL%20Database.md",
+        "Order": 1
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/NIREEKSHITH45/Fabcon_Workshop/refs/heads/main/Workshop_Exercises/02%20-%20Introduction%20to%20Copilot%20for%20SQL%20Database.md",
+        "Order": 2
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/NIREEKSHITH45/Fabcon_Workshop/refs/heads/main/Workshop_Exercises/03%20-%20Data%20Enrichment.md",
+        "Order": 3
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/NIREEKSHITH45/Fabcon_Workshop/refs/heads/main/Workshop_Exercises/04%20-%20Data%20Serving.md",
+        "Order": 4
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/NIREEKSHITH45/Fabcon_Workshop/refs/heads/main/Workshop_Exercises/05%20-%20Exploring%20GraphQL%20API%20Endpoints%20in%20Microsoft%20Fabric.md",
+        "Order": 5
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/NIREEKSHITH45/Fabcon_Workshop/refs/heads/main/Workshop_Exercises/06-%20RAG%20Implementation%20with%20Azure%20OpenAI.md",
+        "Order": 6
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/NIREEKSHITH45/Fabcon_Workshop/refs/heads/main/Workshop_Exercises/07%20-%20Data%20Security%20and%20Compliance.md",
+        "Order": 7
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/NIREEKSHITH45/Fabcon_Workshop/refs/heads/main/Workshop_Exercises/08%20-%20Managing%20Production%20Workloads.md",
+        "Order": 8
+      }
+    ]
+  }
+]
