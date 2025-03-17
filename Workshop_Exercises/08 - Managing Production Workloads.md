@@ -12,27 +12,27 @@ You can use the Performance Dashboard to view database performance metrics, to i
 
 1. Click on **Workspaces** and select **Fabcon-<inject key="Deployment ID" enableCopy="false"/>** workspace.
 
-![](../media/datapipeline1.png)
+   ![](../media/datapipeline1.png)
 
 2. Search for **database** and select the database.
 
-![](../media/database2.1.png)
+   ![](../media/database2.1.png)
 
 3. Click on **Performance summary**.
 
-![](../media/task8.1.png)
+   ![](../media/task8.1.png)
 
 4. Take a look at the **Performance summary** and click on **View performance dashboard** button.
 
-![](../media/f87.png)
+   ![](../media/f87.png)
 
-When the database reaches a critical state of **CPU consumption** (or any other factor which raises an alert), you can see Unhealthy points marked on the CPU consumption tab's graph, marking points where the CPU consumption has crossed the threshold value. The time interval is configurable and defaults to 24 hours.
+    When the database reaches a critical state of **CPU consumption** (or any other factor which raises an alert), you can see Unhealthy points marked on the CPU consumption tab's graph, marking points where the CPU consumption has crossed the threshold value. The time interval is configurable and defaults to 24 hours.
 
-In the following image, the CPU consumption graph indicates when the database reached a critical state.
+    In the following image, the CPU consumption graph indicates when the database reached a critical state.
 
-> **Note:** The following image is for educational purposes only. You will not see any unhealthy points marked on the CPU consumption tab's graph, as the CPU consumption is minimal for this workshop.
+    > **Note:** The following image is for educational purposes only. You will not see any unhealthy points marked on the CPU consumption tab's graph, as the CPU consumption is minimal for this workshop.
 
-![](../media/f62.png)
+    ![](../media/f62.png)
 
 **Alert threshold criteria**
 

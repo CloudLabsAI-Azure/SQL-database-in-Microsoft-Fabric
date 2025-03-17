@@ -100,7 +100,7 @@ Log in as user **'Fabcon-03'** (Admin access) to the Fabcon workspace, assign us
 
 8. Click on **Workspaces** from  the left menu, and select **Fabcon-<inject key="Deployment ID" enableCopy="false"/>**.
 
-![](../media/task_7.2.5.png)
+   ![](../media/task_7.2.5.png)
 
 9. Click on **Fabcon_database**.
 
@@ -140,7 +140,7 @@ Log in as user **'Fabcon-03'** (Admin access) to the Fabcon workspace, assign us
 
     ![](../media/task_7.2.0.1_7.png)
 
-2. Click on **Workspaces** from  the left menu, and select **Fabcon**.
+2. Click on **Workspaces** from  the left menu, and select **Fabcon-<inject key="Deployment ID" enableCopy="false"/>**.
 
     ![](../media/task_7.2.5.png)
 
@@ -191,7 +191,7 @@ The additional Write permission allows user to have full administrative access t
 
    ![](../media/task_7.1.6.png)
 
-> **Note**: You can perform insert/update on any tables as the user has contributor access to Fabcon workspace.
+   > **Note**: You can perform insert/update on any tables as the user has contributor access to Fabcon workspace.
 
 4. Paste the below code in the query editor, click on **Run** icon.
 
@@ -235,47 +235,47 @@ Unlike workspace roles you used in the previous task, SQL native access controls
 
 3. Enter the password **Fabcon03@123** and click on **Sign in**.
 
-![](../media/task_7.2.0.2.png)
+   ![](../media/task_7.2.0.2.png)
 
 4. Select the **checkbox** to disable the message in future, and click on **Yes** button.
 
-![](../media/task_7.2.0.1_1.png)
+   ![](../media/task_7.2.0.1_1.png)
 
 5. Click on **Workspaces** from  the left menu, and select **Fabcon-<inject key="Deployment ID" enableCopy="false"/>**.
 
-![](../media/task_7.2.5.png)
+   ![](../media/task_7.2.5.png)
 
 6. Click on **Fabcon_database**.
 
-![](../media/access9.png)
+   ![](../media/access9.png)
 
 7. Click on **Security** from the top menu, select **Manage SQL Security**, and then click on **New Role** button. 
 
-![](../media/task_7.2.9.png)
+   ![](../media/task_7.2.9.png)
 
 8. Enter the name as **custom_role** in the **Role name** textbox, then select the **Select** and **Insert** checkbox against the **dbo** schema, and click on **Save** button.
 
-![](../media/task_7.2.10.png)
+   ![](../media/task_7.2.10.png)
 
 9. Select the **custom_role** radio button, and click on **Manage access**.
 
-![](../media/task_7.2.11.png)
+   ![](../media/task_7.2.11.png)
 
 10. Search for **Fabcon-02** user from the **Add people, groups or apps** text box, then select the result, and click on **Add** button.
 
-![](../media/task_7.2.12.png)
+    ![](../media/task_7.2.12.png)
 
 11. Click on **Share database**.
 
-![](../media/task_7.2.13.png)
+    ![](../media/task_7.2.13.png)
 
 12. Click on **Grant**.
 
-![](../media/task_7.2.13.1.png)
+    ![](../media/task_7.2.13.1.png)
 
 13. Click on **Save** button.
 
-![](../media/task_7.2.13.2.png)
+    ![](../media/task_7.2.13.2.png)
 
 We have successfully granted Read permission (to connect to database), select and insert access on **dbo** schema of **Fabcon_database** to user **Fabcon-02**.
 
@@ -284,105 +284,105 @@ We have successfully granted Read permission (to connect to database), select an
 
 1. Open a new tab and paste **https://www.microsoft.com/en-us/microsoft-365/outlook/log-in**, press **Enter** and click on **Sign in** button.
 
-![](../media/task_7.2.0.1_6.png)
+   ![](../media/task_7.2.0.1_6.png)
 
 2. Enter the user name as **fabcon-02@CloudLabsAIoutlook.onmicrosoft.com** and click on **Next**.
 
-![](../media/task_7.1.3.png)
+    ![](../media/task_7.1.3.png)
 
 3. Enter the password **Fabcon02@123** and click on **Sign in**.
 
-![](../media/task_7.1.4.png)
+    ![](../media/task_7.1.4.png)
 
 4. You would have received a mail with message **Fabcon-03 shared this SQL Database with you**.
 
 5. Click on the mail and click on the **Open** button.
 
-![](../media/task_7.2.0.0.2.png)
+   ![](../media/task_7.2.0.0.2.png)
 
 6. Select the user **Fabcon-02**.
 
-![](../media/task_7.2.0.1_5.png)
+    ![](../media/task_7.2.0.1_5.png)
 
 7. You will be navigated to **Fabcon_database** within Microsoft Fabric.
 
-![](../media/task_7.2.0.0.3.png)
+   ![](../media/task_7.2.0.0.3.png)
 
 8. Click on **New query**, paste the below code in the query editor, click on **Run** icon.
 
-```
-select * FROM dbo.dimcity;
-```
+    ```
+    select * FROM dbo.dimcity;
+    ```
 
-![](../media/task_7.2.1.1.png)
+    ![](../media/task_7.2.1.1.png)
 
 9. Paste the below code in the query editor, click on **Run** icon.
 
-```
-insert into dbo.dimcity VALUES (11, 'Tokyo');
-```
+    ```
+    insert into dbo.dimcity VALUES (11, 'Tokyo');
+    ```
 
-![](../media/task_7.2.8.1.png)
+    ![](../media/task_7.2.8.1.png)
 
 10. Paste the below code in the query editor, click on **Run** icon, to show the inserted record.
 
-```
-select * FROM dbo.dimcity;
-```
+    ```
+    select * FROM dbo.dimcity;
+    ```
 
-![](../media/task_7.2.0.0.6.png)
+    ![](../media/task_7.2.0.0.6.png)
 
 
 #### Activity: Access as Workspace Admin to assign permissions using T-SQL.
 
 1. Switch back to the previous tab logged in with admin user **Fabcon-03**.
 
-![](../media/task_7.2.0.0.4.png)
+   ![](../media/task_7.2.0.0.4.png)
 
 2. Click on **Workspaces** from  the left menu, and select **Fabcon-<inject key="Deployment ID" enableCopy="false"/>**.
 
-![](../media/task_7.2.5.png)
+    ![](../media/task_7.2.5.png)
 
 3. Click on **Fabcon_database**.
 
-![](../media/access9.png)
+   ![](../media/access9.png)
 
 4. Now, let us provide update access on **dbo** schema using T-SQL.
 
 5. Click on **New query**, paste the below code in the query editor, click on **Run** icon.
 
-```
-GRANT UPDATE ON SCHEMA::dbo TO [fabcon-02@CloudLabsAIoutlook.onmicrosoft.com];
-```
+    ```
+    GRANT UPDATE ON SCHEMA::dbo TO [fabcon-02@CloudLabsAIoutlook.onmicrosoft.com];
+    ```
 
-![](../media/task_7.2.7.png)
+    ![](../media/task_7.2.7.png)
 
 
 #### Activity: Access a database as new user and verify T_SQL permissions.
 
 1. Navigate back to the database tab logged in with the user **Fabcon-02**.
 
-![](../media/task_7.2.0.0.5.png)
+   ![](../media/task_7.2.0.0.5.png)
 
 2. Click on **New query**, paste the below code in the query editor and click on the **Run** button.
 
-```
-update 
-dbo.dimcity
-SET City = 'New York City'
-WHERE CityId = 11
-;
-```
+    ```
+    update 
+    dbo.dimcity
+    SET City = 'New York City'
+    WHERE CityId = 11
+    ;
+    ```
 
-![](../media/task_7.2.14.1.png)
+    ![](../media/task_7.2.14.1.png)
 
-10. Paste the below code and click on the **Run** button.
+3. Paste the below code and click on the **Run** button.
 
-```
-select * from dbo.dimcity;
-```
+    ```
+    select * from dbo.dimcity;
+    ```
 
-![](../media/task_7.2.15.3.png)
+    ![](../media/task_7.2.15.3.png)
 
 
 In this exercise, you have learned how to manage access control in Microsoft Fabric using Workspace roles and SQL native access controls. You have gained practical experience in:
