@@ -21,146 +21,146 @@ Log in as user **'Fabcon-03'** (Admin access) to the Fabcon workspace, assign us
 
 1. Open a new incognito window, and type **app.fabric.microsoft.com** and press **Enter**.
 
-![](../media/task_7.2.2.png)
+   ![](../media/task_7.2.2.png)
 
 2. Enter the user name as **fabcon-03@CloudLabsAIoutlook.onmicrosoft.com** and click on **Submit**.
 
-![](../media/task_7.2.0.1.png)
+   ![](../media/task_7.2.0.1.png)
 
 3. Enter the password **Fabcon03@123** and click on **Sign in**.
 
-![](../media/task_7.2.0.2.png)
+   ![](../media/task_7.2.0.2.png)
 
 4. Select the **checkbox** to disable the message in future, and click on **Yes** button.
 
-![](../media/task_7.2.0.1_1.png)
+   ![](../media/task_7.2.0.1_1.png)
 
-5. Click on **Workspaces** from  the left menu, and select **Fabcon**.
+5. Click on **Workspaces** from  the left menu, and select **Fabcon-<inject key="Deployment ID" enableCopy="false"/>**.
 
-![](../media/task_7.2.5.png)
+   ![](../media/task_7.2.5.png)
 
 6. Click on **Manage_access** from the top right corner.
 
-![](../media/task_7.2.0.3.png)
+   ![](../media/task_7.2.0.3.png)
 
 7. Click on **Add people or groups** button.
 
-![](../media/task_7.2.0.4.png)
+   ![](../media/task_7.2.0.4.png)
 
 8. Search for **Fabcon-01** user in the search box, select the user from the dropdown list, make sure that the **Viewer** access is selected, and then click on **Add**.
 
-![](../media/task_7.2.0.5.png)
+   ![](../media/task_7.2.0.5.png)
 
 9. Wait till you get a success message like below. This might take a minute. Click on the **Close** icon.
 
-![](../media/task_7.2.0.6.png)
+   ![](../media/task_7.2.0.6.png)
 
 10. Hover to the right of **Fabcon_database** to find the **three dots** and click on it.
 
 11. Scroll down and select **Manage permissions**.
 
-![](../media/task_7.2.0.7.png)
+    ![](../media/task_7.2.0.7.png)
 
 12. Type **Fabcon-01** in the search box, and notice the permissions assigned to the users.
 
-![](../media/task_7.2.0.8.png)
+    ![](../media/task_7.2.0.8.png)
 
-Read, ReadData permissions allows user to can connect to Fabcon_database and read all data from it.
+    Read, ReadData permissions allows user to can connect to Fabcon_database and read all data from it.
 
 
 #### Activity: Access a database as a member of the Viewer role and verify what you can and cannot do.
 
 1. Open a new tab in the incognito window, and type **app.fabric.microsoft.com** and press **Enter**.
 
-![](../media/task_7.2.2.png)
+   ![](../media/task_7.2.2.png)
 
 2. Click on the **Profile icon**, then click on **Sign out** button.
 
-![](../media/task_7.2.0.1_2.png)
+   ![](../media/task_7.2.0.1_2.png)
 
 3. You will get the signed out message as shown in the image below.
 
-![](../media/task_7.2.0.1_3.png)
+   ![](../media/task_7.2.0.1_3.png)
 
 4. Again, open a new tab in the incognito window, and type **app.fabric.microsoft.com** and press **Enter**.
 
-![](../media/task_7.2.2.png)
+   ![](../media/task_7.2.2.png)
 
 5. Select **Use another account**.
 
-![](../media/task_7.2.0.1_4.png)
+   ![](../media/task_7.2.0.1_4.png)
 
 6. Enter the user name as **fabcon-01@CloudLabsAIoutlook.onmicrosoft.com** and click on **Next**.
 
-![](../media/task_7.2.3.png)
+   ![](../media/task_7.2.3.png)
 
 7. Enter the password **Fabcon01@123** and click on **Sign in**.
 
-![](../media/task_7.2.4.png)
+   ![](../media/task_7.2.4.png)
 
-8. Click on **Workspaces** from  the left menu, and select **Fabcon**.
+8. Click on **Workspaces** from  the left menu, and select **Fabcon-<inject key="Deployment ID" enableCopy="false"/>**.
 
 ![](../media/task_7.2.5.png)
 
 9. Click on **Fabcon_database**.
 
-![](../media/access9.png)
+   ![](../media/access9.png)
 
 10. Click on **New query**, paste the below code in the query editor, click on **Run** icon.
 
-```
-create table dbo.dim_activity (id int, user_name nvarchar(50), activity nvarchar(20));
-```
+    ```
+    create table dbo.dim_activity (id int, user_name nvarchar(50), activity nvarchar(20));
+    ```
 
-![](../media/task_7.1.1.png)
+    ![](../media/task_7.1.1.png)
 
 11. Paste the below code in the query editor, click on **Run** icon.
 
-```
-insert into dbo.dimcity VALUES (11, 'Tokyo');
-```
+    ```
+    insert into dbo.dimcity VALUES (11, 'Tokyo');
+    ```
 
-![](../media/task_7.1.1.1.png)
+    ![](../media/task_7.1.1.1.png)
 
-> **Note**: The statement has failed as the user has viewer access to Fabcon workspace.
+    > **Note**: The statement has failed as the user has viewer access to Fabcon workspace.
 
 12. Paste the below code in the query editor, click on **Run** icon.
 
-```
-select * from dbo.dimcustomer;
-```
+    ```
+    select * from dbo.dimcustomer;
+    ```
 
-> **Note**: You can perform selection on any tables as the user has viewer access to Fabcon workspace.
+    > **Note**: You can perform selection on any tables as the user has viewer access to Fabcon workspace.
 
-![](../media/task_7.1.2.png)
+     ![](../media/task_7.1.2.png)
 
 #### Activity: Access as Workspace Admin to assign Contributor workspace permission to other user.
 
 1. Switch back to the previous tab logged in with admin user **Fabcon-03**.
 
-![](../media/task_7.2.0.1_7.png)
+    ![](../media/task_7.2.0.1_7.png)
 
 2. Click on **Workspaces** from  the left menu, and select **Fabcon**.
 
-![](../media/task_7.2.5.png)
+    ![](../media/task_7.2.5.png)
 
 3. Click on **Manage_access** from the top right corner.
 
-![](../media/task_7.2.0.3.png)
+    ![](../media/task_7.2.0.3.png)
 
 4. Search for **Fabcon-01** user in the search box, select the **dropdown arrow** next to Viewer, click on **Contributor** access, and then click on **Close** icon.
 
-![](../media/task_7.2.0.9.png)
+   ![](../media/task_7.2.0.9.png)
 
 5. Hover to the right of **Fabcon_database** to find the **three dots** and click on it.
 
 6. Scroll down and select **Manage permissions**.
 
-![](../media/task_7.2.0.7.png)
+   ![](../media/task_7.2.0.7.png)
 
 7. Type **Fabcon-01** in the search box, and notice the permissions assigned to the users.
 
-![](../media/task_7.2.0.10.png)
+    ![](../media/task_7.2.0.10.png)
 
 The additional Write permission allows user to have full administrative access to Fabcon_database.
 
@@ -169,52 +169,52 @@ The additional Write permission allows user to have full administrative access t
 
 1. Navigate back to the database tab logged in with the user **Fabcon-01**.
 
-![](../media/task_7.2.0.1_8.png)
+   ![](../media/task_7.2.0.1_8.png)
 
 2. Click on **New query**, paste the below code in the query editor, click on **Run** icon.
 
-```
-create table dbo.dim_activity (id int, user_name nvarchar(50), activity nvarchar(20));
-```
+    ```
+    create table dbo.dim_activity (id int, user_name nvarchar(50), activity nvarchar(20));
+    ```
 
-> **Note**: The statement has succeeded as the user has contributor access to Fabcon workspace.
+   > **Note**: The statement has succeeded as the user has contributor access to Fabcon workspace.
 
-![](../media/task_7.1.5.png)
+   ![](../media/task_7.1.5.png)
 
 3. Paste the below code in the query editor, click on **Run** icon.
 
-```
-insert into dbo.dim_activity values (1, current_user, 'insert');
-insert into dbo.dim_activity values (2, current_user, 'insert');
-update dbo.dim_activity set activity = 'update' where id = 2;
-```
+    ```
+    insert into dbo.dim_activity values (1, current_user, 'insert');
+    insert into dbo.dim_activity values (2, current_user, 'insert');
+    update dbo.dim_activity set activity = 'update' where id = 2;
+    ```
 
-![](../media/task_7.1.6.png)
+   ![](../media/task_7.1.6.png)
 
 > **Note**: You can perform insert/update on any tables as the user has contributor access to Fabcon workspace.
 
 4. Paste the below code in the query editor, click on **Run** icon.
 
-```
-select * from dbo.dim_activity;
-```
+    ```
+    select * from dbo.dim_activity;
+    ```
 
-> **Note**: You can perform selection on any tables as the user has contributor access to Fabcon workspace.
+   > **Note**: You can perform selection on any tables as the user has contributor access to Fabcon workspace.
 
-![](../media/task_7.1.8.png)
+    ![](../media/task_7.1.8.png)
 
 5. Let's revert the new table creation step. Copy the below code, and paste it in the query editor, then select the pasted code and click on **Run** button.
 
-```
----- Revert new table creation step.
-DROP TABLE dbo.dim_activity;
-```
+    ```
+    ---- Revert new table creation step.
+    DROP TABLE dbo.dim_activity;
+    ```
 
-![](../media/task_7.1.9.png)
+   ![](../media/task_7.1.9.png)
 
 7. Close the incognito window by clicking on the **Close icon**.
 
-![](../media/task_7.2.0.1_9.png)
+    ![](../media/task_7.2.0.1_9.png)
 
 
 
@@ -227,11 +227,11 @@ Unlike workspace roles you used in the previous task, SQL native access controls
 
 1. Open a new incognito window, and type **app.fabric.microsoft.com** and press **Enter**.
 
-![](../media/task_7.2.2.png)
+   ![](../media/task_7.2.2.png)
 
 2. Enter the user name as **fabcon-03@CloudLabsAIoutlook.onmicrosoft.com** and click on **Submit**.
 
-![](../media/task_7.2.0.1.png)
+   ![](../media/task_7.2.0.1.png)
 
 3. Enter the password **Fabcon03@123** and click on **Sign in**.
 

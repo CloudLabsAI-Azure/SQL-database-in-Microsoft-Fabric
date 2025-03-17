@@ -22,29 +22,29 @@ In this task, we will use **Dataflow Gen2** to ingest data and efficiently copy 
 
    ![alt text](../media/image-2.png)
 
-> **Note:** Close any pop-up that appears on the screen.
+   > **Note:** Close any pop-up that appears on the screen.
 
-![alt text](../media/image-3.png)
+   ![alt text](../media/image-3.png)
 
-> **Note:** If you see the following screen, continue with the following steps or directly move to step number **8**.
+   > **Note:** If you see the following screen, continue with the following steps or directly move to step number **8**.
 
 5. Click on the **Continue** button.
 
-![alt text](../media/image-4.png)
+   ![alt text](../media/image-4.png)
 
 6. Click on the **Business phone number** textbox and type a 10-digit number ```1230000849```. Click on the **Get Started** button.
 
-![alt text](../media/image-5.png)
+   ![alt text](../media/image-5.png)
 
 7. Again, click on the **Get Started** button.
 
-![alt text](../media/image-6.png)
+   ![alt text](../media/image-6.png)
 
-> **Note:** Wait for the Power BI workspace to load and close the top bar for a better view.
+   > **Note:** Wait for the Power BI workspace to load and close the top bar for a better view.
 
 8. From the left navigation pane, click on **Workspaces** and then the **+ New workspace** button.
 
-![alt text](../media/image-7.png)
+   ![alt text](../media/image-7.png)
 
 9. In the **Name** field, enter **Fabcon-<inject key="Deployment ID" enableCopy="false"/>**, then click **Apply**.
 
@@ -63,19 +63,19 @@ In this task, we will use **Dataflow Gen2** to ingest data and efficiently copy 
 
 1. Click on **+ New item** and type **SQL** in the search bar, then select **SQL Database (preview)**.
 
-![](../media/database1.png)
+   ![](../media/database1.png)
 
 2. In the **Name** field, enter ```Fabcon_database``` and click on the **Create** button. Database creation should take less than a minute.
 
-![](../media/03.png)
+   ![](../media/03.png)
 
 3. When the new database is provisioned, on the **Home page** notice that the Explorer pane is showing database objects.
 
-![](../media/f54.png)
+   ![](../media/f54.png)
 
 4. Under **Build your database**, three useful tiles can help you get your newly created database up and running.
 
-![](../media/06.png)
+   ![](../media/06.png)
 
 - **Sample data** - Lets you import sample data into your Empty database.
 - **T-SQL** - Gives you a web-editor that can be used to write T-SQL to create database objects like schema, tables, views, and more. For users who are looking for code snippets to create objects, they can look for available samples in the **Templates** drop down list at the top of the menu.
@@ -86,28 +86,28 @@ In this task, we will use **Dataflow Gen2** to ingest data and efficiently copy 
 
 1. Click on **Workspaces** and select **Fabcon-<inject key="Deployment ID" enableCopy="false"/>** workspace.
 
-![](../media/datapipeline1.png)
+   ![](../media/datapipeline1.png)
 
 
 2. Click on **+ New item** and select **Dataflow Gen2**.
 
-![](../media/dfgen21.png)
+   ![](../media/dfgen21.png)
 
 3. Click on **Create** button.
 
-![](../media/dfgen2.2.png)
+   ![](../media/dfgen2.2.png)
 
 3. Click on the **Get data** icon (**not on the dropdown arrow at the bottom of the icon**).
 
-![](../media/f47.png)
+   ![](../media/f47.png)
 
 4. On the **Choose data source** pane, search for **Azure SQL** and click on **Azure SQL database**.
 
-![](../media/dfgen2.4.png)
+   ![](../media/dfgen2.4.png)
 
->**Note:** Note: To fill in the details for required fileds, we need to fetch the details from the SQL Database resource deployed in the Azure Portal.
+   >**Note:** Note: To fill in the details for required fileds, we need to fetch the details from the SQL Database resource deployed in the Azure Portal.
 
-![](../media/g10.png)
+   ![](../media/g10.png)
 
 5. Navigate to the **Azure Portal**, in the resource group **rg-fabcon-<inject key="Deployment ID" enableCopy="false"/>**, search for **sql** in the resource group window and click on the **mssql...** resource.
 
@@ -152,7 +152,7 @@ In this task, we will use **Dataflow Gen2** to ingest data and efficiently copy 
 
     >**Note:** Please ensure to select the destination for all the tables before publishing the dataflow.
 
-12. Click on the **Publish** button.
+13. Click on the **Publish** button.
 
     ![alt text](../media/f21.png)
 
@@ -171,11 +171,11 @@ In this task, we will use **Dataflow Gen2** to ingest data and efficiently copy 
 
 3. Click on the **New Query** icon.
 
-![](../media/database3.png)
+   ![](../media/database3.png)
 
 4. Paste the query ```SELECT * FROM dim_products```, click on the **Run** icon and then check the output.
 
-![](../media/g15.png)
+   ![](../media/g15.png)
 
 
 ### Task 1.2: Load Data from On-Premises Database
@@ -266,15 +266,15 @@ For this workshop, the **On-Premises Data Gateway** is already provisioned for y
 
 1. Click on **Workspaces** and select the **Fabcon-<inject key="Deployment ID" enableCopy="false"/>** workspace.
 
-![](../media/datapipeline1.png)
+   ![](../media/datapipeline1.png)
 
 2. Click on **+ New item** and select the **Data pipeline** option.
 
-![](../media/datapipeline2.png)
+   ![](../media/datapipeline2.png)
 
 3. In the name field, enter ``Ingest on-premises data using pipeline``and click on the **Create** button.
 
-![](../media/24.png)
+   ![](../media/24.png)
 
 4. From the **Home** tab of the pipeline editor, click on the **Copy data** dropdown and select **Use copy assistant** option.
 
@@ -282,22 +282,22 @@ For this workshop, the **On-Premises Data Gateway** is already provisioned for y
 
 5. On the **Home** pane, select the **SQL Server database** option.
 
-![](../media/datapipeline3.png)
+    ![](../media/datapipeline3.png)
 
 6. In the **Connection settings** pane, in the **Server** field paste **FabconVM<inject key="Deployment ID" enableCopy="false"/>** , and paste **FabconDatabase** in the **Database** field. It automatically selects the **Connection**. Click on the **Next** button.
  
 
->**Note:** For this workshop, the **On-Premises Data Gateway** is already provisioned for you and no setup is required by the workshop user, the **gateway connection** can be accessed in your Fabric workspace while setting up the data pipeline. The connection is displayed automatically when database credentials passed on in the pipeline.
+   >**Note:** For this workshop, the **On-Premises Data Gateway** is already provisioned for you and no setup is required by the workshop user, the **gateway connection** can be accessed in your Fabric workspace while setting up the data pipeline. The connection is displayed automatically when database credentials passed on in the pipeline.
 
-![](../media/f51.png)
+   ![](../media/f51.png)
 
 7. Now, under the **FabconDatabase** database, click **Select all** and then click on the **Next** button.
 
-![](../media/f52.png)
+   ![](../media/f52.png)
 
 8. Click on **OneLake** and select existing **SQL database**.
 
-![](../media/f53.png)
+   ![](../media/f53.png)
 <!--
 9. Scroll down and click on the checkbox beside **Allow this connection to be utilized with either on-premises or VNet data gateways** and then click on **Sign in**.
 
@@ -333,20 +333,20 @@ For this workshop, the **On-Premises Data Gateway** is already provisioned for y
 
 1. Select the **Load to new table** radio button and click on the **Next** button.
 
-![](../media/datapipeline13.png)
+   ![](../media/datapipeline13.png)
 
 2. Click on **Save + Run**.
 
-![](../media/datapipeline11.png)
+   ![](../media/datapipeline11.png)
 
 3. Click on the **Ok** button in the **Pipeline run** window..
 
-![](../media/datapipeline12.png)
+   ![](../media/datapipeline12.png)
 
 4. Click on the **Bell** icon at the top right of the screen to verify the Running status of the pipeline.
 
-![](../media/datapipeline14.png)
+   ![](../media/datapipeline14.png)
 
-There you go! Your data has been transferred from the on-premises SQL database to the Fabric SQL database.
+   There you go! Your data has been transferred from the on-premises SQL database to the Fabric SQL database.
 
-Congratulations! You have successfully created your database in a new Fabric workspace and ingested data from both **Azure SQL Database** and an **on-premises SQL Server**. You are ready to move on to the next exercise: [Introduction to Copilot for SQL Database](https://github.com/dreamdemos-ms/Fabcon_Workshop/blob/main/Workshop_Exercises/02%20-%20Introduction%20to%20Copilot%20for%20SQL%20Database.md)
+   Congratulations! You have successfully created your database in a new Fabric workspace and ingested data from both **Azure SQL Database** and an **on-premises SQL Server**. You are ready to move on to the next exercise: [Introduction to Copilot for SQL Database](https://github.com/dreamdemos-ms/Fabcon_Workshop/blob/main/Workshop_Exercises/02%20-%20Introduction%20to%20Copilot%20for%20SQL%20Database.md)
