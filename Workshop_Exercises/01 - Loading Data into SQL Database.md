@@ -27,7 +27,7 @@ In this task, we will use **Dataflow Gen2** to ingest data and efficiently copy 
    ![alt text](../media/image-3.png)
 
    > **Note:** If you see the following screen, continue with the following steps or directly move to step number **8**.
-
+<!--
 5. Click on the **Continue** button.
 
    ![alt text](../media/image-4.png)
@@ -42,15 +42,15 @@ In this task, we will use **Dataflow Gen2** to ingest data and efficiently copy 
 
    > **Note:** Wait for the Power BI workspace to load and close the top bar for a better view.
 
-8. From the left navigation pane, click on **Workspaces** and then the **+ New workspace** button.
+   -->
+
+5. From the left navigation pane, click on **Workspaces** and then the **+ New workspace** button.
 
    ![alt text](../media/image-7.png)
 
-9. In the **Name** field, enter **<inject key="WorkspaceName" enableCopy="true"/>**, then click **Apply**.
+6. In the **Name** field, enter **<inject key="WorkspaceName" enableCopy="true"/>**, then click **Apply**.
 
     > **Note:** Only use the workspace name provided above.
-
-    > **Note:** If the name is already taken, refresh the page and check again. A workspace with that name may already be created. If so, add a different suffix until the name is available.
 
     ![alt text](../media/f46.png)
 
@@ -77,6 +77,10 @@ In this task, we will use **Dataflow Gen2** to ingest data and efficiently copy 
 
    ![](../media/06.png)
 
+   >**Note** : If you cannot see all the tiles shown in the screenshot, use the arrow mark above to navigate through the remaining tiles.
+
+    ![](../media/new1.png)
+
 - **Sample data** - Lets you import sample data into your Empty database.
 - **T-SQL** - Gives you a web-editor that can be used to write T-SQL to create database objects like schema, tables, views, and more. For users who are looking for code snippets to create objects, they can look for available samples in the **Templates** drop down list at the top of the menu.
 - **Connection strings** - Shows the SQL database connection string that is required when you want to connect using **SQL Server Management Studio**, the mssql extension with **Visual Studio Code**, or other external tools.
@@ -84,16 +88,16 @@ In this task, we will use **Dataflow Gen2** to ingest data and efficiently copy 
 
 #### Activity: Use Dataflow Gen2 to move data from Azure SQL DB to the SQL Database in Fabric.
 
-1. Click on **Workspaces** and select **Fabcon-<inject key="Deployment ID" enableCopy="false"/>** workspace.
+1. Click on **Workspaces** and select **<inject key="WorkspaceName" enableCopy="true"/>** workspace.
 
-   ![](../media/datapipeline1.png)
+   ![](../media/new2.png)
 
 
 2. Click on **+ New item** and select **Dataflow Gen2**.
 
    ![](../media/dfgen21.png)
 
-3. Click on **Create** button.
+3. If the pop-up below appears, accept the default name and click the **Create** button.
 
    ![](../media/dfgen2.2.png)
 
@@ -101,15 +105,20 @@ In this task, we will use **Dataflow Gen2** to ingest data and efficiently copy 
 
    ![](../media/f47.png)
 
+   >**Note:** If the **Get Data** icon is not visible, expand **New Query** and select the **Get Data** option.
+
+   ![](../media/new3.png)
+
 4. On the **Choose data source** pane, search for **Azure SQL** and click on **Azure SQL database**.
 
    ![](../media/dfgen2.4.png)
 
+<!--
    >**Note:** Note: To fill in the details for required fileds, we need to fetch the details from the SQL Database resource deployed in the Azure Portal.
 
    ![](../media/g10.png)
 
-5. Navigate to the **Azure Portal**, in the resource group **rg-fabcon-<inject key="Deployment ID" enableCopy="false"/>**, search for **sql** in the resource group window and click on the **mssql...** resource.
+5. Navigate to the **Azure Portal**, in the resource group **rg-fabcon**, search for **sql** in the resource group window and click on the **SalesDB (mssql<inject key="DeploymentID" enableCopy="false"/>** resource.
 
    ![](../media/g11.png)
 
@@ -118,13 +127,17 @@ In this task, we will use **Dataflow Gen2** to ingest data and efficiently copy 
    ![](../media/g12.png)
 
 7. Navigate back to the **Fabric** tab on your browser.
-
-8. On the **Connection settings** pane, in the **Server** field, paste the value you copied in step number **6**, and in the **Database** field, paste ```SalesDb```.
+-->
+8. On the **Connection settings** pane, in the **Server** field, paste the following value **<inject key="MssqlServer" enableCopy="true"/>**, and in the **Database** field, paste ```SalesDb```.
 
     ![](../media/dfgen2.5.png)
 
 
-6.  Scroll down and select **Basic** in the **Authentication kind** dropdown. Enter ``labsqladmin`` as the **Username**, ``Smoothie@2025`` as the **Password** and click on the **Next** button.
+6.  Scroll down, enter the following details, leave everything else as default, and click **Next**.
+
+      - **Authentication kind** : Basic,
+      - **Username** : ``labsqladmin`` , 
+      - **Password**  : ``Smoothie@2025`` 
 
     ![](../media/dfgen2.6.png)
 
@@ -140,13 +153,13 @@ In this task, we will use **Dataflow Gen2** to ingest data and efficiently copy 
 
    ![](../media/dfgen2.9.png)
 
-10. Expand the **Fabcon** folder, select the **Fabcon_database** and then click on the **Next** button.
+10. Expand the **<inject key="WorkspaceName" enableCopy="true"/>** folder, select the **Fabcon_database** and then click on the **Next** button.
 
-    ![](../media/g13.png)
+    ![](../media/new4.png)
 
 11. Click on the **Save settings** button.
 
-   ![](../media/dfgen2.11.png)
+    ![](../media/dfgen2.11.png)
 
 12. For ``Website_Bounce_rate``, ``dim_products`` and ``inventory`` tables perform steps **8-11** to select the destination.
 
@@ -160,9 +173,9 @@ In this task, we will use **Dataflow Gen2** to ingest data and efficiently copy 
 
 #### Activity: Verify the data transfer by querying tables in the SQL Database
 
-1. Click on **Workspaces** and select the **Fabcon-<inject key="Deployment ID" enableCopy="false"/>** workspace.
+1. Click on **Workspaces** and select the **<inject key="WorkspaceName" enableCopy="true"/>** workspace.
 
-   ![](../media/datapipeline1.png)
+   ![](../media/new2.png)
 
 
 2. Search for **database** and select the **Fabcon_database**.
@@ -264,9 +277,9 @@ For this workshop, the **On-Premises Data Gateway** is already provisioned for y
 
 #### Activity: Use a Fabric Pipeline to load data from the On-premises database to the SQL Database
 
-1. Click on **Workspaces** and select the **Fabcon-<inject key="Deployment ID" enableCopy="false"/>** workspace.
+1. Click on **Workspaces** and select the **<inject key="WorkspaceName" enableCopy="true"/>** workspace.
 
-   ![](../media/datapipeline1.png)
+   ![](../media/new2.png)
 
 2. Click on **+ New item** and select the **Data pipeline** option.
 
@@ -278,13 +291,13 @@ For this workshop, the **On-Premises Data Gateway** is already provisioned for y
 
 4. From the **Home** tab of the pipeline editor, click on the **Copy data** dropdown and select **Use copy assistant** option.
 
-![](../media/25.png)
+   ![](../media/25.png)
 
 5. On the **Home** pane, select the **SQL Server database** option.
 
     ![](../media/datapipeline3.png)
 
-6. In the **Connection settings** pane, in the **Server** field paste **FabconVM<inject key="Deployment ID" enableCopy="false"/>** , and paste **FabconDatabase** in the **Database** field. It automatically selects the **Connection**. Click on the **Next** button.
+6. In the **Connection settings** pane, in the **Server** field paste **<inject key="VMName" enableCopy="true"/>** , and paste **FabconDatabase** in the **Database** field. It automatically selects the **Connection**. Click on the **Next** button.
  
 
    >**Note:** For this workshop, the **On-Premises Data Gateway** is already provisioned for you and no setup is required by the workshop user, the **gateway connection** can be accessed in your Fabric workspace while setting up the data pipeline. The connection is displayed automatically when database credentials passed on in the pipeline.
@@ -328,7 +341,9 @@ For this workshop, the **On-Premises Data Gateway** is already provisioned for y
 15. Click on **Connect**.
 
 ![](../media/datapipeline9.png)
+
 -->
+
 #### Activity: Validate the data transfer and ensure schema compatibility
 
 1. Select the **Load to new table** radio button and click on the **Next** button.
