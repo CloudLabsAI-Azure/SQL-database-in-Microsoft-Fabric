@@ -27,22 +27,6 @@ In this task, we will use **Dataflow Gen2** to ingest data and efficiently copy 
    ![alt text](../media/image-3.png)
 
    > **Note:** If you see the following screen, continue with the following steps or directly move to step number **8**.
-<!--
-5. Click on the **Continue** button.
-
-   ![alt text](../media/image-4.png)
-
-6. Click on the **Business phone number** textbox and type a 10-digit number ```1230000849```. Click on the **Get Started** button.
-
-   ![alt text](../media/image-5.png)
-
-7. Again, click on the **Get Started** button.
-
-   ![alt text](../media/image-6.png)
-
-   > **Note:** Wait for the Power BI workspace to load and close the top bar for a better view.
-
-   -->
 
 5. From the left navigation pane, click on **Workspaces** and then the **+ New workspace** button.
 
