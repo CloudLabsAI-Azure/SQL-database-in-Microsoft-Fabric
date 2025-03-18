@@ -10,9 +10,9 @@ The Performance Dashboard in Fabric SQL database displays the performance status
 
 You can use the Performance Dashboard to view database performance metrics, to identify performance bottlenecks, and find solutions to performance issues.
 
-1. Click on **Workspaces** and select **Fabcon-<inject key="Deployment ID" enableCopy="false"/>** workspace.
+1. Click on **Workspaces** and select **<inject key="WorkspaceName" enableCopy="false"/>** workspace.
 
-   ![](../media/datapipeline1.png)
+   ![](../media/new2.png)
 
 2. Search for **database** and select the database.
 

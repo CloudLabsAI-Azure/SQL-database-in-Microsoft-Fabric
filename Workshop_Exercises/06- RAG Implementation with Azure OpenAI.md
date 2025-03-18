@@ -25,7 +25,7 @@ With Retrieval Augmented Generation, you can bridge structured data with generat
 
 1. Click on **Workspaces** and select the **Fabcon-<inject key="Deployment ID" enableCopy="false"/>** workspace.
 
-   ![](../media/datapipeline1.png)
+   ![](../media/new2.png)
 
 2. Click on **Fabcon_database** 
 

@@ -6,9 +6,9 @@ In this exercise, we will leverage **Copilot** to assist with T-SQL queries, inc
 
 #### Activity: Write SQL queries in the SQL query editor in Microsoft Fabric
 
-1. Click on **Workspaces** from the left navigation pane and select the **Fabcon-<inject key="Deployment ID" enableCopy="false"/>** workspace.
+1. Click on **Workspaces** from the left navigation pane and select the **<inject key="WorkspaceName" enableCopy="false"/>** workspace.
 
-   ![](../media/datapipeline1.png)
+   ![](../media/new2.png)
 
 2. Search for **database** and select the database created in the previous task.
 

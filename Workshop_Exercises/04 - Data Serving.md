@@ -6,7 +6,7 @@ In this exercise we will create a **semantic model** from the landed earlier in 
 
 1. Click on **Workspaces** and select the **Fabcon-<inject key="Deployment ID" enableCopy="false"/>** workspace.
 
-   ![](../media/datapipeline1.png)
+   ![](../media/new2.png)
 
 2. Search for **database** and select the **Fabcon_database**.
 

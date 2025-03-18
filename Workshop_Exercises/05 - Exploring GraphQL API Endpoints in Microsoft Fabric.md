@@ -12,7 +12,7 @@ Let's first create a view using a simple analytical T-SQL query. The new view, `
 
 1. Click on **Workspaces** and select the **Fabcon-<inject key="Deployment ID" enableCopy="false"/>** workspace.
 
-   ![](../media/datapipeline1.png)
+   ![](../media/new2.png)
 
 2. Search for **database** and select the **Fabcon_database**.
 

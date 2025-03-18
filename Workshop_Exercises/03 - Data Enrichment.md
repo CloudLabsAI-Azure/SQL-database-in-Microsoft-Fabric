@@ -10,7 +10,7 @@ Now, let's see how each department can easily create a Lakehouse in the Contoso 
 
 1. Click on **Workspaces** and select the **Fabcon-<inject key="Deployment ID" enableCopy="false"/>** workspace.
 
-   ![](../media/datapipeline1.png)
+   ![](../media/new2.png)
 
 2. Click on **+ New item** and select **Lakehouse** under the **Store data** option.
 
@@ -113,9 +113,9 @@ Now, this is something exciting! This section shows how easy it is to create Sho
 
 #### Activity: Create a new dataflow gen2 in Fabric to process raw data from Lakehouse
 
-1. Click on **Workspaces** and select the **Fabcon-<inject key="Deployment ID" enableCopy="false"/>** workspace.
+1. Click on **Workspaces** and select the **<inject key="WorkspaceName" enableCopy="false"/>** workspace.
 
-    ![](../media/datapipeline1.png)
+    ![](../media/new2.png)
 
 2. Click on **+New item** and search for **Dataflow** then select **Dataflow Gen2**
 
@@ -205,7 +205,7 @@ Now, this is something exciting! This section shows how easy it is to create Sho
 
 1. Click on **Workspaces** and select the **Fabcon-<inject key="Deployment ID" enableCopy="false"/>** workspace.
 
-    ![](../media/datapipeline1.png)
+    ![](../media/new2.png)
 
 2. Click on **+ New item** and select **Data pipeline** under **Get data**.
 
