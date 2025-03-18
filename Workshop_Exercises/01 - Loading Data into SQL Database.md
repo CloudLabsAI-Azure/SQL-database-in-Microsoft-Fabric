@@ -167,83 +167,6 @@ Data Factory for Microsoft Fabric is a powerful cloud-based data integration ser
 
 For this workshop, the **On-Premises Data Gateway** is already provisioned for you and no setup is required by the workshop user, the **gateway connection** can be accessed in your Fabric workspace while setting up the data pipeline. The connection is displayed automatically when database credentials passed on in the pipeline.
 
-<!--
-1. Open a new tab in your virtual machine browser and paste the follwing URL, it will download gateway application.
-
-[Download the standard gateway](https://go.microsoft.com/fwlink/?LinkId=2116849&clcid=0x409)
-
-2. In the gateway installer, keep the default installation path, accept the **terms of use**, and then select **Install**.
-
-![](../media/13.png)
-
-3. In **email address to use with this gateway** field, enter **+++@lab.CloudPortalCredential(User1).Username+++** and then select **Sign in**.
-
-![](../media/14.png)
-
-4.  Enter the password by clicking on +++@lab.CloudPortalCredential(User1).Password+++ and click on **Sign in**.
-
-![alt text](../media/image-1.png)
-
-5. Select **Register a new gateway on this computer** and click on **Next**.
-
-![](../media/15.png)
-
-6. Enter a name for the gateway as **Datagateway@lab.LabInstance.Id** and in **Recovery Key** field enter +++@lab.CloudPortalCredential(User1).Password+++ and enter the same value in **Confirm recory key** field and click on **Configure**.
-
-![](../media/16.png)
-
-7. Review the information in the final window. Note that the gateway is available for Microsoft Fabric. Select **Close**.
-
-![](../media/17.png)
-
-
-
-#### Set up a gateway connection to access on-premises data sources
-
-1. Navigate to Azure portal(https://portal.azure.com/) and search for **Resoucegroup**.
-
-![](../media/g1.png)
-
-2. Click on **rg-fabcon-suffix**, copy **virtual machine name** and save it on your notpad.
-
-![](../media/g2.png)
-
-3. Navigate back to Microsoft Fabric tab, click on the **Settings** button (an icon that looks like a gear) at the top right of the page. Then choose **Manage connections and gateways** from the dropdown menu.
-
-![](../media/18.png)
-
-4. Click on **+ New** from top left corner.
-
-![](../media/19.png)
-
-5. Select **On-premises**,
-
-- From **Gateway cluster name** dropdown, select **datagateway**
-
->**Note:** You'll have a suffix concatenated with your Gateway cluster name.
-
-- In **Connection name** field, enter ``on-premisesgateway``.
-
-- From the **Connection type** dropdown, select ``SQL Server``.
-
-- In the **Server** field, enter the Virtual Machine name you copied in **step 2**
-
-- In the **Database** field, enter ``FabconDatabase``.
-
-![](../media/g3.png)
-
-- In the **Authentication method** dropdown, select **Windows**.
-- In the **Username** field, enter the virtual machine name you copied in **Step 2** and append ``\azureuser`` to it. It should look like ``FabconVMxyz\azureuser``.
-- In the **Password** field, enter ``Fabcon@2025``.
-- In the **Privacy level** dropdown, select **None** and click on the **Create** button.
-
-![](../media/g4.png)
-
-6. Scroll up to verify that the connection has been **created**.
-
-![](../media/g5.png)
--->
-
 #### Activity: Use a Fabric Pipeline to load data from the On-premises database to the SQL Database
 
 1. Click on **Workspaces** and select the **<inject key="WorkspaceName" enableCopy="true"/>** workspace.
@@ -280,38 +203,6 @@ For this workshop, the **On-Premises Data Gateway** is already provisioned for y
 8. Click on **OneLake** and select existing **SQL database**.
 
    ![](../media/f53.png)
-<!--
-9. Scroll down and click on the checkbox beside **Allow this connection to be utilized with either on-premises or VNet data gateways** and then click on **Sign in**.
-
-![](../media/datapipeline10.png)
-
->**Note:** If you don’t see the **Allow this connection to be utilized with either on-premises or VNet data gateways** checkbox, duplicate your current tab and follow the steps below. Otherwise, continue from **Step 14**.
-
-10. Click on the **Settings** button (an icon that looks like a gear) at the top right of the page. Then choose **Manage connections and gateways** from the dropdown menu.
-
-![](../media/18.png)
-
-11. Click on **Connections**, then click the ellipsis (three dots) next to the **FabricSql** connection and select **Settings**.
-
-![](../media/f68.png)
-
-12. Click on the checkbox beside **Allow this connection to be utilized with either on-premises or VNet data gateways** and click on the **Save** button.
-
-![](../media/f69.png)
-
-13. Navigate back to your Previous tab and click on **Sign in**
-
-![](../media/f70.png)
-
-14. Click on your **Entra ID** username.
-
-![](../media/datapipeline8.png)
-
-15. Click on **Connect**.
-
-![](../media/datapipeline9.png)
-
--->
 
 #### Activity: Validate the data transfer and ensure schema compatibility
 
