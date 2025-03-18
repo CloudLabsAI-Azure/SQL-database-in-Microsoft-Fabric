@@ -46,7 +46,7 @@ In this task, we will use **Dataflow Gen2** to ingest data and efficiently copy 
 
    ![alt text](../media/image-7.png)
 
-9. In the **Name** field, enter **Fabcon-<inject key="Deployment ID"/>**, then click **Apply**.
+9. In the **Name** field, enter **Fabcon-<inject key="Deployment ID" enableCopy="false"/>**, then click **Apply**.
 
     > **Note:** Only use the workspace name provided above.
 
