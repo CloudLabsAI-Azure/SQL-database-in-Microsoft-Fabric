@@ -113,21 +113,6 @@ In this task, we will use **Dataflow Gen2** to ingest data and efficiently copy 
 
    ![](../media/dfgen2.4.png)
 
-<!--
-   >**Note:** Note: To fill in the details for required fileds, we need to fetch the details from the SQL Database resource deployed in the Azure Portal.
-
-   ![](../media/g10.png)
-
-5. Navigate to the **Azure Portal**, in the resource group **rg-fabcon**, search for **sql** in the resource group window and click on the **SalesDB (mssql<inject key="DeploymentID" enableCopy="false"/>** resource.
-
-   ![](../media/g11.png)
-
-6. Copy the **Server** name.
-
-   ![](../media/g12.png)
-
-7. Navigate back to the **Fabric** tab on your browser.
--->
 8. On the **Connection settings** pane, in the **Server** field, paste the following value **<inject key="MssqlServer" enableCopy="true"/>**, and in the **Database** field, paste ```SalesDb```.
 
     ![](../media/dfgen2.5.png)
