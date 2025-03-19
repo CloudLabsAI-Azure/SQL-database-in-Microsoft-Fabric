@@ -8,7 +8,7 @@ This exercise focuses on **data enrichment** using **Dataflow Gen2** and **Noteb
 
 Now, let's see how each department can easily create a Lakehouse in the Contoso workspace without any provision. They simply provide a name, given the proper access rights of course!
 
-1. Click on **Workspaces** and select the **Fabcon-<inject key="Deployment ID" enableCopy="false"/>** workspace.
+1. Click on **Workspaces** and select the **<inject key="WorkspaceName" enableCopy="false"/>** workspace.
 
    ![](../media/new2.png)
 
@@ -19,6 +19,10 @@ Now, let's see how each department can easily create a Lakehouse in the Contoso 
     **Note:** Screenshots in the exercises may sometimes differ from the actual lab. Please adjust your screen resolution to locate items and select them as needed.
 
 3. In the **Name** field, enter ``Lakehouse``.
+
+    ```
+    Lakehouse
+    ```
 
 4. Click and enable the **Lakehouse schemas** checkbox, then click on the **Create** button.
 
@@ -56,7 +60,7 @@ Now, this is something exciting! This section shows how easy it is to create Sho
 
    ![task-1.3-ext-shortcut11.png](../media/lakehouse4.png)
 
-5. Navigate to the Azure Portal, in the **rg-fabcon-<inject key="Deployment ID" enableCopy="false"/>** resource group search for **storage** and click on the storage account resource.
+5. Navigate to the Azure Portal, in the **rg-fabcon** resource group search for **storage** and click on the storage account resource.
 
    ![](../media/g6.png)
 
@@ -64,21 +68,17 @@ Now, this is something exciting! This section shows how easy it is to create Sho
 
    ![](../media/g7.png)
 
-7. In the left pane, expand the **Settings** section and click on **Endpoints**. Scroll down to copy the **Data Lake Storage endpoint** in the **Data Lake Storage** section.
+7. Navigate back to the Fabric tab.
 
-8. Save the information in a notepad for further use.
+8. Paste the below **endpoint**  under the URL field.
 
-   ![](../media/g8.png)
+   URL: **<inject key="StorageEndpoint" enableCopy="true"/>**
 
-9. Navigate back to the Fabric tab.
+9.  In the **Authentication kind** dropdown, select **Account Key**.
 
-10. Paste the **endpoint** copied in **step 8** under the URL field.
+10. Paste the **account key** copied in step **number 6**.
 
-11.  In the **Authentication kind** dropdown, select **Account Key**.
-
-12. Paste the **account key** copied in step **number 7**.
-
-13. Click on the **Next** button.
+11. Click on the **Next** button.
   
     ![task-1.3-ext-shortcut9.png](../media/g9.png)
 
@@ -121,7 +121,7 @@ Now, this is something exciting! This section shows how easy it is to create Sho
 
    ![](../media/f7.png)
 
-3. In the **Name** field, enter ``Dataflow2`` and click on **create**
+3. If pop-up appears On the  **Name** field, enter ``Dataflow2`` and click on **create**
 
    ![](../media/f57.png)
 
@@ -132,6 +132,10 @@ Now, this is something exciting! This section shows how easy it is to create Sho
 5. When prompted to **Choose data source**, select **Lakehouse** under **OneLake catalog** .
 
    ![](../media/f9.png)
+
+   >**Note :** If you don't see fabcon_database, click the ellipsis in the top right corner and adjust JumpVM's screen resolution to 90%.
+
+   ![](../media/new3u.png)
 
 6. Expand **Lakehouse**, **Files** and then **data**. 
 
@@ -182,13 +186,15 @@ Now, this is something exciting! This section shows how easy it is to create Sho
 
     ![](../media/dfgen2.9.png)
 
-15. Expand the **Fabcon workspace**, click on **Fabcon_database**, enter ``sales_data`` in the **Table name** field, and then click the Next button.
+15. Expand the **<inject key="WorkspaceName" enableCopy="false"/>**, click on **Fabcon_database**, enter ``sales_data`` in the **Table name** field, and then click the Next button.
+
+    ```
+    sales_data
+    ```
 
     >**Note:** It is important to use the provided table name, as it will be used in subsequent exercises.
 
     ![](../media/f17.png)
-
-    >**Note:** You'll have a suffix concatenated with your workspace name.
 
 16. Click on the **Save settings** button.
 
@@ -203,7 +209,7 @@ Now, this is something exciting! This section shows how easy it is to create Sho
 
 #### Activity: Use pipeline activities to load transformed data into SQL Database
 
-1. Click on **Workspaces** and select the **Fabcon-<inject key="Deployment ID" enableCopy="false"/>** workspace.
+1. Click on **Workspaces** and select the **<inject key="WorkspaceName" enableCopy="false"/>** workspace.
 
     ![](../media/new2.png)
 
@@ -213,9 +219,13 @@ Now, this is something exciting! This section shows how easy it is to create Sho
 
 3. In the name field, enter ``load transformed data into in the SQL Database`` and click on the **Create** button.
 
+    ```
+    load transformed data into in the SQL Database
+    ```
+
     ![](../media/f19.png)
 
-4. Click on **Dataflow** from the ribbon. Click on **Settings** and then select **Dataflow2** from the **Dataflow** dropdown.
+4. Click on **Dataflow** from the ribbon. Click on **Settings** and then select **Dataflow** which you have created in previous activity from the **Dataflow** dropdown.
 
    ![](../media/f20.png)
 
@@ -243,9 +253,9 @@ Now, this is something exciting! This section shows how easy it is to create Sho
 
 #### Activity: Get JDBC URL
  
- 1. Click on the **Fabcon-<inject key="Deployment ID" enableCopy="false"/>** workspace from the left menu.
+ 1. Click on the **<inject key="WorkspaceName" enableCopy="false"/>** workspace from the left menu.
  
-    ![](../media/task_3.2.1.1.png)
+     ![](../media/new5u.png)
  
  2. Click on the three dots next to **Fabcon_database** and click on **Settings**.
  
@@ -255,11 +265,30 @@ Now, this is something exciting! This section shows how easy it is to create Sho
  
     ![](../media/task_3.2.0.2.png)
 
+
+#### Activity: Adding the requried Service Principal to the workspace.
+
+1. Click on **Manage Access** in the top right corner of the workspace.
+
+![](../media/new6u.png)
+
+2. Select **+ Add People or Groups**.
+
+   ![](../media/image8u.png)
+
+3. In the **Add People** window, enter ``sp-fabcon-lab``, select **Admin access**, and click **Add**.
+   
+   ```
+   sp-fabcon-lab
+   ```
+
+   ![](../media/image9u.png)
+
 #### Activity: Create a Notebook in the Fabric workspace and process data
 
-1. Click on the **Fabcon-<inject key="Deployment ID" enableCopy="false"/>** workspace from the left menu.
+1. Click on the **<inject key="WorkspaceName" enableCopy="false"/>** workspace from the left menu.
 
-   ![](../media/task_3.2.1.1.png)
+   ![](../media/new5u.png)
 
 2. Click on **+ New item**, search for **notebook** in the search bar, and then select **Notebook**.
 
@@ -291,23 +320,22 @@ Now, this is something exciting! This section shows how easy it is to create Sho
 
    ![](../media/task_3.2.1.7.png)
 
-8. Copy and paste the following code in the notebook cell.
+8. Copy and paste the following code in the notebook cell and Replace **jdbc_url** with the copied value from the **Get URL** activity.
 
     > **Note**: Replace jdbc_properties values with the values as below,
     **Application (client) ID**: 
-    "32adca54-a325-4a3a-9867-542434c0040a"
-    **Directory (tenant) ID**: "f94768c8-8714-4abe-8e2d-37a64b18216a"
-    **jdbc_pswd**: ```Jjl8Q~s5BoiSG~Pwd5BUh59tG1GApicw.s2dhb9K```
+    ""
+    **Directory (tenant) ID**: ""
+    **jdbc_pswd**: ``````
 
-    > **Note**: Replace **jdbc_url** with the copied value from the **Get URL** activity.
 
     ``` 
     # Define JDBC connection parameters
 
     jdbc_url = "<jdbc_url>"
     jdbc_properties = {
-        "user": f"<Application (client) ID>@<Directory (tenant) ID>",
-        "password": "<jdbc_pswd>",
+        "user": f"@",
+        "password": "",
         "driver": "com.microsoft.sqlserver.jdbc.SQLServerDriver"
     }
 
@@ -328,7 +356,7 @@ Now, this is something exciting! This section shows how easy it is to create Sho
             CONCAT(c.FirstName, ' ', c.LastName) AS CustomerName,
             ROUND(SUM(s.NetRevenue), 2) AS TotalSalesRevenue,
             ROUND(SUM(s.GrossRevenue), 2) AS TotalGrossRevenue,
-            ROUND(SUM(s.GrossProfit), 2) AS TotalGrossProfit,
+            ROUND(SUM(sf.GrossProfit), 2) AS TotalGrossProfit,
             ROUND(SUM(s.NetRevenue) - SUM(s.COGS), 2) AS NetProfit,
             ROUND(SUM(s.NetRevenue) / COUNT(DISTINCT s.CustomerId), 2) AS AverageOrderValue,
             ROUND(SUM(s.NetRevenue) / COUNT(DISTINCT s.ProductId), 2) AS RevenuePerProduct,
@@ -389,9 +417,9 @@ Now, this is something exciting! This section shows how easy it is to create Sho
 
     ![](../media/task_3.2.1.10.png)
 
-13. Click on the **Fabcon** workspace in the left menu.
+13. Click on the **<inject key="WorkspaceName" enableCopy="false"/>** workspace in the left menu.
 
-    ![](../media/task_3.2.1.11.png)
+    ![](../media/new5u.png)
 
 14. Click on **Filter**, select **SQL database**, and then click on **Fabcon_database**.
 
@@ -402,12 +430,12 @@ Now, this is something exciting! This section shows how easy it is to create Sho
     ![](../media/task_3.2.1.13.png)
 
 
-    In this exercise, you have learned how to enrich data using Dataflow Gen2 and Notebooks in Microsoft Fabric. You have gained practical experience in:
+In this exercise, you have learned how to enrich data using Dataflow Gen2 and Notebooks in Microsoft Fabric. You have gained practical experience in:
 
-    - Creating and utilizing Dataflow Gen2 to process raw data efficiently.
-    - Using pipeline activities to load transformed data into a **SQL Database**.
-    - Leveraging Notebooks with PySpark or Spark SQL for advanced data processing.
-    - Saving enriched data into the **SQL Database** for further analysis.
-    With these skills, you can now efficiently process, transform, and enrich large datasets using Fabric's powerful tools.
+- Creating and utilizing Dataflow Gen2 to process raw data efficiently.
+- Using pipeline activities to load transformed data into a **SQL Database**.
+- Leveraging Notebooks with PySpark or Spark SQL for advanced data processing.
+- Saving enriched data into the **SQL Database** for further analysis.
+ With these skills, you can now efficiently process, transform, and enrich large datasets using Fabric's powerful tools.
 
-    You are ready to move on to the next exercise: [Data Serving](https://github.com/dreamdemos-ms/Fabcon_Workshop/blob/main/Workshop_Exercises/04%20-%20Data%20Serving.md)
+ You are ready to move on to the next exercise: [Data Serving](https://github.com/dreamdemos-ms/Fabcon_Workshop/blob/main/Workshop_Exercises/04%20-%20Data%20Serving.md)
