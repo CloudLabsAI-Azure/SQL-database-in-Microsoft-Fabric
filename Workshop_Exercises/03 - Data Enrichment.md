@@ -158,7 +158,7 @@ Now, this is something exciting! This section shows how easy it is to create Sho
     ![alt text](../media/g16.png)
 
 
-     >**Note:** If Copilot needs additional context to understand your query, consider rephrasing the prompt to include more details.
+**Note:** If Copilot needs additional context to understand your query, consider rephrasing the prompt to include more details.
 
 10. Scroll to the right hand side and observe the **GrossRevenue** and **NetRevenue** columns (**There are some empty rows with null values**).
 
