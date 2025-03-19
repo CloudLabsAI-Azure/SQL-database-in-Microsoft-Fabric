@@ -42,7 +42,7 @@ In this exercise we will create a **semantic model** from the landed earlier in 
 
 #### Activity: Connect Power BI to the SQL Database in Fabric
 
-1. Click on the **Fabcon** workspace from the left navigation menu, click on **Filter** and under **Type**, select **Semantic model**.
+1. Click on the **<inject key="WorkspaceName" enableCopy="false"/>** workspace from the left navigation menu, click on **Filter** and under **Type**, select **Semantic model**.
 
 2. Click on the **website_bounce_rate** semantic model.
 
@@ -101,11 +101,12 @@ In this exercise we will create a **semantic model** from the landed earlier in 
 
     ![alt text](../media/img-9.png)
 
+    >**Note :** The Copilot response you receive may differ from the one shown in the screenshot.
+
 5. Click on the Copilot **chat box** field and enter the following prompt.
 
     ```
     Create a report Bounce Rate analysis, to show the correlation between customer sentiment, particularly among millennials and Gen Z, unsuccessful product searches across different devices, and the website's bounce rate by customer generations.
-
     ```
 
 
@@ -129,7 +130,6 @@ In this exercise we will create a **semantic model** from the landed earlier in 
 
     ```
     Based on the data in the page, what can be done to improve the bounce rate of millennials?
-
     ```
 
 	
