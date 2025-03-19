@@ -14,6 +14,7 @@
 
     - **Lab Guide**
     - **Environment**
+    - **Resources**
     - **Help**
 
      ![](../media/Task4.png)
@@ -62,7 +63,7 @@
      ![](../media/1.png)
 
 
-    >**Note:** To ensure the **deployment is successful!** Verify that the **Resource Group** contains **10 resources**.
+7. Ensure the **deployment is successful!** Verify that the **Resource Group** contains **10 resources**.
 
     ![](../media/2.png)
 
