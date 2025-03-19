@@ -159,7 +159,6 @@ Below query retrieves and displays stored product embeddings.
 
     ```
     SELECT * FROM dbo.Product_Embeddings;
-
     ```
     ![](../media/Exe6_04_image.png)
 
@@ -168,7 +167,7 @@ Below query defines a stored procedure to find the most relevant products by com
 
     > **Note:** Replace {endpointurl} with the copied values from earlier. Remove the curly brackets {} while replacing values.
 
-    ```
+```
     CREATE OR ALTER PROCEDURE [dbo].[find_relevant_products]
     @text NVARCHAR(MAX),
     @top INT = 10,
@@ -249,7 +248,7 @@ Below query defines a stored procedure to find the most relevant products by com
         );
     END;
 
-    ```
+```
    ![](../media/Exe6_05_image.png)
 
 

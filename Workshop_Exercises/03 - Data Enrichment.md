@@ -325,11 +325,11 @@ Now, this is something exciting! This section shows how easy it is to create Sho
     > **Note**: Replace jdbc_properties values with the values as below,
 
     - **Application (client) ID**: 
-    "173c7875-69b5-4d9b-9bf1-0898bb590773"
+    "<inject key="ClientID" enableCopy="false"/>"
 
-    - **Directory (tenant) ID**: "79fe009c-79e0-4bc9-baec-a76d3145bde5"
+    - **Directory (tenant) ID**: "<inject key="TenantID" enableCopy="false"/>"
 
-    - **jdbc_pswd**: ``````
+    - **jdbc_pswd**: <inject key="ClientSecret" enableCopy="false"/>
 
 
     ``` 
