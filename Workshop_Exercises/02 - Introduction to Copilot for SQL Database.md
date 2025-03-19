@@ -10,7 +10,7 @@ In this exercise, we will leverage **Copilot** to assist with T-SQL queries, inc
 
    ![](../media/new2.png)
 
-2. Search for **database** and select the database created in the previous task.
+2. Search for **database** and select the **Fabcon_database** created in the previous task.
 
    ![](../media/database2.png)
 
@@ -20,13 +20,25 @@ In this exercise, we will leverage **Copilot** to assist with T-SQL queries, inc
 
 4. Paste the query ```SELECT * FROM dimcustomer```, click on the **Run** icon and then check the output.
 
+   ```
+   SELECT * FROM dimcustomer
+   ```
+
    ![](../media/database4.png)
 
 5. In the **Query Editor**, paste the query ```SELECT TOP(10) ``` and observe how Copilot suggests code to complete your query.
 
-    >**Note:** Copilot responses may not match what is shown in the screenshot but will provide similar results.
-
+   ```
+   SELECT TOP(10)
+   ```
     ![](../media/database17.png)
+
+    >**Note:** 
+    - Copilot responses may not match what is shown in the screenshot but will provide similar results.
+
+    - If the Copilot-suggested response is not visible, refresh Fabcon_database and try again.  
+
+      ![](../media/new4u.png)
 
 6. Press the **Tab** key on your keyboard to accept the suggestion or continue typing to ignore it.
 
