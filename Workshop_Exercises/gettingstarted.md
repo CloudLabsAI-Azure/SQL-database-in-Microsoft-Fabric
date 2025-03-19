@@ -32,23 +32,24 @@
 
     ![](../media/Task6.png)
 
-2. If you see the pop-up notification to restore pages, click on  **"x"**  to close it.
 
-     ![](../media/Task7.png)
+2. You'll see the **Sign into Microsoft Azure** tab. Here, enter your credentials:
 
-3. On the **Microsoft Azure** browser tab, paste the provided **Username**: **<inject key= "AzureAdUserEmail" enableCopy="true"/>**  to **Sign in** and click **Next**.
+   - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
 
     ![](../media/Task8.png)
 
-4. Now paste the following **Password**: **<inject key= "AzureAdUserPassword" enableCopy="true"/>** and click on **Sign in**.
+3. Next, provide your password:
+
+   - **Password:** <inject key="AzureAdUserPassword"></inject>
 
    ![](../media/Task9.png)
 
-5. Click on **Yes** button.
+4. Click on **Yes** button.
 
    ![](../media/Task10.png)
 
-6. Click **No, Thanks** button on the pop-up prompting to **Sign in to Microsoft Edge**.
+5. Click **No, Thanks** button on the pop-up prompting to **Sign in to Microsoft Edge**.
 
     ![](../media/signinpopup.png)
    
@@ -56,12 +57,12 @@
 
     ![](../media/welcometoms.png)
 
-7. Now, on the **Azure Portal** Dashboard, click on Search bar to search and select the Resource Group as **`rg-fabcon`**.
+6. Now, on the **Azure Portal** Dashboard, click on Search bar to search and select the Resource Group as **`rg-fabcon`**.
    
-     ![](../media//1.png)
+     ![](../media/1.png)
 
 
-    >**Note:** To ensure the **deployment is successful!** Verify that the **Resource Group** contains **8 resources**.
+    >**Note:** To ensure the **deployment is successful!** Verify that the **Resource Group** contains **10 resources**.
 
     ![](../media/2.png)
 
