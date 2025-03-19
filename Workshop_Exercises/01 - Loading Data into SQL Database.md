@@ -8,31 +8,25 @@ In this task, we will use **Dataflow Gen2** to ingest data and efficiently copy 
 
 #### Activity: Create a new Fabric workspace
 
-1. Open a new tab and paste ``app.powerbi.com`` then press **Enter**.
+1. Open **Microsoft Fabric** in a new tab by copy pasting the below link.
 
-2. Enter your **<inject key="AzureAdUserEmail"></inject>** in the **Email** field, then click on the **Submit** button.
+   ```BASH
+   https://app.fabric.microsoft.com/home
+   ```
 
-   ![alt text](../media/image.png)
+2.  Sign in with your Azure AD credentials. If you are not already signed in, you will be redirected to the Microsoft Fabric login page.
 
-3. Enter your **Password:** <inject key="AzureAdUserPassword"></inject> and click on the **Sign in** button.
+    >**Note:** Close any pop-up that appears on the screen.
 
-   ![alt text](../media/image-1.png)
+    ![alt text](../media/image5u.png)
 
-4. If prompted to stay signed in, click on **Yes**.
+    ![alt text](../media/newu.png)
 
-   ![alt text](../media/image-2.png)
-
-   > **Note:** Close any pop-up that appears on the screen.
-
-   ![alt text](../media/image-3.png)
-
-   > **Note:** If you see the following screen, continue with the following steps or directly move to step number **8**.
-
-5. From the left navigation pane, click on **Workspaces** and then the **+ New workspace** button.
+3. From the left navigation pane, click on **Workspaces** and then the **+ New workspace** button.
 
    ![alt text](../media/image-7.png)
 
-6. In the **Name** field, enter **<inject key="WorkspaceName" enableCopy="true"/>**, then click **Apply**.
+4. In the **Name** field, enter **<inject key="WorkspaceName" enableCopy="true"/>**, then click **Apply**.
 
     > **Note:** Only use the workspace name provided above.
 
