@@ -36,6 +36,10 @@ In this task, we will use **Dataflow Gen2** to ingest data and efficiently copy 
 
     ![alt text](../media/image-9.png)
 
+   > **Note:** If the **Introducing Task Flows(preview)** pop-up appears, click **Got it**.
+
+     ![alt text](../media/new2u.png)
+
 
 #### Activity: Create a new SQL Database in Fabric
 
@@ -43,7 +47,11 @@ In this task, we will use **Dataflow Gen2** to ingest data and efficiently copy 
 
    ![](../media/database1.png)
 
-2. In the **Name** field, enter ```Fabcon_database``` and click on the **Create** button. Database creation should take less than a minute.
+2. In the **Name** field, enter **Fabcon_database** and click on the **Create** button. Database creation should take less than a minute.
+
+   ```
+   Fabcon_database
+   ```
 
    ![](../media/03.png)
 
@@ -151,6 +159,10 @@ In this task, we will use **Dataflow Gen2** to ingest data and efficiently copy 
 
 4. Paste the query ```SELECT * FROM dim_products```, click on the **Run** icon and then check the output.
 
+   ```
+   SELECT * FROM dim_products
+   ```
+
    ![](../media/g15.png)
 
 
@@ -173,6 +185,9 @@ For this workshop, the **On-Premises Data Gateway** is already provisioned for y
 
 3. In the name field, enter ``Ingest on-premises data using pipeline``and click on the **Create** button.
 
+   ```
+   Ingest on-premises data using pipeline
+   ```
    ![](../media/24.png)
 
 4. From the **Home** tab of the pipeline editor, click on the **Copy data** dropdown and select **Use copy assistant** option.
