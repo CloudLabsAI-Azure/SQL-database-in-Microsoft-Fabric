@@ -10,7 +10,7 @@ We can start building GraphQL APIs directly from within the Fabric SQL query edi
 
 Let's first create a view using a simple analytical T-SQL query. The new view, ``SupplyChain.vProductsbySuppliers``, will be used for the GraphQL API.
 
-1. Click on **Workspaces** and select the **Fabcon-<inject key="Deployment ID" enableCopy="false"/>** workspace.
+1. Click on **Workspaces** and select the **<inject key="WorkspaceName" enableCopy="false"/>** workspace.
 
    ![](../media/new2.png)
 
@@ -47,12 +47,19 @@ Let's first create a view using a simple analytical T-SQL query. The new view, `
 
    ![](../media/07.png)
 
+    ```
+    supplier_impact_gql
+    ```
 
 #### Activity: Write and test GraphQL queries to retrieve data
 
 At this point, the API is ready but it's not exposing any data. APIs for GraphQL are defined in a schema organized in terms of types and fields, in a strongly typed system. Fabric automatically generates the necessary GraphQL schema based on the data you choose to expose to GraphQL clients.
 
 1. The **Choose data** screen enables you to search for and choose the objects to expose your GraphQL schema. Enter ``vProductsbySuppliers`` in the search bar, select the checkbox next to ``dbo.vProductsbySuppliers``, and click on the **Load** button.
+
+    ```
+    vProductsbySuppliers
+    ```
 
    ![](../media/f34.png)
 
@@ -62,7 +69,6 @@ The schema is generated, and you can start prototyping GraphQL queries (read, li
 
     ```
     query { vProductsbySuppliers(filter: { SupplierLocationID: { eq: 7 } }) { items { CompanyName SupplierLocationID ProductCount } } }
-
     ```
 
    ![](../media/f35.png)
@@ -109,7 +115,7 @@ You have been asked to create an application that shows all affected Suppliers i
 
    ![](../media/g14.png)
 
-    ```
+```
     function RefreshTokens() {
         #Copy external blob content
     }
@@ -226,7 +232,7 @@ You have been asked to create an application that shows all affected Suppliers i
 
     dotnet run
 
-    ```
+```
 
 5. You'll be prompted to enter the endpoint that you copied in earlier step. Paste it into the **PowerShell** and press **Enter**.
 
