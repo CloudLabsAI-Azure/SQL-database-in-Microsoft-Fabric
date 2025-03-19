@@ -126,7 +126,7 @@ In this task, we will use **Dataflow Gen2** to ingest data and efficiently copy 
 
    ![](../media/dfgen2.9.png)
 
-10. Expand the **<inject key="WorkspaceName" enableCopy="true"/>** folder, select the **Fabcon_database** and then click on the **Next** button.
+10. Expand the **<inject key="WorkspaceName" enableCopy="false"/>** folder, select the **Fabcon_database** and then click on the **Next** button.
 
     ![](../media/new4.png)
 
@@ -150,16 +150,19 @@ In this task, we will use **Dataflow Gen2** to ingest data and efficiently copy 
 
    ![](../media/new2.png)
 
-
 2. Search for **database** and select the **Fabcon_database**.
 
    ![](../media/database2.png)
 
-3. Click on the **New Query** icon.
+3. Click on the refresh icon to see the tables loaded in Schema.
+
+   ![](../media/refresh.png)
+
+4. Click on the **New Query** icon.
 
    ![](../media/database3.png)
 
-4. Paste the query ```SELECT * FROM dim_products```, click on the **Run** icon and then check the output.
+5. Paste the query ```SELECT * FROM dim_products```, click on the **Run** icon and then check the output.
 
    ```
    SELECT * FROM dim_products
