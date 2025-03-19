@@ -70,9 +70,9 @@ Now, this is something exciting! This section shows how easy it is to create Sho
 
 7. Navigate back to the Fabric tab.
 
-8. Paste the below **endpoint**  under the URL field.
+8. Paste the below endpoint  under the URL field.
 
-   URL: **<inject key="StorageEndpoint" enableCopy="true"/>**
+   **URL:** <inject key="StorageEndpoint" enableCopy="true"/>
 
 9.  In the **Authentication kind** dropdown, select **Account Key**.
 
@@ -158,7 +158,7 @@ Now, this is something exciting! This section shows how easy it is to create Sho
     ![alt text](../media/g16.png)
 
 
-    >**Note:** If Copilot needs additional context to understand your query, consider rephrasing the prompt to include more details.
+     >**Note:** If Copilot needs additional context to understand your query, consider rephrasing the prompt to include more details.
 
 10. Scroll to the right hand side and observe the **GrossRevenue** and **NetRevenue** columns (**There are some empty rows with null values**).
 
@@ -270,7 +270,7 @@ Now, this is something exciting! This section shows how easy it is to create Sho
 
 1. Click on **Manage Access** in the top right corner of the workspace.
 
-![](../media/new6u.png)
+   ![](../media/new6u.png)
 
 2. Select **+ Add People or Groups**.
 
