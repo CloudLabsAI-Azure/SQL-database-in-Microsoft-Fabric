@@ -261,7 +261,7 @@ Below query retrieves relevant products based on user input, generates a structu
 
     > **Note:** Replace {endpointurl} with the copied values from earlier. Remove the curly brackets {} while replacing values.
 
-    ```
+```
     CREATE OR ALTER PROCEDURE dbo.get_ai_response
     @UserSessionID UNIQUEIDENTIFIER,
     @UserQuery NVARCHAR(MAX),
@@ -353,9 +353,7 @@ Below query retrieves relevant products based on user input, generates a structu
         WHERE UserSessionID = @UserSessionID
         ORDER BY CreatedAt ASC;
     END;
-
-
-    ```
+```
 
    ![](../media/Exe6_06_image.png)
 
@@ -373,11 +371,11 @@ Below query calls the search procedure to retrieve the closest matching products
    ![](../media/Exe6_07_image.png)
 
 
-    In this exercise, you have explored Retrieval Augmented Generation (RAG) to enhance natural language queries using Fabric SQL database and Azure OpenAI GPT-4. You have gained practical experience in:
+In this exercise, you have explored Retrieval Augmented Generation (RAG) to enhance natural language queries using Fabric SQL database and Azure OpenAI GPT-4. You have gained practical experience in:
     
-    - Performing vector operations directly within the Fabric SQL database to enable vector similarity searches.
-    - Using sp_invoke_external_rest_endpoint to call an Azure OpenAI model for generating embedding vectors.
-    - Asking questions and retrieving relevant answers from the Fabric SQL database.
-    - Sending questions and answers to Azure OpenAI GPT-4 to generate responses in natural language.
+- Performing vector operations directly within the Fabric SQL database to enable vector similarity searches.
+- Using sp_invoke_external_rest_endpoint to call an Azure OpenAI model for generating embedding vectors.
+- Asking questions and retrieving relevant answers from the Fabric SQL database.
+- Sending questions and answers to Azure OpenAI GPT-4 to generate responses in natural language.
 
-    With these skills, you can now bridge structured data with generative AI to improve query understanding and response generation. You are ready to move on to the next exercise [Data Security and Compliance](https://github.com/dreamdemos-ms/Fabcon_Workshop/blob/main/Workshop_Exercises/07%20-%20Data%20Security%20and%20Compliance.md)
+With these skills, you can now bridge structured data with generative AI to improve query understanding and response generation. You are ready to move on to the next exercise [Data Security and Compliance](https://github.com/dreamdemos-ms/Fabcon_Workshop/blob/main/Workshop_Exercises/07%20-%20Data%20Security%20and%20Compliance.md)
