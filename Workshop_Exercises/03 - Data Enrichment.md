@@ -323,10 +323,13 @@ Now, this is something exciting! This section shows how easy it is to create Sho
 8. Copy and paste the following code in the notebook cell and Replace **jdbc_url** with the copied value from the **Get URL** activity.
 
     > **Note**: Replace jdbc_properties values with the values as below,
-    **Application (client) ID**: 
-    ""
-    **Directory (tenant) ID**: ""
-    **jdbc_pswd**: ``````
+
+    - **Application (client) ID**: 
+    "173c7875-69b5-4d9b-9bf1-0898bb590773"
+
+    - **Directory (tenant) ID**: "79fe009c-79e0-4bc9-baec-a76d3145bde5"
+
+    - **jdbc_pswd**: ``````
 
 
     ``` 
@@ -334,8 +337,8 @@ Now, this is something exciting! This section shows how easy it is to create Sho
 
     jdbc_url = "<jdbc_url>"
     jdbc_properties = {
-        "user": f"@",
-        "password": "",
+        "user": f"<Application (client) ID>@<Directory (tenant) ID>",
+        "password": "<jdbc_pswd>",
         "driver": "com.microsoft.sqlserver.jdbc.SQLServerDriver"
     }
 
