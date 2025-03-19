@@ -33,7 +33,7 @@ In this task, we will use **Dataflow Gen2** to ingest data and efficiently copy 
     ![alt text](../media/f46.png)
 
     > **Note:** Wait for the Power BI Workspace to load.
-    
+
    > **Note:** If the **Introducing Task Flows(preview)** pop-up appears, click **Got it**.
 
      ![alt text](../media/new2u.png)
@@ -98,6 +98,10 @@ In this task, we will use **Dataflow Gen2** to ingest data and efficiently copy 
    ![](../media/dfgen2.4.png)
 
 8. On the **Connection settings** pane, in the **Server** field, paste the following value **<inject key="MssqlServer" enableCopy="true"/>**, and in the **Database** field, paste ```SalesDb```.
+
+   ```
+   SalesDb
+   ```
 
     ![](../media/dfgen2.5.png)
 
