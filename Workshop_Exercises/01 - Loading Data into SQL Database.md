@@ -110,8 +110,7 @@ In this task, we will use **Dataflow Gen2** to ingest data and efficiently copy 
 
       - **Authentication kind** : Basic,
       - **Username** : ``labsqladmin`` 
-      - **Password**  : ``Smoothie@2025``
-      - <span onclick="copyToClipboard('example')">example</span>  
+      - **Password**  : ``Smoothie@2025`` 
 
     ![](../media/dfgen2.6.png)
 
