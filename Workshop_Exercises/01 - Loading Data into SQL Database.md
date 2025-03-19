@@ -213,6 +213,10 @@ For this workshop, the **On-Premises Data Gateway** is already provisioned for y
 
    ![](../media/f53.png)
 
+   > **Note :** If you don't see **Fabcon_database**, click the **ellipsis** in the top right corner and adjust **JumpVM's** screen resolution to 90%.
+
+   ![](../media/new3u.png)
+
 #### Activity: Validate the data transfer and ensure schema compatibility
 
 1. Select the **Load to new table** radio button and click on the **Next** button.
