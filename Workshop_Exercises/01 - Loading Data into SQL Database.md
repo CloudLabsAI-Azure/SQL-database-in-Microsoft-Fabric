@@ -33,9 +33,7 @@ In this task, we will use **Dataflow Gen2** to ingest data and efficiently copy 
     ![alt text](../media/f46.png)
 
     > **Note:** Wait for the Power BI Workspace to load.
-
-    ![alt text](../media/image-9.png)
-
+    
    > **Note:** If the **Introducing Task Flows(preview)** pop-up appears, click **Got it**.
 
      ![alt text](../media/new2u.png)
