@@ -22,6 +22,10 @@ In this exercise we will create a **semantic model** from the landed earlier in 
 
 5. In the **Name** field, enter ``website_bounce_rate_model``.
 
+   ```
+   website_bounce_rate_model
+   ```
+
 6. Select workspace as **Fabcon** and click on the **Expand** icon next to the **dbo** checkbox.
 
    ![](../media/f25.png)
