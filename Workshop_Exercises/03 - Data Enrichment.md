@@ -323,30 +323,13 @@ Now, this is something exciting! This section shows how easy it is to create Sho
 
 8. Copy and paste the following code in the notebook cell and Replace **jdbc_url** with the copied value from the **Get URL** activity.
 
-    > **Note**: Replace jdbc_properties values with the values as below,
-
-    - **Application (client) ID**: 
-    ```
-    <inject key="ClientID" enableCopy="false"/>
-    ```
-
-    - **Directory (tenant) ID**: 
-    ```
-    <inject key="TenantID" enableCopy="false"/>
-    ```
-
-    - **jdbc_pswd**: 
-    ```
-    <inject key="ClientSecret" enableCopy="false"/>
-    ```
-
     ``` 
     # Define JDBC connection parameters
 
     jdbc_url = "<jdbc_url>"
     jdbc_properties = {
         "user": f"173c7875-69b5-4d9b-9bf1-0898bb590773@79fe009c-79e0-4bc9-baec-a76d3145bde5",
-        "password": <inject key="ClientSecret" enableCopy="false"/>,
+        "password": "<inject key="ClientSecret" enableCopy="false"/>",
         "driver": "com.microsoft.sqlserver.jdbc.SQLServerDriver"
     }
 
@@ -367,7 +350,7 @@ Now, this is something exciting! This section shows how easy it is to create Sho
             CONCAT(c.FirstName, ' ', c.LastName) AS CustomerName,
             ROUND(SUM(s.NetRevenue), 2) AS TotalSalesRevenue,
             ROUND(SUM(s.GrossRevenue), 2) AS TotalGrossRevenue,
-            ROUND(SUM(sf.GrossProfit), 2) AS TotalGrossProfit,
+            ROUND(SUM(s.GrossProfit), 2) AS TotalGrossProfit,
             ROUND(SUM(s.NetRevenue) - SUM(s.COGS), 2) AS NetProfit,
             ROUND(SUM(s.NetRevenue) / COUNT(DISTINCT s.CustomerId), 2) AS AverageOrderValue,
             ROUND(SUM(s.NetRevenue) / COUNT(DISTINCT s.ProductId), 2) AS RevenuePerProduct,
@@ -439,6 +422,10 @@ Now, this is something exciting! This section shows how easy it is to create Sho
 15. Click on **SalesMetricsTable** to see the results.
 
     ![](../media/task_3.2.1.13.png)
+
+    > **Note:** If the SalesMetricsTable table is not visible in Fabcon_database, click on the ellipsis (...) and select Refresh.
+
+    ![](../media/refresh1.png)
 
 
 In this exercise, you have learned how to enrich data using Dataflow Gen2 and Notebooks in Microsoft Fabric. You have gained practical experience in:
