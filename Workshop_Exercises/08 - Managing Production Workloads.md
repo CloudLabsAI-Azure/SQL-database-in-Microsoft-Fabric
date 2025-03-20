@@ -14,7 +14,7 @@ You can use the Performance Dashboard to view database performance metrics, to i
 
    ![](../media/new2.png)
 
-2. Search for **database** and select the database.
+2. Search for **database** and select the **Fabcon_database**.
 
    ![](../media/database2.1.png)
 
@@ -93,6 +93,12 @@ The Automatic index tab report shows a history and status of automatically creat
 1. Click on **Automatic index** tab.
 
 ![](../media/f67.png)
+
+
+**Note:** If the **Automatic Index** option is not visible, click on the ellipsis (...) and select **Automatic Index**.
+
+![](../media/autosize.png)
+
 <!--
 #### Use Copilot AI to generate performance optimization suggestions.
 
