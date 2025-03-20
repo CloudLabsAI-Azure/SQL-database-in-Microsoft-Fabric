@@ -12,7 +12,7 @@ Now, let's see how each department can easily create a Lakehouse in the Contoso 
 
    ![](../media/new2.png)
 
-2. Click on **+ New item** and select **Lakehouse** under the **Store data** option.
+2. Click on **+ New item** then search and select **Lakehouse** under the **Store data** option.
 
    ![](../media/lakehouse1.png)
 
@@ -60,27 +60,18 @@ Now, this is something exciting! This section shows how easy it is to create Sho
 
    ![task-1.3-ext-shortcut11.png](../media/lakehouse4.png)
 
-5. Navigate to the Azure Portal, in the **rg-fabcon** resource group search for **storage** and click on the storage account resource.
 
-   ![](../media/g6.png)
-
-6. Expand the **Security + networking** section and click on **Access keys**. Click on the **Show** button under **key1**. Click on the **Copy to clickboard** button and Save this information in a notepad for further use.
-
-   ![](../media/g7.png)
-
-7. Navigate back to the Fabric tab.
-
-8. Paste the below endpoint  under the URL field.
+5. Paste the below endpoint  under the URL field.
 
    **URL:** <inject key="StorageEndpoint" enableCopy="true"/>
 
-9.  In the **Authentication kind** dropdown, select **Account Key**.
+9.  In the **Authentication kind** dropdown, select **Organizational Account**.
 
-10. Paste the **account key** copied in step **number 6**.
+10. Ensure You are signedin as <inject key="Username" enableCopy="false"/>
 
 11. Click on the **Next** button.
   
-    ![task-1.3-ext-shortcut9.png](../media/g9.png)
+    ![task-1.3-ext-shortcut9.png](../media/lakehouse.png)
 
 <!--
 6. In the **URL** field, type the endpoint: ```https://stfabcon[suffix].dfs.core.windows.net/```.
@@ -93,7 +84,7 @@ Now, this is something exciting! This section shows how easy it is to create Sho
 -->
 
 
-14. Click the **data** directory checkbox and click on the **Next** button.
+14. Click on the **data** directory, select the checkbox, and then click the Next button.
 
     ![task-wb6.png](../media/f4.png)
 
