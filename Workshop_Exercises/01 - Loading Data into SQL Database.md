@@ -117,7 +117,7 @@ In this task, we will use **Dataflow Gen2** to ingest data and efficiently copy 
 
     ![](../media/dfgen2.6.png)
 
-7. Select ``Suppliers``, ``Website_Bounce_rate``, ``dim_products`` and ``inventory`` tables, then click on the **Create** button.
+7. Select ``Suppliers``, ``Website_Bounce_rate`` and ``inventory`` tables, then click on the **Create** button.
 
    ![](../media/f55.png)
 
@@ -137,7 +137,7 @@ In this task, we will use **Dataflow Gen2** to ingest data and efficiently copy 
 
     ![](../media/dfgen2.11.png)
 
-12. For ``Website_Bounce_rate``, ``dim_products`` and ``inventory`` tables perform steps **8-11** to select the destination.
+12. For ``Website_Bounce_rate`` and ``inventory`` tables perform steps **8-11** to select the destination.
 
     >**Note:** Please ensure to select the destination for all the tables before publishing the dataflow.
 
@@ -165,10 +165,10 @@ In this task, we will use **Dataflow Gen2** to ingest data and efficiently copy 
 
    ![](../media/database3.png)
 
-5. Paste the query ```SELECT * FROM dim_products```, click on the **Run** icon and then check the output.
+5. Paste the query ```SELECT * FROM inventory```, click on the **Run** icon and then check the output.
 
    ```
-   SELECT * FROM dim_products
+   SELECT * FROM inventory
    ```
 
    ![](../media/g15.png)
