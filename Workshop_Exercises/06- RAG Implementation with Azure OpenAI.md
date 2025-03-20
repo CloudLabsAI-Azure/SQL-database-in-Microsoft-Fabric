@@ -2,28 +2,11 @@
 
 In this exercise, we will implement a **Retrieval-Augmented Generation (RAG) system** in Microsoft Fabric by utilizing a **Fabric SQL database** as the **vector store**, Azure OpenAI for text embeddings, and the GPT-4 model to enhance natural language queries and responses.
 
-### Activity: Get model URLS
-
-1. Open a new tab and go to **https://portal.azure.com/**, search for **Azure OpenAI** in the search bar, then select the result.
-
-   ![](../media/task_6.0.1.png)
-
-2. Click on the **OpenAI-<inject key="Deployment ID" enableCopy="false"/>** resource.
-
-   ![](../media/task_6.0.2.png)
-
-3. Expand **Resource Management**, go to **Keys and Endpoint**, click on **Copy icon** next to Endpoint. Store the value and replace it wherever {endpointurl} appears in following exercise.
-
-4. Click on **Copy icon** next to 'KEY 1'. Store the value and replace it wherever {endpointkey} appears in following exercise.
-
-   ![](../media/task_6.0.3.png)
-
-
 ### Task 6.1: AI-Powered Recommendations with Vector Search
 
 With Retrieval Augmented Generation, you can bridge structured data with generative AI, enhancing natural language queries across applications. Fabric SQL database, now has support to perform vector operations directly in the database, making it easy to perform vector similarity search. Once the Azure OpenAI model is deployed, it can be called from Fabric SQL database using sp_invoke_external_rest_endpoint, to get the embedding vector.
 
-1. Click on **Workspaces** and select the **Fabcon-<inject key="Deployment ID" enableCopy="false"/>** workspace.
+1. Click on **Workspaces** and select the **<inject key="WorkspaceName" enableCopy="false"/>** workspace.
 
    ![](../media/new2.png)
 
@@ -36,26 +19,22 @@ Below query creates a master key and a database credential.The credential is use
 
     > **Note:** You can provide your own password instead of Smoothie@123 in the following code.
 
-    > **Note:** Replace {endpointurl} and {endpointkey} with the copied values from earlier. Remove the curly brackets {} while replacing values.
-
     ```
     CREATE MASTER KEY ENCRYPTION BY PASSWORD = 'Smoothie@123';
 
-    CREATE DATABASE SCOPED CREDENTIAL [{endpointurl}] 
+    CREATE DATABASE SCOPED CREDENTIAL [<inject key="Openaiendpoint" enableCopy="false"/>] 
     WITH IDENTITY = 'HTTPEndpointHeaders',
-    SECRET = '{"api-key": "{endpointkey}"}';
+    SECRET = '{"api-key": "<inject key="OpenAIKey" enableCopy="false"/>"}';
 
     SELECT * 
     FROM sys.database_scoped_credentials
-    WHERE name = '{endpointurl}';
+    WHERE name = '<inject key="Openaiendpoint" enableCopy="false"/>';
 
     ```
     ![](../media/Exe6_01_image.png)
 
 4. Click on **New Query**, paste the query below, and then click on **Run**. 
 Below query defines a stored procedure that converts text into an embedding (vector representation) using an external OpenAI API. 
-
-   > **Note:** Replace {endpointurl} and {endpointkey} with the copied values from earlier. Remove the curly brackets {} while replacing values.
 
     ```
     create or alter procedure [dbo].[get_embedding]
@@ -68,12 +47,12 @@ Below query defines a stored procedure that converts text into an embedding (vec
         declare @response nvarchar(max)
         DECLARE @headers NVARCHAR(MAX) = JSON_OBJECT(
         'Content-Type': 'application/json',
-        'api-key': '{endpointkey}' 
+        'api-key': '<inject key="OpenAIKey" enableCopy="false"/>' 
     );
         exec @retval = sp_invoke_external_rest_endpoint
-            @url = '{endpointurl}openai/deployments/text-embedding-ada-002/embeddings?api-version=2023-05-15',
+            @url = '<inject key="Openaiendpoint" enableCopy="false"/>openai/deployments/text-embedding-ada-002/embeddings?api-version=2023-05-15',
             @method = 'POST',
-            @credential = [{endpointurl}],
+            @credential = [<inject key="Openaiendpoint" enableCopy="false"/>],
             @payload = @payload,
             @response = @response output;
     end try
@@ -165,8 +144,6 @@ Below query retrieves and displays stored product embeddings.
 7. Click on **New Query**, paste the following query in the query editor, and then click on **Run**.
 Below query defines a stored procedure to find the most relevant products by comparing embeddings using similarity metrics.
 
-    > **Note:** Replace {endpointurl} with the copied values from earlier. Remove the curly brackets {} while replacing values.
-
 ```
     CREATE OR ALTER PROCEDURE [dbo].[find_relevant_products]
     @text NVARCHAR(MAX),
@@ -201,9 +178,9 @@ Below query defines a stored procedure to find the most relevant products by com
         }';
 
         EXEC @LLMRetval = sp_invoke_external_rest_endpoint
-            @url = '{endpointurl}openai/deployments/gpt-4/chat/completions?api-version=2024-08-01-preview',
+            @url = '<inject key="Openaiendpoint" enableCopy="false"/>openai/deployments/gpt-4/chat/completions?api-version=2024-08-01-preview',
             @method = 'POST',
-            @credential = [{endpointurl}],
+            @credential = [<inject key="Openaiendpoint" enableCopy="false"/>],
             @payload = @LLMPayload,
             @response = @LLMResponse OUTPUT;
 
@@ -259,8 +236,6 @@ Let's use the natural language understanding and reasoning capabilities of the L
 1. Click on **New Query**, paste the following query in the query editor, and then click on **Run**.
 Below query retrieves relevant products based on user input, generates a structured AI response via an external OpenAI API call, stores the conversation in a database, and returns formatted chat messages.
 
-    > **Note:** Replace {endpointurl} with the copied values from earlier. Remove the curly brackets {} while replacing values.
-
 ```
     CREATE OR ALTER PROCEDURE dbo.get_ai_response
     @UserSessionID UNIQUEIDENTIFIER,
@@ -309,9 +284,9 @@ Below query retrieves relevant products based on user input, generates a structu
         DECLARE @retval INT, @response NVARCHAR(MAX);
         
         EXEC @retval = sp_invoke_external_rest_endpoint
-            @url = '{endpointurl}openai/deployments/gpt-4/chat/completions?api-version=2024-08-01-preview',
+            @url = '<inject key="Openaiendpoint" enableCopy="false"/>openai/deployments/gpt-4/chat/completions?api-version=2024-08-01-preview',
             @method = 'POST',
-            @credential = [{endpointurl}],
+            @credential = [<inject key="Openaiendpoint" enableCopy="false"/>],
             @payload = @Payload,
             @response = @AIResponse OUTPUT;
 
