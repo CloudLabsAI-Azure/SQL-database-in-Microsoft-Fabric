@@ -4,7 +4,7 @@ In this exercise we will create a **semantic model** from the landed earlier in 
 
 ### Task 4.1: Build Reports with Power BI
 
-1. Click on **Workspaces** and select the **Fabcon-<inject key="Deployment ID" enableCopy="false"/>** workspace.
+1. Click on **Workspaces** and select the **<inject key="WorkspaceName" enableCopy="false"/>** workspace.
 
    ![](../media/new2.png)
 
@@ -28,7 +28,7 @@ In this exercise we will create a **semantic model** from the landed earlier in 
 
 6. Select workspace as **Fabcon** and click on the **Expand** icon next to the **dbo** checkbox.
 
-   ![](../media/f25.png)
+   ![](../media/f25u.png)
 
 7. Click on the **Expand** icon next to the **Tables** checkbox.
 
@@ -36,7 +36,7 @@ In this exercise we will create a **semantic model** from the landed earlier in 
 
 8. Scroll down if you see a scroll bar and select **website_bounce_rate table**, then click on the **Confirm** button.
 
-   ![](../media/f27.png)
+   ![](../media/f26uu.png)
 
    **Note:** Wait for the semantic model creation.
 
@@ -113,8 +113,16 @@ In this exercise we will create a **semantic model** from the landed earlier in 
 6. Click on the **Send** button and wait for the results to load. 
 
    ![alt text](../media/img-10.png)
+
+7. If a pop-up similar to the one in the screenshot appears, click on the dropdown, select the **Copilot Preview** option, and skip steps 10 and 11.
+
+   ![alt text](../media/preview.png)
 	
-    >**Note:** If you see the error message saying, 'Something went wrong.', try refreshing the page and restart the task. Being in a shared environment, the service may be busy at times.
+    >**Note:** 
+
+    - If Copilot is not generating a visualization report, retry by using the same prompt again..
+    
+    - If you see the error message saying, 'Something went wrong.', try refreshing the page and restart the task. Being in a shared environment, the service may be busy at times.
 
     - If Copilot needs additional context to understand your query, consider rephrasing the prompt to include more details.
 
@@ -126,7 +134,7 @@ In this exercise we will create a **semantic model** from the landed earlier in 
 
     We’ll ask Copilot for suggestions based on the results and data in the report. 
 
-7. Enter the following prompt in Copilot, and press the **Send** button.
+8. Enter the following prompt in Copilot, and press the **Send** button.
 
     ```
     Based on the data in the page, what can be done to improve the bounce rate of millennials?
@@ -135,15 +143,15 @@ In this exercise we will create a **semantic model** from the landed earlier in 
 	
    ![alt text](../media/img-12.png)
 	
-8. Look at the suggestions Copilot provided. Copilot creates the desired Power BI report and even goes a step further to give powerful insights. To improve the website bounce rate, Contoso needs to transform their mobile website experience for millennials. This helps them reduce their millennial related customer churn too! Now, what if Contoso’s leadership team needed a quick summary of this entire report? **Smart Narrative** to the rescue!
+9. Look at the suggestions Copilot provided. Copilot creates the desired Power BI report and even goes a step further to give powerful insights. To improve the website bounce rate, Contoso needs to transform their mobile website experience for millennials. This helps them reduce their millennial related customer churn too! Now, what if Contoso’s leadership team needed a quick summary of this entire report? **Smart Narrative** to the rescue!
 	
     ![alt text](../media/img-15.png)
 	
-9. Expand the **Visualizations** pane and select the **Narratives** visual. 
+10. Expand the **Visualizations** pane and select the **Narratives** visual. 
 
-   ![alt text](../media/f30.png)
+    ![alt text](../media/f30.png)
 
-10. Click on **Copilot (preview)** within the visual.
+11. Click on **Copilot (preview)** within the visual.
 
     ![alt text](../media/img-13.png)
 	
