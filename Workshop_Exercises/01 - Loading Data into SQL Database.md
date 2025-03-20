@@ -72,7 +72,7 @@ In this task, we will use **Dataflow Gen2** to ingest data and efficiently copy 
 
 #### Activity: Use Dataflow Gen2 to move data from Azure SQL DB to the SQL Database in Fabric.
 
-1. Click on **Workspaces** and select **<inject key="WorkspaceName" enableCopy="true"/>** workspace.
+1. Click on **Workspaces** and select **<inject key="WorkspaceName" enableCopy="false"/>** workspace.
 
    ![](../media/new2.png)
 
@@ -106,11 +106,14 @@ In this task, we will use **Dataflow Gen2** to ingest data and efficiently copy 
     ![](../media/dfgen2.5.png)
 
 
-6.  Scroll down, enter the following details, leave everything else as default, and click **Next**.
+6.  Scroll down and select **Basic** for Authentication kind, enter **labsqladmin** as the **Username**, **Smoothie@2025** as the **Password** and click **Next**.
 
-      - **Authentication kind** : Basic,
-      - **Username** : ``labsqladmin`` 
-      - **Password**  : ``Smoothie@2025`` 
+    ```BASH
+      labsqladmin
+    ```
+    ```BASH
+      Smoothie@2025
+    ```
 
     ![](../media/dfgen2.6.png)
 
@@ -146,7 +149,7 @@ In this task, we will use **Dataflow Gen2** to ingest data and efficiently copy 
 
 #### Activity: Verify the data transfer by querying tables in the SQL Database
 
-1. Click on **Workspaces** and select the **<inject key="WorkspaceName" enableCopy="true"/>** workspace.
+1. Click on **Workspaces** and select the **<inject key="WorkspaceName" enableCopy="false"/>** workspace.
 
    ![](../media/new2.png)
 
@@ -154,7 +157,7 @@ In this task, we will use **Dataflow Gen2** to ingest data and efficiently copy 
 
    ![](../media/database2.png)
 
-3. Click on the refresh icon to see the tables loaded in Schema.
+3. Click on the **refresh** icon to see the tables loaded in Schema.
 
    ![](../media/refresh.png)
 
@@ -180,7 +183,7 @@ For this workshop, the **On-Premises Data Gateway** is already provisioned for y
 
 #### Activity: Use a Fabric Pipeline to load data from the On-premises database to the SQL Database
 
-1. Click on **Workspaces** and select the **<inject key="WorkspaceName" enableCopy="true"/>** workspace.
+1. Click on **Workspaces** and select the **<inject key="WorkspaceName" enableCopy="false"/>** workspace.
 
    ![](../media/new2.png)
 
