@@ -11,8 +11,8 @@
 
 2. Continue with next excercise.
 
-<!--
-In this exercise, we will explore **workspace roles** and **SQL native access controls** to effectively manage user permissions. 
+
+<!--In this exercise, we will explore **workspace roles** and **SQL native access controls** to effectively manage user permissions. 
 
 ### Task 7.1: Access control using Fabric workspaces roles​
 
