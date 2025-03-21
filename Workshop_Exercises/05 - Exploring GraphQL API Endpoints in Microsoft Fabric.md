@@ -14,9 +14,15 @@ Let's first create a view using a simple analytical T-SQL query. The new view, `
 
    ![](../media/new2.png)
 
+    >**Note:** When the Unsaved changes pop-up appears, select Don't Save.
+
+      ![](../media/dontsave.png)
+
 2. Search for **database** and select the **Fabcon_database**.
 
    ![](../media/database2.png)
+
+   >**Note:** Clear any filters related to Sematic model from the filter section.
 
 3. In the **SQL Database**, click on **New Query** and **Copy** the following T-SQL script and paste it in the query window.
 
@@ -44,12 +50,11 @@ Let's first create a view using a simple analytical T-SQL query. The new view, `
 
 
 6. Enter ``supplier_impact_gql`` in the **Name** field and click on the **Create** button.
-
-   ![](../media/07.png)
-
     ```
     supplier_impact_gql
     ```
+   ![](../media/07.png)
+
 
 #### Activity: Write and test GraphQL queries to retrieve data
 

@@ -8,7 +8,7 @@ In this exercise we will create a **semantic model** from the landed earlier in 
 
    ![](../media/new2.png)
 
-2. Search for **database** and select the **Fabcon_database**.
+2. Select the **Fabcon_database**.
 
    ![](../media/database2.png)
 
@@ -44,6 +44,8 @@ In this exercise we will create a **semantic model** from the landed earlier in 
 
 1. Click on the **<inject key="WorkspaceName" enableCopy="false"/>** workspace from the left navigation menu, click on **Filter** and under **Type**, select **Semantic model**.
 
+> **Note:** Clear any filters related to SQL Database from the filter section.
+
 2. Click on the **website_bounce_rate** semantic model.
 
    ![](../media/f28.png)
@@ -63,6 +65,8 @@ In this exercise we will create a **semantic model** from the landed earlier in 
 6. Scroll down to the **Q&A** section and expand it, then select the **Turn on Q&A to ask natural language questions about your data** checkbox, and click on **Apply**.
 
    ![alt text](../media/img-2.png)
+
+   > **Note:** If it is already applied, proceed to the next step.
 
 7. Click on **Untitled report** from the left menu.
 
