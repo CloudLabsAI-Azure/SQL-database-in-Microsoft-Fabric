@@ -85,6 +85,8 @@ In this task, we will use **Dataflow Gen2** to ingest data and efficiently copy 
 
    ![](../media/dfgen2.2.png)
 
+   > **Note:** If the pop-up does not appear, wait for 30 seconds for Dataflow Gen 2 to be created.
+
 3. Click on the **Get data** icon (**not on the dropdown arrow at the bottom of the icon**).
 
    ![](../media/f47.png)
@@ -119,11 +121,11 @@ In this task, we will use **Dataflow Gen2** to ingest data and efficiently copy 
 
 7. Select ``Suppliers``, ``Website_Bounce_rate`` and ``inventory`` tables, then click on the **Create** button.
 
-   ![](../media/f55.png)
+   ![](../media/dim_products1u.png)
 
 8. Click on the ``Suppliers`` table, select the **Add data destination** option from the ribbon, then select **SQL database** from the list.
 
-   ![](../media/f56.png)
+   ![](../media/dim_products2u.png)
 
 9. Click on the **Next** button.
 

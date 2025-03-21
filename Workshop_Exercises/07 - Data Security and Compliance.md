@@ -1,7 +1,17 @@
 ## Exercise 7: Data Security and Compliance (click-by-click)
 
->**Note:** This exercise will be a click-by-click version of this exercise. The creation is currently in progress, and once it's complete, we will add the hyperlink here.
+>**Note**: Due to time constraints, the following steps will be completed via an online Click-by-Click exercise.
 
+>Please follow the green beacons for this exercise.
+- This exercise will be performed outside the VM browser.
+- Please return back to the VM browser once you see the **End of this Exercise** screen.
+- Once you press the **Agree** button, press the **A** key on your keyboard if you do not see the annotations.
+	
+1. Click on the [**hyperlink**](https://regale.cloud/Microsoft/play/4474/07-data-security-and-compliance#/0/2)
+
+2. Continue with next excercise.
+
+<!--
 In this exercise, we will explore **workspace roles** and **SQL native access controls** to effectively manage user permissions. 
 
 ### Task 7.1: Access control using Fabric workspaces roles​
@@ -384,6 +394,7 @@ We have successfully granted Read permission (to connect to database), select an
 
     ![](../media/task_7.2.15.3.png)
 
+-->
 
 In this exercise, you have learned how to manage access control in Microsoft Fabric using Workspace roles and SQL native access controls. You have gained practical experience in:
  
