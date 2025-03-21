@@ -173,7 +173,7 @@ In this task, we will use **Dataflow Gen2** to ingest data and efficiently copy 
    SELECT * FROM inventory
    ```
 
-   ![](../media/g15.png)
+   ![](../media/dim3u.png)
 
 
 ### Task 1.2: Load Data from On-Premises Database

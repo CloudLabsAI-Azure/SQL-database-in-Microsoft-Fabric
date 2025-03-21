@@ -116,6 +116,8 @@ Now, this is something exciting! This section shows how easy it is to create Sho
 
    ![](../media/f57.png)
 
+   > **Note:** If the pop-up does not appear, wait for 30 seconds for Dataflow Gen 2 to be created.
+
 4. Click on the **Get data** icon (**do not click on the dropdown arrow at the bottom of the icon**).
 
    ![](../media/dfgen2.3.png)
