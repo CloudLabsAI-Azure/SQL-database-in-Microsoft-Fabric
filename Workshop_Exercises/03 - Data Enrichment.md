@@ -271,7 +271,7 @@ Now, this is something exciting! This section shows how easy it is to create Sho
 
 #### Activity: Adding the requried Service Principal to the workspace.
 
-1. Click on **Manage Access** in the top right corner of the workspace.
+1. Navigate back to workspace and Click on **Manage Access** in the top right corner of the workspace.
 
    ![](../media/new6u.png)
 
