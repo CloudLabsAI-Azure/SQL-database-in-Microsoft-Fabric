@@ -52,18 +52,18 @@ The intuitive interface and streamlined steps make it straightforward to expose 
 
 To summarize, here is what you will do in each exercise of this workshop,
 
-[Exercise 1: Loading Data into SQL Database](https://github.com/CloudLabsAI-Azure/SQL-database-in-Microsoft-Fabric/blob/main/Workshop_Exercises/01%20-%20Loading%20Data%20into%20SQL%20Database.md)
+Exercise 1: Loading Data into SQL Database
 
-[Exercise 2: Introduction to Copilot for SQL Database](https://github.com/CloudLabsAI-Azure/SQL-database-in-Microsoft-Fabric/blob/main/Workshop_Exercises/02%20-%20Introduction%20to%20Copilot%20for%20SQL%20Database.md)
+Exercise 2: Introduction to Copilot for SQL Database
 
-[Exercise 3: Data Enrichment and Transformation](https://github.com/CloudLabsAI-Azure/SQL-database-in-Microsoft-Fabric/blob/main/Workshop_Exercises/03%20-%20Data%20Enrichment.md)
+Exercise 3: Data Enrichment and Transformation
 
-[Exercise 4: Data Serving](https://github.com/CloudLabsAI-Azure/SQL-database-in-Microsoft-Fabric/blob/main/Workshop_Exercises/04%20-%20Data%20Serving.md)
+Exercise 4: Data Serving
 
-[Exercise 5: Exploring GraphQL API Endpoints in Microsoft Fabric](https://github.com/CloudLabsAI-Azure/SQL-database-in-Microsoft-Fabric/blob/main/Workshop_Exercises/05%20-%20Exploring%20GraphQL%20API%20Endpoints%20in%20Microsoft%20Fabric.md)
+Exercise 5: Exploring GraphQL API Endpoints in Microsoft Fabric
 
-[Exercise 6: RAG Implementation with Azure OpenAI](https://github.com/CloudLabsAI-Azure/SQL-database-in-Microsoft-Fabric/blob/main/Workshop_Exercises/06-%20RAG%20Implementation%20with%20Azure%20OpenAI.md)
+Exercise 6: RAG Implementation with Azure OpenAI
 
-[Exercise 7: Data Security and Compliance](https://github.com/CloudLabsAI-Azure/SQL-database-in-Microsoft-Fabric/blob/main/Workshop_Exercises/07%20-%20Data%20Security%20and%20Compliance.md)
+Exercise 7: Data Security and Compliance
 
-[Exercise 8: Managing Production Workloads](https://github.com/CloudLabsAI-Azure/SQL-database-in-Microsoft-Fabric/blob/main/Workshop_Exercises/08%20-%20Managing%20Production%20Workloads.md)
+Exercise 8: Managing Production Workloads
