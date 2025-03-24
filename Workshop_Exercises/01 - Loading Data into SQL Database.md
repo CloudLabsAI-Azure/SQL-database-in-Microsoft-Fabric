@@ -214,7 +214,7 @@ For this workshop, the **On-Premises Data Gateway** is already provisioned for y
 
     ![](../media/datapipeline3.png)
 
-6. In the **Connection settings** pane, in the **Server** field paste **<inject key="VMName" enableCopy="true"/>** , and paste **FabconDatabase** in the **Database** field. It automatically selects the **Connection**. Click on the **Next** button.
+6. In the **Connection settings** pane, in the **Server** field paste **LabVM-1653224** , and paste **FabconDatabase** in the **Database** field. It automatically selects the **Connection**. Click on the **Next** button.
  
 
    >**Note:** For this workshop, the **On-Premises Data Gateway** is already provisioned for you and no setup is required by the workshop user, the **gateway connection** can be accessed in your Fabric workspace while setting up the data pipeline. The connection is displayed automatically when database credentials passed on in the pipeline.
