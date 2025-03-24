@@ -102,7 +102,9 @@ In this exercise, you will create a **semantic model** from the data previously 
 
     > **Note:** If you don't see the 'What's in my data?' option, click in the Copilot **chat box** field, enter the following prompt, and click on the **Send** button.
 
-    ```What's in my data?```
+    ```
+    What's in my data?
+    ```
 
     ![alt text](../media/img-8.png)
 
@@ -112,18 +114,18 @@ In this exercise, you will create a **semantic model** from the data previously 
 
     >**Note :** The Copilot response you receive may differ from the one shown in the screenshot.
 
-5. Click on the Copilot **chat box** field and enter the following prompt.
+6. Click on the Copilot **chat box** field and enter the following prompt.
 
     ```
     Create a report Bounce Rate analysis, to show the correlation between customer sentiment, particularly among millennials and Gen Z, unsuccessful product searches across different devices, and the website's bounce rate by customer generations.
     ```
 
 
-6. Click on the **Send** button and wait for the results to load. 
+7. Click on the **Send** button and wait for the results to load. 
 
    ![alt text](../media/img-10.png)
 
-7. If a pop-up similar to the one in the screenshot appears, click on the dropdown, select the **Copilot Preview** option, and skip steps 10 and 11.
+8. If a pop-up similar to the one in the screenshot appears, click on the dropdown, select the **Copilot Preview** option, and skip steps 10 and 11.
 
    ![alt text](../media/preview.png)
 	
@@ -143,7 +145,7 @@ In this exercise, you will create a **semantic model** from the data previously 
 
     We’ll ask Copilot for suggestions based on the results and data in the report. 
 
-8. Enter the following prompt in Copilot, and press the **Send** button.
+9. Enter the following prompt in Copilot, and press the **Send** button.
 
     ```
     Based on the data in the page, what can be done to improve the bounce rate of millennials?
@@ -152,15 +154,15 @@ In this exercise, you will create a **semantic model** from the data previously 
 	
    ![alt text](../media/img-12.png)
 	
-9. Look at the suggestions Copilot provided. Copilot creates the desired Power BI report and even goes a step further to give powerful insights. To improve the website bounce rate, Contoso needs to transform their mobile website experience for millennials. This helps them reduce their millennial related customer churn too! Now, what if Contoso’s leadership team needed a quick summary of this entire report? **Smart Narrative** to the rescue!
+10. Look at the suggestions Copilot provided. Copilot creates the desired Power BI report and even goes a step further to give powerful insights. To improve the website bounce rate, Contoso needs to transform their mobile website experience for millennials. This helps them reduce their millennial related customer churn too! Now, what if Contoso’s leadership team needed a quick summary of this entire report? **Smart Narrative** to the rescue!
 	
     ![alt text](../media/img-15.png)
 	
-10. Expand the **Visualizations** pane and select the **Narratives** visual. 
+11. Expand the **Visualizations** pane and select the **Narratives** visual. 
 
     ![alt text](../media/f30.png)
 
-11. Click on **Copilot (preview)** within the visual.
+12. Click on **Copilot (preview)** within the visual.
 
     ![alt text](../media/img-13.png)
 	
