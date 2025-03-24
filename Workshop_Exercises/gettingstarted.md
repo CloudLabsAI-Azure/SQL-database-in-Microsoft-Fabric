@@ -4,6 +4,8 @@
 
    ![](../media/launchpage.png)
 
+
+
    ### Familiarize yourself with the Lab Environment, before you begin!
 
 1. The **Lab Guide** tab contains all the steps required to complete the lab. You can use the numbers at the bottom of the **Lab Guide** to navigate between different **Exercises**.
