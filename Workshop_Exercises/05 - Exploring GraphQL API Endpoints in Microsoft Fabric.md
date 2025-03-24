@@ -1,6 +1,11 @@
 ## Exercise 5: Exploring GraphQL API Endpoints in Microsoft Fabric
 
-In this exercise, we will build a **GraphQL API** in Fabric and integrate its **endpoint** into an application.
+In this exercise, you will build a **GraphQL API** in Microsoft Fabric and integrate its **endpoint** into an application. The key benefit here is that the creation of GraphQL API itself is super-efficient, given that you do not even need to create a GraphQL server, amazing right? And once GraphQL API is ready, it is available for easy consumption across the entire enterprise for app creation! Data integration challenges will be transformed like never before in Contoso!
+
+---
+>**Note:** Follow the steps provided in the task below. The Click-by-Click is available as a backup option in case of any technical issues preventing you from performing the lab in the actual environment.Before starting this exercise, open a backup Click-by-Click using the following hyperlink in a new tab, then return to the browser.
+[Click-by-Click](https://regale.cloud/Microsoft/play/4473/05-exploring-graphql-api-endpoints-in-microsoft-fabric#/0/0)
+---
 
 ### Task 5.1: Create GraphQL API Endpoints
 
