@@ -1,6 +1,6 @@
 ### Exercise 8: Managing Production Workloads
 
-in this exercise, we will explore different **SQL database performance metrics** available in Fabric and enable **version control** to track database changes efficiently.
+In this exercise, we will explore different **SQL Database performance metrics** available in Microsoft Fabric and enable **version control** to track database changes efficiently. The simple and autonomous capability of SQL Database in Microsoft Fabric can take a novice developer from not knowing anything about databases to be maintaining the database in a short period of time - indexes get automatically created based on the queries that are running in the database. This kind of work was manual work done by a DBA in the past. How cool is that?
 
 ### Task 8.1: Monitor SQL Database Performance
 
@@ -135,16 +135,17 @@ Generate performance optimization suggestions.
 	
 1. Click on the [**hyperlink**](https://regale.cloud/Microsoft/play/4476/08-managing-production-workloads#/0/0)
 
-2. Continue with next Excercise.
 
-In this exercise, you have learned how to monitor and optimize database performance using the Performance Dashboard in Fabric SQL database. You have gained practical experience in:
+In this exercise, you have learned how to monitor and optimize database performance using the Performance Dashboard in Microsoft Fabric SQL Database. You have gained practical experience in:
  
 - Viewing database performance metrics to assess system health and efficiency.
 - Identifying performance bottlenecks and diagnosing issues to enhance query execution.
 - Integrating with Git repositories for version control of database objects and schema.
 - Automating deployment of database schema and data for streamlined operations.
 
-With these skills, you can now proactively manage database performance and implement efficient version control and deployment strategies.
+Now that you have these skills, you can now proactively manage database performance and implement efficient version control and deployment strategies.
+
+With all the above transformations, you will help Contoso and April achieve an all-green dashboard. Imagine what you can do with SQL Database in Microsoft Fabric for your organization. The possibilities are limitless!
 
 
 
