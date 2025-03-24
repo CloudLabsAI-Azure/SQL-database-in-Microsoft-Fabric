@@ -1,6 +1,12 @@
 ## Exercise 1: Loading Data into SQL Database
 
-In this exercise, we will create a **SQL database in Fabric** and ingest data from both **Azure SQL Database** and an **on-premises SQL Server**. 
+This module covers the basics of getting started with **SQL Database in Microsoft Fabric**. You will learn how to **create workspaces**, create a **SQL Database in Microsoft Fabric**, and **seed the database** with initial data that will be used in later modules. You will see how simple it is to create the databases by providing a name. And even more exciting, loading the initial data into SQL Database can be achieved without any code! This reduces maintenance effort while delighting developers!
+
+---
+>**!Note:** Follow the steps provided in the task below. The Click-by-Click is available as a **backup option** in case of any technical issues preventing you from performing the lab in the actual environment.
+Before starting this exercise, open a backup Click-by-Click using the following hyperlink in a new tab, then return to the browser.
+[Click-by-Click](https://regale.cloud/Microsoft/play/4463/01-loading-data-into-sql-database#/0/0)
+---
 
 ### Task 1.1: Load Data from Azure SQL Database
 
