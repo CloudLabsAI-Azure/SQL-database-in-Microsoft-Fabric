@@ -280,4 +280,4 @@ function RefreshTokens() {
     - Generate GraphQL endpoints from a SQL Database for flexible querying.
     - Integrate GraphQL endpoints into a web application for dynamic and efficient data access.
 
-    With these skills, you can now build and integrate GraphQL APIs to create more responsive applications! You are ready to move on to the next exercise: [RAG Implementation with Azure OpenAI](https://github.com/dreamdemos-ms/Fabcon_Workshop/blob/main/Workshop_Exercises/06-%20RAG%20Implementation%20with%20Azure%20OpenAI.md)
+    With these skills, you can now build and integrate GraphQL APIs to create more responsive applications! You are ready to move on to the next exercise: RAG Implementation with Azure OpenAI.
