@@ -1,6 +1,10 @@
 ## Exercise 6: RAG Implementation with Azure OpenAI
 
-In this exercise, we will implement a **Retrieval-Augmented Generation (RAG) system** in Microsoft Fabric by utilizing a **Fabric SQL database** as the **vector store**, Azure OpenAI for text embeddings, and the GPT-4 model to enhance natural language queries and responses.
+Contoso developers have been tasked with creating an online shopping copilot for their website in a very short time. So, how can you help achieve that? Well, in this exercise, you will implement a **Retrieval-Augmented Generation (RAG) system** in Microsoft Fabric. You will use a **Microsoft Fabric SQL Database** as the **vector store**, Azure OpenAI for **text embeddings**, and the GPT-4 model to enhance **natural language queries and responses**. This way, you will help Contoso implement a personal shopper like experience on their online website!
+
+---
+>**Note:** Follow the steps provided in the task below. The Click-by-Click is available as a backup option in case of any technical issues preventing you from performing the lab in the actual environment.Before starting this exercise, open a backup Click-by-Click using the following hyperlink in a new tab, then return to the browser.[Click-by-Click](https://regale.cloud/Microsoft/play/4457/06-rag-implementation-with-azure-openai#/0/0)
+---
 
 ### Task 6.1: AI-Powered Recommendations with Vector Search
 
