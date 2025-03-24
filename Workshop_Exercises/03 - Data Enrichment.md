@@ -1,6 +1,12 @@
 ## Exercise 3: Data Enrichment
 
-This exercise focuses on **data enrichment** using **Dataflow Gen2** and **Notebooks**. The transformed data will then be stored in **SQL database in Fabric**.
+This exercise focuses on **data enrichment** using **Dataflow Gen2** and **Notebooks**. The transformed data will then be stored in **SQL Database in Microsoft Fabric**. This is a low-code/no-code solution improving time to market and IT efficiency for Contoso.
+
+---
+>**Note:** Follow the steps provided in the task below. The Click-by-Click is available as a **backup** option in case of any technical issues preventing you from performing the lab in the actual environment.
+Before starting this exercise, open a backup Click-by-Click using the following hyperlink in a new tab, then return to the browser.
+[Click-by-Click](https://regale.cloud/Microsoft/play/4469/03-data-enrichment#/0/0)
+---
 
 ### Task 3.1: Enrich Data using DataFlow Gen2
 
