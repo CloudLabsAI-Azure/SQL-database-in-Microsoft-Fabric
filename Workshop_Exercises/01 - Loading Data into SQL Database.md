@@ -30,7 +30,7 @@ In this task, we will use **Dataflow Gen2** to ingest data and efficiently copy 
 
 3. From the left navigation pane, click on **Workspaces** and then the **+ New workspace** button.
 
-   ![alt text](../media/image-7.png)
+   ![alt text](../media/Newworkspace.png)
 
 4. In the **Name** field, enter **<inject key="WorkspaceName" enableCopy="true"/>**, then click **Apply**.
 
@@ -239,15 +239,17 @@ For this workshop, the **On-Premises Data Gateway** is already provisioned for y
 
    ![](../media/datapipeline13.png)
 
-2. Click on **Save + Run**.
+2. Under Options, ensure that **Start data transfer immediately** remains **enabled** (default setting).
 
-   ![](../media/datapipeline11.png)
+3. Click on **Save + Run** to proceed.
 
-3. Click on the **Ok** button in the **Pipeline run** window..
+   ![](../media/saverun.png)
+
+4. Click on the **Ok** button in the **Pipeline run** window..
 
    ![](../media/datapipeline12.png)
 
-4. Click on the **Bell** icon at the top right of the screen to verify the Running status of the pipeline.
+5. Click on the **Bell** icon at the top right of the screen to verify the Running status of the pipeline.
 
    ![](../media/datapipeline14.png)
 
