@@ -4,6 +4,11 @@
     "Language": "English",
     "Files": [
       {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/SQL-database-in-Microsoft-Fabric/refs/heads/main/Workshop_Exercises/overview.md",
+        "Order": 0
+      },
+      
+      {
         "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/SQL-database-in-Microsoft-Fabric/refs/heads/main/Workshop_Exercises/01%20-%20Loading%20Data%20into%20SQL%20Database.md",
         "Order": 1
       },
