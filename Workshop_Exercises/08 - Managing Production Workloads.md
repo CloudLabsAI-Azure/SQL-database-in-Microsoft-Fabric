@@ -124,124 +124,18 @@ Generate performance optimization suggestions.
 
 #### Activity: Integrate with Git repositories for version control
 
-1. Sign in to your organization (https://dev.azure.com/{Your_Organization}) 
+---
+>**Note:** This exercise will be a Click-by-Click. Use the following link to perform the exercise. Once you complete the exercise using the ***Click-by-Click***, navigate back to the browser.
+---
 
+>Please follow the green beacons for this exercise.
+- This exercise will be performed outside the VM browser.
+- Please return back to the VM browser once you see the **End of this Exercise** screen.
+- Once you press the **Agree** button, press the **A** key on your keyboard if you do not see the annotations.
+	
+1. Click on the [**hyperlink**](https://regale.cloud/Microsoft/play/4476/08-managing-production-workloads#/0/0)
 
-2. Select project you want to do Git integration and make sure the Branch **Initialize** is done.
-
-    ![](../media/git-init.png)
-
-3. Navigate to the Fabric Workspace and click on the **Workspace settings**.
-
-    ![](../media/1.2.png)
-
-5. under "Workspace settings" click on **Git integration** and click on **Azure DevOps** followed by click on **Connect**.
-
-    ![](../media/1.3.png)
-
-6. Connect Git repository and Branch
-    - Select Organization
-    - Select Project
-    - Select Git repository
-    - Select Branch
-    - Provide a name to create a Git Folder as **Fabric Git Integration**
-    - Click on **Connect and sync**
-
-    ![](../media/1.4.png)
-
-7. up on the pop-up of "Create a new folder?" click on **Create and sync**
-
-    ![](../media/1.5.png)
-
-8. Confirm "Git status" is **synced**.
-
-    ![](../media/f91.png)
-
-#### Activity: Automate deployment of database schema and data.    
-
-1. Go to the Azure DevOps and click on the **Repos** and click on the **Fabric Git Integration** folder and click on the Branch dropdown and **+ New branch** to create new "dev" branch.
-
-    ![](../media/1.7.png)
-
-2. Up on the popup "Create a branch" provide the Name as **dev** and Based on **main** and click on **Create**.
-
-    ![](../media/1.8.png)
-
-3. Click on the main and select the **dev** branch.
-
-    ![](../media/1.9.png)
-
-4. Once switch to the **dev** branch.
-    - Click on the *Fabric Git Integration*
-    - click on the dropdown *Contoso_databse.SQLDatabase*
-    - Click on the (three dots) ellipse of the security folder.
-    - click on the **+ New** and click on **File**.
-
-    ![](../media/1.10.png)
-
-5. In the *New file* Popup page provide New file name as **sales.sql** and click on **Create**.
-
-    ![](../media/1.11.png)
-
-6. Provide the below sql query in the content section and click on **Commit**. The following query will create a new **schema**, **Sales**, and a **view** in it called **vw_TotalSalesByYear**.
-
-    ```sql
-    CREATE SCHEMA Sales
- 
-    CREATE VIEW Sales.vw_TotalSalesByYear AS
-    SELECT
-        d.CalendarYear,
-        SUM(f.SalesAmount) AS TotalSalesAmount
-    FROM
-        dbo.factinternetsales f
-    JOIN
-        dbo.dimdate d ON f.OrderDateKey = d.DateKey
-    GROUP BY
-        d.CalendarYear;
-    ```
-    ![](../media/1.12.png)
-
-7. Once you get the *Commit* popup page click on **Commit** button.
-
-    ![](../media/1.13.png)
-
-8. Click on **create a pull request** under **dev** branch.
-
-    ![](../media/1.14.png)
-
-9. Up on the *New pull request* page verify the pull request is creating between *dev and main*. Provide the Reviewers Name and click on create.
-
-    ![](../media/1.15.png)
-    ![](../media/1.16.png)
-
-10. Once it is confirmed share the pull request to the person who needs to approve it.
-
-11. Once it is approved click on the **Pull requests** and open the request you created and click on **Complete**.
-
-    ![](../media/1.17.png)
-
-12. On the popup click of *Complete pull request* verify that the *delete dev after merging* is unchecked and click on **Complete megre**
-
-    ![](../media/1.18.png)
-
-13. once the merge is completed go back to the main branch and under security verify the **sales.sql** file.
-
-    ![](../media/1.19.png)
-
-14. Go back to the Microsoft Fabric Workspace, and do a hard refresh with the Ctrl + shift + R.
-
-15. Click on the **Source control** and click on **Update all** and under the changes click on **Commit** to keep it in sync.
-
-    ![](../media/1.20.png)
-
-16. Once the update is completed, click on the **SQL Database**
-
-    ![](../media/f93.png)
-
-17. Verify that the **sales** schema appears in the SQL database under Explorer and that a **view** has been created.
-
-    ![](../media/f86.png)
-
+2. Continue with next Excercise.
 
 In this exercise, you have learned how to monitor and optimize database performance using the Performance Dashboard in Fabric SQL database. You have gained practical experience in:
  
