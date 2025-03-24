@@ -1,6 +1,10 @@
 ## Exercise 7: Data Security and Compliance (click-by-click)
 
->**Note**: Due to time constraints, the following steps will be completed via an online Click-by-Click exercise.
+---
+>**Note:** This exercise will be a Click-by-Click. Use the following link to perform the exercise. Once you complete the exercise using the ***Click-by-Click***, navigate back to the browser.
+---
+
+Security and governance are complex for any organization, and Contoso is no different. Having the right user access is key to achieving business outcomes while driving down vulnerabilities. In this exercise, you will explore **Microsoft Fabric workspace roles** and **SQL native access controls** to effectively manage user permissions to drive down compliance alerts.
 
 >Please follow the green beacons for this exercise.
 - This exercise will be performed outside the VM browser.
@@ -9,7 +13,7 @@
 	
 1. Click on the [**hyperlink**](https://regale.cloud/Microsoft/play/4474/07-data-security-and-compliance#/0/2)
 
-2. Continue with next excercise.
+2. Continue with next Excercise.
 
 
 <!--In this exercise, we will explore **workspace roles** and **SQL native access controls** to effectively manage user permissions. 
