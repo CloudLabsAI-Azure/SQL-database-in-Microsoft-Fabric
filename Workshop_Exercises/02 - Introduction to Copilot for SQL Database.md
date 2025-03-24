@@ -1,6 +1,6 @@
 ### Exercise 2: Introduction to Copilot for SQL Database
 
-In this exercise, we will leverage **Copilot** to assist with T-SQL queries, including **auto-suggestions**, **fixing error**, and **natural language query**.
+In this exercise, you will use **Copilot** to assist with T-SQL queries, including **auto-suggestions**, **fixing error**, and **natural language query**, again contributing to Contoso developer efficiency!
 
 #### Task 2.1: Use Copilot in SQL Database
 
