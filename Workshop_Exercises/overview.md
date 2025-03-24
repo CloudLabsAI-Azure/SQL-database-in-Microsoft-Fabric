@@ -5,8 +5,7 @@
  
 ><strong>Important Note:</strong> Before starting the workshop, use only the **Workshop_Exercises**  folder and avoid other folders meant for Internal Development. Use the provided hyperlinks to access the exercises.
 
-<img src="../media/Architecture-diagram.png" alt="Alt Text" width="1000">
-
+ ![](../media/Architecture-diagram.png)
 
 Welcome to the *SQL database in Microsoft Fabric* workshop. This workshop is designed to provide you with a comprehensive understanding of SQL database in Microsoft Fabric and its integration with other services. Throughout this workshop, you will learn how to create, manage, and optimize SQL databases, as well as how to leverage artificial intelligence and build applications using GraphQL API builder.
 
