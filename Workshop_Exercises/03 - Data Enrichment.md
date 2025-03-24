@@ -240,7 +240,9 @@ Now, this is something exciting! This section shows how easy it is to create Sho
 
     Let's schedule the pipeline to reduce manual effort and ensure data is always up to date.
 
-5. Click on **Schedule** from the ribbon.
+5. Under the **Run** tab, click on **Schedule** from the ribbon.
+
+   ![](../media/runschedule.png)
 
 6. Turn **On** the **Scheduled run** radio button.
 
