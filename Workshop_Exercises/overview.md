@@ -18,7 +18,7 @@ As of Jan 2025, Contoso’s KPIs are struggling due to data integration challeng
 
 ### Transforming Contoso with SQL Database in Microsoft Fabric
 
-So, she talks to her VP of Engineering, Rupesh. Now, you, as a team member of Rupesh, will play a key role in transforming Contoso’s struggling KPIs. Let us see how.
+She talks to her VP of Engineering, Rupesh. Now, you, as a team member of Rupesh, will play a key role in transforming Contoso’s struggling KPIs. Let us see how.
 You will use SQL Database in Microsoft Fabric, which is a developer-friendly transactional database based on the Azure SQL Database engine. It is simple, autonomous, secure by default and AI-integrated. Being part of Microsoft Fabric, it benefits from Fabric's promises and offers tight integration with other workloads within Microsoft Fabric.
 
 With your SQL Database in Microsoft Fabric, you can easily build OLTP applications while minimizing the need to stitch together multiple services to create an end-to-end solution.
