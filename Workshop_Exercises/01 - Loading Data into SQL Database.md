@@ -35,6 +35,7 @@ In this task, we will use **Dataflow Gen2** to ingest data and efficiently copy 
 4. In the **Name** field, enter **<inject key="WorkspaceName" enableCopy="true"/>**, then click **Apply**.
 
     > **Note:** Only use the workspace name provided above.
+    > **Note:** If any pop-up appears on *Premium Capacity Settings*, click on **Got it** button.
 
     ![alt text](../media/f46.png)
 
