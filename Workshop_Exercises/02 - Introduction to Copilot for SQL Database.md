@@ -115,4 +115,4 @@ In this exercise, you will use **Copilot** to assist with T-SQL queries, includi
 
    ![](../media/database16.png)
 
-    Congratulations! You have learned how to leverage **Copilot** for SQL Database in Microsoft Fabric to enhance your **query-writing** experience. With these skills, you are now better equipped to write SQL queries faster and troubleshoot errors effectively using Copilot. You are ready to move on to the next exercise: [Data Enrichment and Transformation](https://github.com/dreamdemos-ms/Fabcon_Workshop/blob/main/Workshop_Exercises/03%20-%20Data%20Enrichment.md)
+    Congratulations! You have learned how to leverage **Copilot** for SQL Database in Microsoft Fabric to enhance your **query-writing** experience. With these skills, you are now better equipped to write SQL queries faster and troubleshoot errors effectively using Copilot. You are ready to move on to the next exercise: Data Enrichment and Transformation.
