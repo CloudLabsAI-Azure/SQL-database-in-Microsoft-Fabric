@@ -405,6 +405,8 @@ Now, this is something exciting! This section shows how easy it is to create Sho
 
 12. Hover below the current cell to click on **Add code cell**, then paste the following code in the cell, and click on the **Run** icon to display the results.
 
+    >**Note:** If the **+ Code** button is not visible, hover over the cell below to click and add a **new code cell**.
+
     ``` 
     # Read data from SalesMetricsTable using JDBC (with LIMIT)
 
@@ -421,15 +423,15 @@ Now, this is something exciting! This section shows how easy it is to create Sho
 
     ![](../media/task_3.2.1.10.png)
 
-13. Click on the **<inject key="WorkspaceName" enableCopy="false"/>** workspace in the left menu.
+14. Click on the **<inject key="WorkspaceName" enableCopy="false"/>** workspace in the left menu.
 
     ![](../media/new5u.png)
 
-14. Click on **Filter**, select **SQL database**, and then click on **Fabcon_database**.
+15. Click on **Filter**, select **SQL database**, and then click on **Fabcon_database**.
 
     ![](../media/task_3.2.1.12.png)
 
-15. Once in the **SQL Database** under the **Explorer**, expand *Fabcon_database*, then expand the **dbo schema** and the **Tables** section. Scroll down to locate the **SalesMetricsTable**.
+16. Once in the **SQL Database** under the **Explorer**, expand *Fabcon_database*, then expand the **dbo schema** and the **Tables** section. Scroll down to locate the **SalesMetricsTable**.
 
     ![](../media/fabcondatabase.png)
 
@@ -437,7 +439,7 @@ Now, this is something exciting! This section shows how easy it is to create Sho
 
     ![](../media/refresh1.png)
  
-16. Click on **SalesMetricsTable** to see the results.
+17. Click on **SalesMetricsTable** to see the results.
 
     ![](../media/task_3.2.1.13.png)
 
