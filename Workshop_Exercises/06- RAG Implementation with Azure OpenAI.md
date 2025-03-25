@@ -96,7 +96,8 @@ Let us implement RAG-pattern with Microsoft Fabric SQL Database, which now has t
    ![](../media/Exe6_02_image.png)
 
 6. Click on **New Query**, paste the query below, and then click on **Run**.
-This code declares a cursor to iterate through products in the dbo.dim_products table. It generates an embedding for each of the products using the stored procedure created in previous step (dbo.get_embedding), and inserts the results into the dbo.Product_Embeddings table.
+
+   This code declares a cursor to iterate through products in the dbo.dim_products table. It generates an embedding for each of the products using the stored procedure created in previous step (dbo.get_embedding), and inserts the results into the dbo.Product_Embeddings table.
 
     ```
     -- Step 1: Create a temporary table to store the results
@@ -147,8 +148,8 @@ This code declares a cursor to iterate through products in the dbo.dim_products 
 
     CLOSE ProductCursor;
     DEALLOCATE ProductCursor;
+   ```
 
-    ```
    ![](../media/Exe6_03_image.png)
 
 7. Click on **New Query**, paste the following query in the query editor, and then click on **Run**.
@@ -164,7 +165,7 @@ This code declares a cursor to iterate through products in the dbo.dim_products 
 
    Below query processes the user's text input to extract product keywords and invokes Azure OpenAI endpoint to generate vector embedding for the same. This vector is then compared with the embeddings from the dbo.Product_Embeddings table, to find the top 10 products based on their similarity (vector_distance function).
 
-```
+   ```
     CREATE OR ALTER PROCEDURE [dbo].[find_relevant_products]
     @text NVARCHAR(MAX),
     @top INT = 10,
@@ -245,8 +246,7 @@ This code declares a cursor to iterate through products in the dbo.dim_products 
             FOR JSON AUTO, ROOT('search_results')
         );
     END;
-
-```
+   ```
    ![](../media/Exe6_05_image.png)
 
 
