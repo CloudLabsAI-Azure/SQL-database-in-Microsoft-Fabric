@@ -107,7 +107,8 @@ In this task, we will use **Dataflow Gen2** to ingest data and efficiently copy 
 
    ![](../media/dfgen2.4.png)
 
-8. On the **Connection settings** pane, in the **Server** field, paste the following value **<inject key="MssqlServer" enableCopy="true"/>**, and in the **Database** field, paste ```SalesDb```.
+5. On the **Connection settings** pane, in the **Server** field, paste the following value **<inject key="MssqlServer" enableCopy="true"/>**.
+6. In the **Database** field, paste ```SalesDb```.
 
    ```
    SalesDb
@@ -116,42 +117,42 @@ In this task, we will use **Dataflow Gen2** to ingest data and efficiently copy 
     ![](../media/dfgen2.5.png)
 
 
-6.  Scroll down and select **Basic** for Authentication kind, enter **labsqladmin** as the **Username**, **Smoothie@2025** as the **Password** and click **Next**.
+7.  Scroll down and select **Basic** for Authentication kind, enter **labsqladmin** as the **Username**, **Smoothie@2025** as the **Password** and click **Next**.
 
     ```BASH
-      labsqladmin
+    labsqladmin
     ```
     ```BASH
-      Smoothie@2025
+    Smoothie@2025
     ```
 
     ![](../media/dfgen2.6.png)
 
-7. Select ``Suppliers``, ``Website_Bounce_rate`` and ``inventory`` tables, then click on the **Create** button.
+8. Select ``Suppliers``, ``Website_Bounce_rate`` and ``inventory`` tables, then click on the **Create** button.
 
    ![](../media/dim_products1u.png)
 
-8. Click on the ``Suppliers`` table, select the **Add data destination** option from the ribbon, then select **SQL database** from the list.
+9. Click on the ``Suppliers`` table, select the **Add data destination** option from the ribbon, then select **SQL database** from the list.
 
    ![](../media/dim_products2u.png)
 
-9. Click on the **Next** button.
+10. Click on the **Next** button.
 
    ![](../media/dfgen2.9.png)
 
-10. Expand the **<inject key="WorkspaceName" enableCopy="false"/>** folder, select the **Fabcon_database** and then click on the **Next** button.
+11. Expand the **<inject key="WorkspaceName" enableCopy="false"/>** folder, select the **Fabcon_database** and then click on the **Next** button.
 
     ![](../media/new4.png)
 
-11. Click on the **Save settings** button.
+12. Click on the **Save settings** button.
 
     ![](../media/dfgen2.11.png)
 
-12. For ``Website_Bounce_rate`` and ``inventory`` tables perform steps **8-11** to select the destination.
+13. For ``Website_Bounce_rate`` and ``inventory`` tables perform steps **8-11** to select the destination.
 
     >**Note:** Please ensure to select the destination for all the tables before publishing the dataflow.
 
-13. Click on the **Publish** button.
+14. Click on the **Publish** button.
 
     ![alt text](../media/f21.png)
 
