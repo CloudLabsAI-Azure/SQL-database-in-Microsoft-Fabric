@@ -147,6 +147,6 @@ Now that you have these skills, you can now proactively manage database performa
 
 With all the above transformations, you will help Contoso and April achieve an all-green dashboard. Imagine what you can do with SQL Database in Microsoft Fabric for your organization. The possibilities are limitless!
 
-
+ Move to the next page to continue!
 
 
