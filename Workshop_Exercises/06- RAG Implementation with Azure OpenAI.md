@@ -167,7 +167,7 @@ Let us implement RAG-pattern with Microsoft Fabric SQL Database, which now has t
 
    Below query processes the user's text input to extract product keywords and invokes Azure OpenAI endpoint to generate vector embedding for the same. This vector is then compared with the embeddings from the dbo.Product_Embeddings table, to find the top 10 products based on their similarity (vector_distance function).
 
-   ```sql
+```
     CREATE OR ALTER PROCEDURE [dbo].[find_relevant_products]
     @text NVARCHAR(MAX),
     @top INT = 10,
@@ -247,7 +247,7 @@ Let us implement RAG-pattern with Microsoft Fabric SQL Database, which now has t
             FOR JSON AUTO, ROOT('search_results')
         );
     END;
-   ```
+```
    ![](../media/Exe6_05_image.png)
 
 
