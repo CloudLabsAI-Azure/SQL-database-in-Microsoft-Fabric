@@ -35,13 +35,14 @@ In this task, we will use **Dataflow Gen2** to ingest data and efficiently copy 
 4. In the **Name** field, enter **<inject key="WorkspaceName" enableCopy="true"/>**, then click **Apply**.
 
     > **Note:** Only use the workspace name provided above.
+    
     > **Note:** If any pop-up appears on *Premium Capacity Settings*, click on **Got it** button.
 
     ![alt text](../media/f46.png)
 
     > **Note:** Wait for the Power BI Workspace to load.
 
-   > **Note:** If the **Introducing Task Flows(preview)** pop-up appears, click **Got it**.
+    > **Note:** If the **Introducing Task Flows(preview)** pop-up appears, click **Got it**.
 
      ![alt text](../media/new2u.png)
 
@@ -236,21 +237,22 @@ For this workshop, the **On-Premises Data Gateway** is already provisioned for y
 
 #### Activity: Validate the data transfer and ensure schema compatibility
 
-1. Select the **Load to new table** radio button and click on the **Next** button.
+1. Select the **Load to new table** radio button and wait for the **column mapping** to appear.
+2. Click on the **Next** button.
 
    ![](../media/datapipeline13.png)
 
-2. Under Options, ensure that **Start data transfer immediately** remains **enabled** (default setting).
+3. Under Options, ensure that **Start data transfer immediately** remains **enabled** (default setting).
 
-3. Click on **Save + Run** to proceed.
+4. Click on **Save + Run** to proceed.
 
    ![](../media/saverun.png)
 
-4. Click on the **Ok** button in the **Pipeline run** window..
+5. Click on the **Ok** button in the **Pipeline run** window..
 
    ![](../media/datapipeline12.png)
 
-5. Click on the **Bell** icon at the top right of the screen to verify the Running status of the pipeline.
+6. Click on the **Bell** icon at the top right of the screen to verify the Running status of the pipeline.
 
    ![](../media/datapipeline14.png)
 
