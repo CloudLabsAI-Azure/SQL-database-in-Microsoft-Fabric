@@ -125,9 +125,9 @@ In this exercise, you will create a **semantic model** from the data previously 
 
    ![alt text](../media/img-10.png)
 
-8. If a pop-up similar to the one in the screenshot appears, click on the dropdown, select the **Copilot Preview** option, and skip steps 10 and 11.
+8. If a pop-up similar to the one in the screenshot appears to edit the **Report title**, click anywhere on the **report** to **close it**.
 
-   ![alt text](../media/preview.png)
+   ![alt text](../media/editpopup.png)
 	
     >**Note:** 
 
