@@ -186,3 +186,5 @@ In this exercise, you will create a **semantic model** from the data previously 
     The summary can also be generated in another language, if specified. Additionally, the summary updates if you filter the report on any visual.
 
     Congratulations! You have now successfully generated a report using the data that was landed earlier in the **SQL Database**. You are ready to move on to the next exercise: Exploring GraphQL API Endpoints in Microsoft Fabric.
+
+ Move to the next page to continue!
