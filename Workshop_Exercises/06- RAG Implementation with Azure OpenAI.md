@@ -358,3 +358,5 @@ In this exercise, you have explored Retrieval Augmented Generation (RAG) to enha
 - Sending questions and answers to Azure OpenAI GPT-4 to generate responses in natural language.
 
 With these skills, you can now bridge structured data with generative AI to improve query understanding and response generation. You are ready to move on to the next exercise: Data Security and Compliance.
+
+ Move to the next page to continue!
