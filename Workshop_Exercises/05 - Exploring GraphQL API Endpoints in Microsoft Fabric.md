@@ -63,7 +63,7 @@ Let's first create a view using a simple analytical T-SQL query. The new view, `
 
 #### Activity: Write and test GraphQL queries to retrieve data
 
-At this point, the API is ready but it's not exposing any data. APIs for GraphQL are defined in a schema organized in terms of types and fields, in a strongly typed system. Microsoft Fabric automatically generates the necessary GraphQL schema based on the data you choose to expose to GraphQL clients.
+   At this point, the API is ready but it's not exposing any data. APIs for GraphQL are defined in a schema organized in terms of types and fields, in a strongly typed system. Microsoft Fabric automatically generates the necessary GraphQL schema based on the data you choose to expose to GraphQL clients.
 
 1. The **Choose data** screen enables you to search for and choose the objects to expose your GraphQL schema. Enter ``vProductsbySuppliers`` in the search bar, select the checkbox next to ``dbo.vProductsbySuppliers``, and click on the **Load** button.
 
@@ -73,7 +73,7 @@ At this point, the API is ready but it's not exposing any data. APIs for GraphQL
 
    ![](../media/f34.png)
 
-The schema is generated, and you can start prototyping GraphQL queries (read, list) or mutations (create, update, delete) to interact with your data. The following image shows the **Schema explorer** with an API call template.
+   The schema is generated, and you can start prototyping GraphQL queries (read, list) or mutations (create, update, delete) to interact with your data. The following image shows the **Schema explorer** with an API call template.
 
 2. In the ``Query1`` panel, replace the text you see there with the following GraphQL query string:
 
@@ -99,13 +99,13 @@ The schema is generated, and you can start prototyping GraphQL queries (read, li
 
    ![](../media/f37.png)
 
-Your API for GraphQL is now ready to accept connections and requests. You can use the API editor to test and prototype GraphQL queries and the Schema explorer to verify the data types and fields exposed in the API.
+   Your API for GraphQL is now ready to accept connections and requests. You can use the API editor to test and prototype GraphQL queries and the Schema explorer to verify the data types and fields exposed in the API.
 
 #### Activity: Use the Endpoint in an existing application for Dynamic Data Access.
 
-You have been asked to create an application that shows all affected Suppliers if a Location has a supply chain break due to natural disasters or other interruptions. This code shows how to create an ASP.NET application that uses a GraphQL Query to access a Query in the SQL in Fabric GraphQL endpoint you created in the previous task.
+   You have been asked to create an application that shows all affected Suppliers if a Location has a supply chain break due to natural disasters or other interruptions. This code shows how to create an ASP.NET application that uses a GraphQL Query to access a Query in the SQL in Fabric GraphQL endpoint you created in the previous task.
 
-This activity requires the .NET SDK and Azure CLI as prerequisites, which have already been installed on our Jump VM.
+   This activity requires the .NET SDK and Azure CLI as prerequisites, which have already been installed on our Jump VM.
 
 1. In the search bar, type **PowerShell ISE** and open it.
 
