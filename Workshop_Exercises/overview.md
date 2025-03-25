@@ -66,3 +66,6 @@ Exercise 6: RAG Implementation with Azure OpenAI
 Exercise 7: Data Security and Compliance
 
 Exercise 8: Managing Production Workloads
+
+
+ Move to the next page to continue!
