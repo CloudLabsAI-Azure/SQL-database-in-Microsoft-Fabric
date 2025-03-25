@@ -1,14 +1,14 @@
 ## Exercise 6: RAG Implementation with Azure OpenAI
 
-Contoso developers have been tasked with creating an online shopping copilot for their website in a very short time. So, how can you help achieve that? Well, in this exercise, you will implement a **Retrieval-Augmented Generation (RAG) system** in Microsoft Fabric. You will use a **Microsoft Fabric SQL Database** as the **vector store**, Azure OpenAI for **text embeddings**, and the GPT-4 model to enhance **natural language queries and responses**. This way, you will help Contoso implement a personal shopper like experience on their online website!
+Contoso developers have been tasked with creating an online shopping copilot for their website in a very short time. So, how can you help achieve that? Well, in this exercise, you will implement a **Retrieval-Augmented Generation (RAG) system** in Microsoft Fabric. You will use a **Microsoft Fabric SQL Database** as the **vector store**, Azure OpenAI ada-002 for **text embeddings**, and the GPT-4 model to enhance **natural language queries and responses**. This way, you will help Contoso implement a personal shopper like experience on their online website!
 
 ---
->**Note:** Follow the steps provided in the task below. The Click-by-Click is available as a backup option in case of any technical issues preventing you from performing the lab in the actual environment.Before starting this exercise, open a backup Click-by-Click using the following hyperlink in a new tab, then return to the browser.[Click-by-Click](https://regale.cloud/Microsoft/play/4457/06-rag-implementation-with-azure-openai#/0/0)
+>**Note:** Follow the steps provided in the task below. The Click-by-Click is available as a backup option in case of any technical issues preventing you from performing the lab in the actual environment. Before starting this exercise, open a backup Click-by-Click using the following hyperlink in a new tab, then return to the browser.[Click-by-Click](https://regale.cloud/Microsoft/play/4457/06-rag-implementation-with-azure-openai#/0/0)
 ---
 
 ### Task 6.1: AI-Powered Recommendations with Vector Search
 
-With Retrieval Augmented Generation, you can bridge structured data with generative AI, enhancing natural language queries across applications. Fabric SQL database, now has support to perform vector operations directly in the database, making it easy to perform vector similarity search. Once the Azure OpenAI model is deployed, it can be called from Fabric SQL database using sp_invoke_external_rest_endpoint, to get the embedding vector.
+Let us implement RAG-pattern with Microsoft Fabric SQL Database, which now has the dedicated vector data type. This allows for efficient and optimized storing of vector data, and comes with a set of functions to help developers streamline vector and similarity search implementation. The Azure OpenAI ada-002 model can be easily consumed within Microsoft Fabric SQL Database using the sp_invoke_external_rest_endpoint system stored procedure, to tranform data into embeddings.
 
 1. Click on **Workspaces** and select the **<inject key="WorkspaceName" enableCopy="false"/>** workspace.
 
@@ -19,17 +19,21 @@ With Retrieval Augmented Generation, you can bridge structured data with generat
    ![](../media/access9.png)
 
 3.  Click on **New Query**, paste the query below, and then click on **Run**.
-Below query creates a master key and a database credential.The credential is used by the database to access to the external location anytime the database is performing an operation that requires access.
+
+The code first establishes a master key for encryption purposes, then creates a credential that allows the Microsoft Fabric SQL Database to authenticate with the Azure OpenAI endpoint using an API key. Finally, it queries the system catalog to confirm the creation of the credential.
 
     > **Note:** You can provide your own password instead of Smoothie@123 in the following code.
 
     ```
+    -- Create a master key for encryption with the specified password
     CREATE MASTER KEY ENCRYPTION BY PASSWORD = 'Smoothie@123';
 
+    -- Create a database scoped credential for accessing a specific HTTPS endpoint
     CREATE DATABASE SCOPED CREDENTIAL [<inject key="Openaiendpoint" enableCopy="false"/>] 
     WITH IDENTITY = 'HTTPEndpointHeaders',
     SECRET = '{"api-key": "<inject key="OpenAIKey" enableCopy="false"/>"}';
 
+    -- Retrieve information about the database scoped credential with the specified name
     SELECT * 
     FROM sys.database_scoped_credentials
     WHERE name = '<inject key="Openaiendpoint" enableCopy="false"/>';
@@ -37,8 +41,10 @@ Below query creates a master key and a database credential.The credential is use
     ```
     ![](../media/Exe6_01_image.png)
 
-4. Click on **New Query**, paste the query below, and then click on **Run**. 
-Below query defines a stored procedure that converts text into an embedding (vector representation) using an external OpenAI API. 
+4. Click on **New Query**, paste the query below, and then click on **Run**.
+
+   This SQL stored procedure is designed to interact with Azure OpenAI endpoint to get embeddings for a given search query using the text-embedding-ada-002 model. It utilizes the database scoped credential for authentication, ensuring secure access to the external service.
+
 
     ```
     create or alter procedure [dbo].[get_embedding]
@@ -47,12 +53,15 @@ Below query defines a stored procedure that converts text into an embedding (vec
     as
     begin try
         declare @retval int;
+        -- Create a JSON payload with the search query
         declare @payload nvarchar(max) = json_object('input': @inputText);
         declare @response nvarchar(max)
+        -- Define headers for the REST API call
         DECLARE @headers NVARCHAR(MAX) = JSON_OBJECT(
         'Content-Type': 'application/json',
         'api-key': '<inject key="OpenAIKey" enableCopy="false"/>' 
     );
+        -- Call the external REST API to get text embeddings
         exec @retval = sp_invoke_external_rest_endpoint
             @url = '<inject key="Openaiendpoint" enableCopy="false"/>openai/deployments/text-embedding-ada-002/embeddings?api-version=2023-05-15',
             @method = 'POST',
@@ -61,6 +70,7 @@ Below query defines a stored procedure that converts text into an embedding (vec
             @response = @response output;
     end try
     begin catch
+        -- Handle any errors that occur during the execution
         select 
             'SQL' as error_source,
             error_number() as error_code,
@@ -69,6 +79,7 @@ Below query defines a stored procedure that converts text into an embedding (vec
     end catch
 
     if (@retval != 0) begin
+       -- If the API call returns an error, handle it
         select 
             'OPENAI' as error_source,
             json_value(@response, '$.result.error.code') as error_code,
@@ -77,23 +88,27 @@ Below query defines a stored procedure that converts text into an embedding (vec
         return;
     end;
 
+    -- Extract the embedding data from the API response
     declare @re nvarchar(max)= json_query(@response, '$.result.data[0].embedding')
+    -- Set the output parameter with the extracted embedding data
     set @embedding = cast(@re as vector(1536));
 
     ```
    ![](../media/Exe6_02_image.png)
 
-5. Click on **New Query**, paste the query below, and then click on **Run**.
-Below query loops through product names in a table, generates embeddings for each, and stores them in a new table.
+6. Click on **New Query**, paste the query below, and then click on **Run**.
+This code declares a cursor to iterate through products in the dbo.dim_products table. It generates an embedding for each of the products using the stored procedure created in previous step (dbo.get_embedding), and inserts the results into the dbo.Product_Embeddings table.
 
     ```
     -- Step 1: Create a temporary table to store the results
+    -- Create a table named Product_Embeddings to hold product names, descriptions, and embeddings
     CREATE TABLE dbo.Product_Embeddings (
         ProductName NVARCHAR(MAX),
         Description NVARCHAR (MAX),
         EmbeddedName VECTOR(1536)
     );
 
+    -- Create a table named ChatMessages to store chat message details
     CREATE TABLE dbo.ChatMessages (
         MessageID INT IDENTITY(1,1) PRIMARY KEY,
         UserSessionID UNIQUEIDENTIFIER,
@@ -102,12 +117,12 @@ Below query loops through product names in a table, generates embeddings for eac
         CreatedAt DATETIME DEFAULT GETDATE()
     );
 
-    -- Step 2: Declare variables for the procedure output
+    -- Declare variables to store product name, description, and embedding
     DECLARE @ProductName NVARCHAR(MAX);
     DECLARE @Description NVARCHAR(MAX);
     DECLARE @Embedding VECTOR(1536);
 
-    -- Step 3: Loop through the dimproduct table
+    -- Declare a cursor to iterate over product names and descriptions
     DECLARE ProductCursor CURSOR FOR
     SELECT ProductName, Description
     FROM dbo.dim_products;
@@ -118,12 +133,12 @@ Below query loops through product names in a table, generates embeddings for eac
 
     WHILE @@FETCH_STATUS = 0
     BEGIN
-        -- Execute the procedure for each row
+        -- Call the get_embedding procedure to get the embedding for the product name
         EXEC [dbo].[get_embedding]
             @inputText = @ProductName,
             @embedding = @Embedding OUTPUT;
 
-        -- Insert the result into the ProductEmbeddings table
+        -- Store the product name, description, and embedding in the Product_Embeddings table
         INSERT INTO dbo.Product_Embeddings (ProductName, Description, EmbeddedName)
         VALUES (@ProductName, @Description, @Embedding);
 
@@ -137,16 +152,18 @@ Below query loops through product names in a table, generates embeddings for eac
     ```
    ![](../media/Exe6_03_image.png)
 
-6. Click on **New Query**, paste the following query in the query editor, and then click on **Run**.
-Below query retrieves and displays stored product embeddings.
+7. Click on **New Query**, paste the following query in the query editor, and then click on **Run**.
+
+   The SQL command **SELECT * FROM dbo.Product_Embeddings** will retrieve all the data from the Product_Embeddings table.
 
     ```
     SELECT * FROM dbo.Product_Embeddings;
     ```
     ![](../media/Exe6_04_image.png)
 
-7. Click on **New Query**, paste the following query in the query editor, and then click on **Run**.
-Below query defines a stored procedure to find the most relevant products by comparing embeddings using similarity metrics.
+8. Click on **New Query**, paste the following query in the query editor, and then click on **Run**.
+
+   Below query processes the user's text input to extract product keywords and invokes Azure OpenAI endpoint to generate vector embedding for the same. This vector is then compared with the embeddings from the dbo.Product_Embeddings table, to find the top 10 products based on their similarity (vector_distance function).
 
 ```
     CREATE OR ALTER PROCEDURE [dbo].[find_relevant_products]
@@ -156,6 +173,7 @@ Below query defines a stored procedure to find the most relevant products by com
     @JsonResults NVARCHAR(MAX) OUTPUT
     AS
     BEGIN
+        -- Check if the search query is NULL, if so, exit the procedure
         IF (@text IS NULL) RETURN;
 
         DECLARE @RefinedQuery NVARCHAR(MAX);
@@ -163,6 +181,7 @@ Below query defines a stored procedure to find the most relevant products by com
         DECLARE @LLMRetval INT;
         DECLARE @LLMPayload NVARCHAR(MAX);
 
+        -- Prepare the payload for the Language Model API call
         SET @LLMPayload = 
         N'{
             "model": "gpt-4",
@@ -181,6 +200,7 @@ Below query defines a stored procedure to find the most relevant products by com
             "max_tokens": 20
         }';
 
+        -- Call the external REST endpoint to interact with the Language Model
         EXEC @LLMRetval = sp_invoke_external_rest_endpoint
             @url = '<inject key="Openaiendpoint" enableCopy="false"/>openai/deployments/gpt-4/chat/completions?api-version=2024-08-01-preview',
             @method = 'POST',
@@ -190,17 +210,18 @@ Below query defines a stored procedure to find the most relevant products by com
 
         -- Extract the refined query from the LLM response JSON
         SET @RefinedQuery = JSON_VALUE(@LLMResponse, '$.result.choices[0].message.content');
-
+        -- If the refined query is NULL or empty, use the original search query
         IF (@RefinedQuery IS NULL OR LEN(@RefinedQuery) = 0)
             SET @RefinedQuery = @text;
 
 
         DECLARE @retval INT, @qv VECTOR(1536);
-
+        -- Call the get_embedding stored procedure to get the embedding for the refined query
         EXEC @retval = dbo.get_embedding @RefinedQuery, @qv OUTPUT;
-
+        -- If an error occurred in get_embedding, exit the procedure
         IF (@retval != 0) RETURN;
 
+        -- Retrieve the top similar product embeddings based on the query embedding
         WITH cteSimilarEmbeddings AS (
             SELECT TOP(@top)
                 pe.ProductName AS ProductName,
@@ -210,14 +231,11 @@ Below query defines a stored procedure to find the most relevant products by com
             ORDER BY distance
         )
 
+        -- Select the relevant product information in JSON format based on similarity threshold
         SELECT @JsonResults = (
             SELECT 
-                -- p.id AS ProductId,
                 p.ProductName AS ProductName
-                -- p.description AS ProductDescription,
-                -- p.price AS ProductPrice,
-                -- 1 - distance AS CosineSimilarity
-        
+
             FROM cteSimilarEmbeddings se
             
             INNER JOIN dbo.dim_products p ON se.ProductName = p.ProductName
@@ -235,10 +253,10 @@ Below query defines a stored procedure to find the most relevant products by com
 
 ### Task 6.2: AI-Powered Natural Language result processing
 
-Let's use the natural language understanding and reasoning capabilities of the LLM to analyzes the results and generate a response. We will query our Fabric SQL database, then send the result to Azure OpenAI GPT4 to generate a response in well formatted natural language chat messages.
+Let's use the natural language understanding and reasoning capabilities of the LLM to analyzes the results and generate a response. We will query our Microsoft Fabric SQL Database, then send the result to Azure OpenAI GPT-4 to generate a response in well formatted natural language chat messages.
 
 1. Click on **New Query**, paste the following query in the query editor, and then click on **Run**.
-Below query retrieves relevant products based on user input, generates a structured AI response via an external OpenAI API call, stores the conversation in a database, and returns formatted chat messages.
+The code is designed to process a natural language response generated by the Azure OpenAI GPT-4 model call. The response is splitted into lines based on a specified delimiter. This approach is useful for handling multi-line responses in applications that involve conversational AI or chat interfaces within the SQL database in Microsoft Fabric.
 
 ```
     CREATE OR ALTER PROCEDURE dbo.get_ai_response
@@ -281,7 +299,7 @@ Below query retrieves relevant products based on user input, generates a structu
             "max_tokens": 300
         }';
 
-        -- Debugging: Display the payload before calling OpenAI API
+        -- Debugging: Display the payload before calling Azure OpenAI API
         -- SELECT @Payload AS DebugPayload;
 
         -- Step 4: Call Azure OpenAI API
@@ -337,7 +355,7 @@ Below query retrieves relevant products based on user input, generates a structu
    ![](../media/Exe6_06_image.png)
 
 2. Click on **New Query**, paste the following query in the query editor, and then click on **Run**. 
-Below query calls the search procedure to retrieve the closest matching products based on an input text.
+   Below query calls the search procedure to retrieve the closest matching products based on an search query.
 
     ```
     --- Question 1: find me phones
