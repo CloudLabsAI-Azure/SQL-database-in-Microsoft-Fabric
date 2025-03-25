@@ -42,8 +42,7 @@ Let us implement RAG-pattern with Microsoft Fabric SQL Database, which now has t
    ![](../media/Exe6_01_image.png)
 
 4. Click on **New Query**, paste the query below, and then click on **Run**.
-
-   This SQL stored procedure is designed to interact with Azure OpenAI endpoint to get embeddings for a given search query using the text-embedding-ada-002 model. It utilizes the database scoped credential for authentication, ensuring secure access to the external service.
+This SQL stored procedure is designed to interact with Azure OpenAI endpoint to get embeddings for a given search query using the text-embedding-ada-002 model. It utilizes the database scoped credential for authentication, ensuring secure access to the external service.
 
 
     ```sql
@@ -98,7 +97,7 @@ Let us implement RAG-pattern with Microsoft Fabric SQL Database, which now has t
 
 
 6. Click on **New Query**, paste the query below, and then click on **Run**.
-   This code declares a cursor to iterate through products in the dbo.dim_products table. It generates an embedding for each of the products using the stored procedure created in previous step (dbo.get_embedding), and inserts the results into the dbo.Product_Embeddings table.
+This code declares a cursor to iterate through products in the dbo.dim_products table. It generates an embedding for each of the products using the stored procedure created in previous step (dbo.get_embedding), and inserts the results into the dbo.Product_Embeddings table.
 
     ```sql
     -- Step 1: Create a temporary table to store the results
