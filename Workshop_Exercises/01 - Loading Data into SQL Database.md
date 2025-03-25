@@ -259,4 +259,6 @@ For this workshop, the **On-Premises Data Gateway** is already provisioned for y
 
    There you go! Your data has been transferred from the on-premises SQL database to the Fabric SQL database.
 
-   Congratulations! You have successfully created your database in a new Fabric workspace and ingested data from both **Azure SQL Database** and an **on-premises SQL Server**. You are ready to move on to the next exercise: Introduction to Copilot for SQL Database.
+   Congratulations! You have successfully created your database in a new Fabric workspace and ingested data from both **Azure SQL Database** and an **on-premises SQL Server**.
+   You are ready to move on to the next exercise: Introduction to Copilot for SQL Database.
+   Move to the next page to continue!
