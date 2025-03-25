@@ -21,3 +21,5 @@ In this exercise, you have learned how to manage access control in Microsoft Fab
 - Configuring SQL native access controls using the Manage SQL Security UI and Transact-SQL commands.
 
 With this knowledge, you can now effectively manage user permissions and secure SQL databases within Microsoft Fabric. You are ready to move on to the next exercise: Managing Production Workloads.
+
+ Move to the next page to continue!
