@@ -96,8 +96,8 @@ Let us implement RAG-pattern with Microsoft Fabric SQL Database, which now has t
 
    ![](../media/Exe6_02_image.png)
 
-6. Click on **New Query**, paste the query below, and then click on **Run**.
 
+6. Click on **New Query**, paste the query below, and then click on **Run**.
    This code declares a cursor to iterate through products in the dbo.dim_products table. It generates an embedding for each of the products using the stored procedure created in previous step (dbo.get_embedding), and inserts the results into the dbo.Product_Embeddings table.
 
     ```sql
