@@ -281,3 +281,5 @@ function RefreshTokens() {
     - Integrate GraphQL endpoints into a web application for dynamic and efficient data access.
 
     With these skills, you can now build and integrate GraphQL APIs to create more responsive applications! You are ready to move on to the next exercise: RAG Implementation with Azure OpenAI.
+
+    Move to the next page to continue!
