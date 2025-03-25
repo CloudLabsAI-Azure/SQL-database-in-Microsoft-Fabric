@@ -154,7 +154,7 @@ Let us implement RAG-pattern with Microsoft Fabric SQL Database, which now has t
 
    ![](../media/Exe6_03_image.png)
 
-8. Click on **New Query**, paste the following query in the query editor, and then click on **Run**.
+7. Click on **New Query**, paste the following query in the query editor, and then click on **Run**.
 
    The SQL command **SELECT * FROM dbo.Product_Embeddings** will retrieve all the data from the Product_Embeddings table.
 
@@ -163,11 +163,11 @@ Let us implement RAG-pattern with Microsoft Fabric SQL Database, which now has t
     ```
     ![](../media/Exe6_04_image.png)
 
-9. Click on **New Query**, paste the following query in the query editor, and then click on **Run**.
+8. Click on **New Query**, paste the following query in the query editor, and then click on **Run**.
 
    Below query processes the user's text input to extract product keywords and invokes Azure OpenAI endpoint to generate vector embedding for the same. This vector is then compared with the embeddings from the dbo.Product_Embeddings table, to find the top 10 products based on their similarity (vector_distance function).
 
-   ```
+   ```sql
     CREATE OR ALTER PROCEDURE [dbo].[find_relevant_products]
     @text NVARCHAR(MAX),
     @top INT = 10,
@@ -175,7 +175,7 @@ Let us implement RAG-pattern with Microsoft Fabric SQL Database, which now has t
     @JsonResults NVARCHAR(MAX) OUTPUT
     AS
     BEGIN
-        -- Check if the search query is NULL, if so, exit the procedure
+   -- Check if the search query is NULL, if so, exit the procedure
         IF (@text IS NULL) RETURN;
 
         DECLARE @RefinedQuery NVARCHAR(MAX);
@@ -215,7 +215,6 @@ Let us implement RAG-pattern with Microsoft Fabric SQL Database, which now has t
         -- If the refined query is NULL or empty, use the original search query
         IF (@RefinedQuery IS NULL OR LEN(@RefinedQuery) = 0)
             SET @RefinedQuery = @text;
-
 
         DECLARE @retval INT, @qv VECTOR(1536);
         -- Call the get_embedding stored procedure to get the embedding for the refined query
