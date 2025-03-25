@@ -53,7 +53,7 @@ In this exercise, you will create a **semantic model** from the data previously 
 
 2. Click on the **website_bounce_rate** semantic model.
 
-   ![](../media/f28.png)
+   ![](../media/f28000.png)
 
 3. To create a new report using this semantic model, expand **Explore this data** in the top bar and click on **Create a blank report**.
 
