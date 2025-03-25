@@ -431,15 +431,16 @@ Now, this is something exciting! This section shows how easy it is to create Sho
 
 15. Once in the **SQL Database** under the **Explorer**, expand *Fabcon_database*, then expand the **dbo schema** and the Tables section. Scroll down to locate the **SalesMetricsTable**.
 
-   ![](../media/fabcondatabase.png)
+    ![](../media/fabcondatabase.png)
+
+    > **Note:** If the SalesMetricsTable table is not visible in Fabcon_database, click on the ellipsis (...) and select Refresh.
+
+    ![](../media/refresh1.png)
  
 16. Click on **SalesMetricsTable** to see the results.
 
     ![](../media/task_3.2.1.13.png)
 
-    > **Note:** If the SalesMetricsTable table is not visible in Fabcon_database, click on the ellipsis (...) and select Refresh.
-
-    ![](../media/refresh1.png)
 
 
 In this exercise, you have learned how to enrich data using Dataflow Gen2 and Notebooks in Microsoft Fabric. You have gained practical experience in:
