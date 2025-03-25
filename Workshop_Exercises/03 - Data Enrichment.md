@@ -429,7 +429,7 @@ Now, this is something exciting! This section shows how easy it is to create Sho
 
     ![](../media/task_3.2.1.12.png)
 
-15. Once in the **SQL Database** under the **Explorer**, expand *Fabcon_database*, then expand the **dbo schema** and the Tables section. Scroll down to locate the **SalesMetricsTable**.
+15. Once in the **SQL Database** under the **Explorer**, expand *Fabcon_database*, then expand the **dbo schema** and the **Tables** section. Scroll down to locate the **SalesMetricsTable**.
 
     ![](../media/fabcondatabase.png)
 
