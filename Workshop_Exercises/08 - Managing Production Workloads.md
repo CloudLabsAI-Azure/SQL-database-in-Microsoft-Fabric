@@ -133,7 +133,7 @@ Generate performance optimization suggestions.
 - Please return back to the VM browser once you see the **End of this Exercise** screen.
 - Once you press the **Agree** button, press the **A** key on your keyboard if you do not see the annotations.
 	
-1. Click on the [**hyperlink**](https://regale.cloud/Microsoft/play/4476/08-managing-production-workloads#/0/0)
+1. Click on the [**hyperlink**](https://regale.cloud/Microsoft/play/4476/08-managing-production-workloads#/0/8)
 
 
 In this exercise, you have learned how to monitor and optimize database performance using the Performance Dashboard in Microsoft Fabric SQL Database. You have gained practical experience in:
