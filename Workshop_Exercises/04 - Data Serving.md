@@ -19,27 +19,29 @@ In this exercise, you will create a **semantic model** from the data previously 
 
 3. Click on **SQL database** from the top right corner and select **SQL analytics endpoint**.
 
+   >**Note:** If clicking on the **SQL Analytics Endpoint** is not working, try refreshing the page and try again.
+
    ![](../media/f23.png)
 
-4. Click on the **Reporting** tab and select **New semantic model**.
+5. Click on the **Reporting** tab and select **New semantic model**.
 
    ![](../media/f24.png)
 
-5. In the **Name** field, enter ``website_bounce_rate_model``.
+6. In the **Name** field, enter ``website_bounce_rate_model``.
 
    ```
    website_bounce_rate_model
    ```
 
-6. Select workspace as **Fabcon** and click on the **Expand** icon next to the **dbo** checkbox.
+7. Select workspace as **Fabcon** and click on the **Expand** icon next to the **dbo** checkbox.
 
    ![](../media/f25u.png)
 
-7. Click on the **Expand** icon next to the **Tables** checkbox.
+8. Click on the **Expand** icon next to the **Tables** checkbox.
 
    ![](../media/f26.png)
 
-8. Scroll down if you see a scroll bar and select **website_bounce_rate table**, then click on the **Confirm** button.
+9. Scroll down if you see a scroll bar and select **website_bounce_rate table**, then click on the **Confirm** button.
 
    ![](../media/f26uu.png)
 
