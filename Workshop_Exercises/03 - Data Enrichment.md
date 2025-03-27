@@ -71,11 +71,11 @@ Now, this is something exciting! This section shows how easy it is to create Sho
 
    **URL:** <inject key="StorageEndpoint" enableCopy="true"/>
 
-9.  In the **Authentication kind** dropdown, select **Organizational Account**.
+6.  In the **Authentication kind** dropdown, select **Organizational Account**.
 
-10. Ensure You are signed in as <inject key="AzureAdUserEmail" enableCopy="false"/>
+7. Ensure you are signed in as **<inject key="AzureAdUserEmail" enableCopy="false"/>**.
 
-11. Click on the **Next** button.
+8. Click on the **Next** button.
   
     ![task-1.3-ext-shortcut9.png](../media/lakehouse.png)
 
@@ -90,17 +90,17 @@ Now, this is something exciting! This section shows how easy it is to create Sho
 -->
 
 
-14. Click on the **data** directory, select the checkbox, and then click the Next button.
+9. Click on the **data** directory, select the checkbox, and then click the Next button.
 
     ![task-wb6.png](../media/f4.png)
 
-15. Click on the **Create** button.
+10. Click on the **Create** button.
 
     ![task-1.3-ext-shortcut10.png](../media/f5.png)
 
     And there you go! Your shortcut is now ready! 
 
-17. Click on (do not expand) the newly created shortcut named **data**.
+11. Click on (do not expand) the newly created shortcut named **data**.
 
     ![task-wb7.png](../media/f6.png)
 
