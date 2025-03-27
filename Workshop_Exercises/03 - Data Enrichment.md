@@ -252,7 +252,7 @@ Now, this is something exciting! This section shows how easy it is to create Sho
 
 9. Set the **Start Date and time** and **End Date and time** as needed.
 
-10. Click on **Apply** to save the schedule and close the Schedule Window from the top right corner.
+10. Click on **Apply** to save the schedule and **Close** the Schedule Window from the top right corner.
 
     ![](../media/f22.png)
 
