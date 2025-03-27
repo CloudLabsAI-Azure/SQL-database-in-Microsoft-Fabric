@@ -129,6 +129,8 @@ In this task, we will use **Dataflow Gen2** to ingest data and efficiently copy 
 
 9. Click on the ``Suppliers`` table, select the **Add data destination** option from the ribbon, then select **SQL database** from the list.
 
+   >**Note:** If the **Data destination** is already added as **SQL Database**, skip to **Step 14**.
+
    ![](../media/dim_products2u.png)
 
 10. Click on the **Next** button.
