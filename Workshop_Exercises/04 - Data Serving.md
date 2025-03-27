@@ -49,11 +49,11 @@ In this exercise, you will create a **semantic model** from the data previously 
 
 #### Activity: Connect Power BI to the SQL Database in Fabric
 
-1. Click on the **<inject key="WorkspaceName" enableCopy="false"/>** workspace from the left navigation menu, click on **Filter** and under **Type**, select **Semantic model**.
+1. Click on the **<inject key="WorkspaceName" enableCopy="false"/>** workspace from the left navigation menu. Click on **Filter** and under **Type**, select **Semantic model**.
 
-> **Note:** Clear any filters related to SQL Database from the filter section.
+   > **Note:** Clear any filters related to SQL Database from the filter section.
 
-2. Click on the **website_bounce_rate** semantic model.
+2. Click on the **website_bounce_rate_model** semantic model.
 
    ![](../media/f28000.png)
 
@@ -69,13 +69,13 @@ In this exercise, you will create a **semantic model** from the data previously 
 
    ![alt text](../media/img-1.png)
 
-6. Scroll down to the **Q&A** section and expand it, then select the **Turn on Q&A to ask natural language questions about your data** checkbox, and click on **Apply**.
+6. Scroll down to the **Q&A** section and expand it, then select the **Turn on Q&A to ask natural language questions about your data** checkbox, and click on **Apply** button.
 
    ![alt text](../media/img-2.png)
 
-   > **Note:** If it is already applied, proceed to the next step.
+   >**Note:** If it is already applied, proceed to the next step.
 
-7. Click on **Untitled report** from the left menu.
+7. Click on **Untitled report** or the **Report** created in earlier steps from the left menu.
 
    ![alt text](../media/img-3.png)
 
@@ -116,24 +116,24 @@ In this exercise, you will create a **semantic model** from the data previously 
 
     >**Note :** The Copilot response you receive may differ from the one shown in the screenshot.
 
-6. Click on the Copilot **chat box** field and enter the following prompt.
+5. Click on the **Copilot chat box** field and enter the following prompt:
 
     ```
     Create a report Bounce Rate analysis, to show the correlation between customer sentiment, particularly among millennials and Gen Z, unsuccessful product searches across different devices, and the website's bounce rate by customer generations.
     ```
 
 
-7. Click on the **Send** button and wait for the results to load. 
+6. Click on the **Send** button and wait for the results to load. 
 
    ![alt text](../media/img-10.png)
 
-8. If a pop-up similar to the one in the screenshot appears to edit the **Report title**, click anywhere on the **report** to **close it**.
+7. If a pop-up similar to the one in the screenshot appears to edit the **Report title**, click anywhere on the **report** to **close it**.
 
    ![alt text](../media/editpopup.png)
 	
     >**Note:** 
 
-    - If Copilot is not generating a visualization report, retry by using the same prompt again..
+    - If Copilot is not generating a visualization report, retry by using the same prompt again.
     
     - If you see the error message saying, 'Something went wrong.', try refreshing the page and restart the task. Being in a shared environment, the service may be busy at times.
 
@@ -147,7 +147,7 @@ In this exercise, you will create a **semantic model** from the data previously 
 
     We’ll ask Copilot for suggestions based on the results and data in the report. 
 
-9. Enter the following prompt in Copilot, and press the **Send** button.
+8. Enter the following prompt in Copilot, and press the **Send** button.
 
     ```
     Based on the data in the page, what can be done to improve the bounce rate of millennials?
@@ -156,32 +156,32 @@ In this exercise, you will create a **semantic model** from the data previously 
 	
    ![alt text](../media/img-12.png)
 	
-10. Look at the suggestions Copilot provided. Copilot creates the desired Power BI report and even goes a step further to give powerful insights. To improve the website bounce rate, Contoso needs to transform their mobile website experience for millennials. This helps them reduce their millennial related customer churn too! Now, what if Contoso’s leadership team needed a quick summary of this entire report? **Smart Narrative** to the rescue!
+9. Look at the suggestions Copilot provided. Copilot creates the desired Power BI report and even goes a step further to give powerful insights. To improve the website bounce rate, Contoso needs to transform their mobile website experience for millennials. This helps them reduce their millennial related customer churn too! Now, what if Contoso’s leadership team needed a quick summary of this entire report? **Smart Narrative** to the rescue!
 	
     ![alt text](../media/img-15.png)
 	
-11. Expand the **Visualizations** pane and select the **Narratives** visual. 
+10. Expand the **Visualizations** pane and select the **Narrative** visual. 
 
     ![alt text](../media/f30.png)
 
-12. Click on **Copilot (preview)** within the visual.
+11. Click on **Copilot (preview)** within the visual.
 
     ![alt text](../media/img-13.png)
 	
-11. Select **Give an executive summary**. 
+12. Select **Give an executive summary**. 
 
-12. Click on **Update** and observe the generated summary. See how easy it was to get an executive summary with absolutely no IT resource dependency!
+13. Click on **Update** and observe the generated summary. See how easy it was to get an executive summary with absolutely no IT resource dependency!
  
-    >**Note:** If you don't see the 'Give an executive summary' option, click on the **Copilot narrative** chat box field, enter the prompt below, and click on **Update**:
+    >**Note:** If you don't see the 'Give an executive summary' option, click on the **Copilot narrative** chat box field, enter the following prompt, and click on **Update**:
     ``Summarize the data, provide an executive summary, indicating important takeaways.``
 
     ![alt text](../media/img-16.png)
 
-13. Expand the narrative from the corner to get a better readable view of the result.
+14. Expand the narrative from the corner to get a better readable view of the result.
 
     ![alt text](../media/img-17.png)
 
-14. Click on the **Close** button in the pop-up window.
+15. Click on the **Close** button in the pop-up window.
 
     ![alt text](../media/img-18.png)
 	
