@@ -38,21 +38,23 @@
 
 2. You'll see the **Sign into Microsoft Azure** tab. Here, enter your credentials:
 
+   Provide the **Username** and click on **Next**.
+
    - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
 
     ![](../media/Task8.png)
 
-3. Next, provide your password:
+4. Next, provide your **Password** and click on **Sign In**:
 
    - **Password:** <inject key="AzureAdUserPassword"></inject>
 
    ![](../media/Task9.png)
 
-4. Click on **Yes** button.
+5. Click on **Yes** button.
 
    ![](../media/Task10.png)
 
-5. Click **No, Thanks** button on the pop-up prompting to **Sign in to Microsoft Edge**.
+6. Click **No, Thanks** button on the pop-up prompting to **Sign in to Microsoft Edge**.
 
     ![](../media/signinpopup.png)
    
@@ -60,12 +62,12 @@
 
     ![](../media/welcometoms.png)
 
-6. Now, on the **Azure Portal** Dashboard, click on Search bar to search and select the Resource Group as **`rg-fabcon`**.
+7. Now, on the **Azure Portal** Dashboard, click on Search bar to search and select the Resource Group as **`rg-fabcon`**.
    
      ![](../media/1.png)
 
 
-7. Ensure the **deployment is successful!** Verify that the **Resource Group** contains **10 resources**.
+8. Ensure the **deployment is successful!** Verify that the **Resource Group** contains **10 resources**.
 
     ![](../media/2.png)
 
