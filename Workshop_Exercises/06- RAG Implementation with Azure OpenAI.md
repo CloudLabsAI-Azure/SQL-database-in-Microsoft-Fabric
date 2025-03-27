@@ -357,7 +357,7 @@ Let's use the natural language understanding and reasoning capabilities of the L
 
 2. Click on **New Query**, paste the following query in the query editor, and then click on **Run** button. 
 
-   Below query calls the search procedure to retrieve the closest matching products based on an search query.
+   Below query calls the search procedure to retrieve the closest matching products based on search query.
 
     ```
     --- Question 1: find me phones
