@@ -1,4 +1,4 @@
-## Exercise 7: Data Security and Compliance (click-by-click)
+## Exercise 7: Data Security and Compliance (Click-by-Click)
 
 ---
 >**Note:** This exercise will be a Click-by-Click. Use the following link to perform the exercise. Once you complete the exercise using the ***Click-by-Click***, navigate back to the browser.
