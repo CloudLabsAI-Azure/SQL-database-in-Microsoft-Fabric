@@ -265,22 +265,22 @@ Now, this is something exciting! This section shows how easy it is to create Sho
 
 #### Activity: Get JDBC URL
  
- 1. Click on the **<inject key="WorkspaceName" enableCopy="false"/>** workspace from the left menu.
+1. Click on the **<inject key="WorkspaceName" enableCopy="false"/>** workspace from the left menu.
 
     ![](../media/new5u.png)
  
- 3. Click on the three dots (ellipse) next to **Fabcon_database** and click on **Settings**.
+2. Click on the three dots (ellipse) next to **Fabcon_database** and click on **Settings**.
 
     ![](../media/task_3.2.0.1.png)
  
- 5. Click on **Connection strings**, go to **JDBC** tab, copy the **JDBC URL** and save it in the notepad separately to use later.
+3. Click on **Connection strings**, go to **JDBC** tab, copy the **JDBC URL** and save it in the notepad separately to use later.
  
     ![](../media/task_3.2.0.2.png)
 
 
 #### Activity: Adding the requried Service Principal to the workspace.
 
-1. Navigate back to workspace and Click on **Manage Access** in the top right corner of the workspace.
+1. Navigate back to workspace and click on **Manage Access** in the top right corner of the workspace.
 
    ![](../media/new6u.png)
 
@@ -306,13 +306,13 @@ Now, this is something exciting! This section shows how easy it is to create Sho
 
    ![](../media/task_3.2.1.2.png)
 
-    > **Note:** If the following pop-up appears, click on the **Skip tour**.
+    >**Note:** If the following pop-up appears, click on the **Skip tour**.
 
     ![](../media/task_3.2.1.14.png)
 
-3. Click on the name of the notebook on top left corner and change it to **factsalesdata_notebook**.
+3. Click on the name of the **notebook** on top left corner and change it to **factsalesdata_notebook**.
 
-    > **Note:** After changing the name, click anywhere outside the popup window to save the Notebook name.
+    >**Note:** After changing the name, click anywhere outside the popup window to save the Notebook name.
 
     ![](../media/task_3.2.1.3.png)
 
@@ -332,7 +332,7 @@ Now, this is something exciting! This section shows how easy it is to create Sho
 
    ![](../media/task_3.2.1.7.png)
 
-8. Copy and paste the following code in the notebook cell and Replace **jdbc_url** with the copied value from the **Get URL** activity.
+8. Copy and paste the following code in the notebook cell and replace **jdbc_url** with the copied value from the **Get URL** activity.
 
     ``` 
     # Define JDBC connection parameters
@@ -398,7 +398,7 @@ Now, this is something exciting! This section shows how easy it is to create Sho
 
    ![](../media/task_3.2.1.7_2.png)
 
-10. Click on the **Run** icon.
+10. Click on the **Run** button.
 
     This code connects to a Fabric SQL database using JDBC, retrieves the top 1000 rows from the SalesMetricsTable, loads them into a Spark DataFrame, and displays the results in a Fabric Notebook.
 
@@ -408,7 +408,7 @@ Now, this is something exciting! This section shows how easy it is to create Sho
 
     ![](../media/task_3.2.1.9.png)
 
-13. Hover below the current cell to click on **Add code cell**, then paste the following code in the cell, and click on the **Run** icon to display the results.
+12. Hover below the current cell to click on **Add code cell**, then paste the following code in the cell, and click on the **Run** button to display the results.
 
     >**Note:** If the **+ Code** button is not visible, hover over the cell below to click and add a **new code cell**.
 
@@ -436,11 +436,11 @@ Now, this is something exciting! This section shows how easy it is to create Sho
 
     ![](../media/task_3.2.1.12.png)
 
-16. Once in the **SQL Database** under the **Explorer**, expand *Fabcon_database*, then expand the **dbo schema** and the **Tables** section. Scroll down to locate the **SalesMetricsTable**.
+16. In the **SQL Database** under the **Explorer**, expand *Fabcon_database*, then expand the **dbo schema** and the **Tables** section. Scroll down to locate the **SalesMetricsTable**.
 
     ![](../media/fabcondatabase.png)
 
-    > **Note:** If the SalesMetricsTable table is not visible in Fabcon_database, click on the ellipsis (...) and select Refresh.
+    > **Note:** If the ```SalesMetricsTable``` table is not visible in Fabcon_database, click on the ellipsis (...) and select Refresh.
 
     ![](../media/refresh1.png)
  
