@@ -20,7 +20,7 @@ In this task, we will use **Dataflow Gen2** to ingest data and efficiently copy 
    https://app.fabric.microsoft.com/home
    ```
 
-2.  Sign in with your Azure AD credentials. If you are not already signed in, you will be redirected to the Microsoft Fabric login page.
+2.  **Sign in** with your **Azure AD** credentials. If you are not already signed in, you will be redirected to the Microsoft Fabric login page.
 
     >**Note:** Close any pop-up that appears on the screen.
 
@@ -90,7 +90,7 @@ In this task, we will use **Dataflow Gen2** to ingest data and efficiently copy 
 
    > **Note:** If the pop-up does not appear, wait for 30 seconds for Dataflow Gen 2 to be created.
 
-3. Click on the **Get data** icon (**not on the dropdown arrow at the bottom of the icon**).
+3. Click on the **Get data** icon (**not on the dropdown arrow**).
 
    ![](../media/f47.png)
 
