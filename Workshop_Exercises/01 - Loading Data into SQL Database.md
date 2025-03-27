@@ -257,7 +257,7 @@ For this workshop, the **On-Premises Data Gateway** is already provisioned for y
 
    ![](../media/saverun.png)
 
-5. Click on the **Ok** button in the **Pipeline run** window..
+5. In the **Pipeline run** window, click on **OK**.
 
    ![](../media/datapipeline12.png)
 
