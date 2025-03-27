@@ -269,7 +269,7 @@ Now, this is something exciting! This section shows how easy it is to create Sho
 
     ![](../media/new5u.png)
  
- 3. Click on the three dots next to **Fabcon_database** and click on **Settings**.
+ 3. Click on the three dots (ellipse) next to **Fabcon_database** and click on **Settings**.
 
     ![](../media/task_3.2.0.1.png)
  
@@ -284,11 +284,11 @@ Now, this is something exciting! This section shows how easy it is to create Sho
 
    ![](../media/new6u.png)
 
-2. Select **+ Add People or Groups**.
+2. Click on **+ Add People or Groups**.
 
    ![](../media/image8u.png)
 
-3. In the **Add People** window, enter ``sp-fabcon-lab``, select **Admin access**, and click **Add**.
+3. In the **Add People** window, enter ``sp-fabcon-lab``, select **Admin access**, and click **Add** button.
    
    ```
    sp-fabcon-lab
@@ -306,7 +306,7 @@ Now, this is something exciting! This section shows how easy it is to create Sho
 
    ![](../media/task_3.2.1.2.png)
 
-    > **Note:** If any pop-up appears like below, click on the **Skip tour**.
+    > **Note:** If the following pop-up appears, click on the **Skip tour**.
 
     ![](../media/task_3.2.1.14.png)
 
@@ -324,7 +324,7 @@ Now, this is something exciting! This section shows how easy it is to create Sho
 
    ![](../media/task_3.2.1.5.png)
 
-6. Click on the **Add** button.
+6. Click and select **Existing Lakehouse with Schema** radio button, and then click on the **Add** button.
 
    ![](../media/task_3.2.1.6.png)
 
