@@ -391,6 +391,10 @@ Now, this is something exciting! This section shows how easy it is to create Sho
 
 9. Scroll to the end of **jdbc_url** and change the value for **authentication** as **ActiveDirectoryServicePrincipal**.
 
+    ```
+    ActiveDirectoryServicePrincipal
+    ```
+
    ![](../media/task_3.2.1.7_2.png)
 
 10. Click on the **Run** icon.
@@ -403,7 +407,7 @@ Now, this is something exciting! This section shows how easy it is to create Sho
 
     ![](../media/task_3.2.1.9.png)
 
-12. Hover below the current cell to click on **Add code cell**, then paste the following code in the cell, and click on the **Run** icon to display the results.
+13. Hover below the current cell to click on **Add code cell**, then paste the following code in the cell, and click on the **Run** icon to display the results.
 
     >**Note:** If the **+ Code** button is not visible, hover over the cell below to click and add a **new code cell**.
 
