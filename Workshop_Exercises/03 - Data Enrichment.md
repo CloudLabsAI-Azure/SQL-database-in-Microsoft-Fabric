@@ -266,14 +266,14 @@ Now, this is something exciting! This section shows how easy it is to create Sho
 #### Activity: Get JDBC URL
  
  1. Click on the **<inject key="WorkspaceName" enableCopy="false"/>** workspace from the left menu.
- 
+
     ![](../media/new5u.png)
  
- 2. Click on the three dots next to **Fabcon_database** and click on **Settings**.
+ 3. Click on the three dots next to **Fabcon_database** and click on **Settings**.
+
+    ![](../media/task_3.2.0.1.png)
  
-   ![](../media/task_3.2.0.1.png)
- 
- 3. Click on **Connection strings**, go to **JDBC** tab, copy the **JDBC URL** and save it in the notepad separately to use later.
+ 5. Click on **Connection strings**, go to **JDBC** tab, copy the **JDBC URL** and save it in the notepad separately to use later.
  
     ![](../media/task_3.2.0.2.png)
 
