@@ -79,7 +79,7 @@ In this exercise, you will use **Copilot** to assist with T-SQL queries, includi
 
    ![](../media/database10.png)
 
-3. Paste the following question in the **Copilot** chat box and click on **Send**.
+3. Paste the following question in the **Copilot** chat box and click on **Send** button.
 
     ```
     What is the most sold product?
@@ -97,7 +97,7 @@ In this exercise, you will use **Copilot** to assist with T-SQL queries, includi
 
    ![](../media/database13.png)
 
-6. Paste the following question in the Copilot chat box and click on **Send**.
+6. Paste the following question in the **Copilot** chat box and click on **Send** button.
 
     >**Note:** Copilot responses may not match what is shown in the screenshot but will provide similar results.
 
@@ -111,10 +111,10 @@ In this exercise, you will use **Copilot** to assist with T-SQL queries, includi
 
    ![](../media/database15.png)
 
-8. Select the query that was inserted by Copilot, click on the **Run** icon and check the **Results**.
+8. Select the query that was inserted by **Copilot**, click on the **Run** icon and check the **Results**.
 
    ![](../media/database16.png)
 
-    Congratulations! You have learned how to leverage **Copilot** for SQL Database in Microsoft Fabric to enhance your **query-writing** experience. With these skills, you are now better equipped to write SQL queries faster and troubleshoot errors effectively using Copilot. You are ready to move on to the next exercise: Data Enrichment and Transformation.
+    Congratulations! You have learned how to leverage **Copilot for SQL Database in Microsoft Fabric** to enhance your **query-writing** experience. With these skills, you are now better equipped to write SQL queries faster and troubleshoot errors effectively using Copilot. You are ready to move on to the next exercise: Data Enrichment and Transformation.
 
  Move to the next page to continue!
