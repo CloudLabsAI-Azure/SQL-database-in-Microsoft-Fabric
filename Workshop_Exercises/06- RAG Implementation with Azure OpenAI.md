@@ -165,7 +165,7 @@ Let us implement RAG-pattern with Microsoft Fabric SQL Database, which now has t
 
 7. Click on **New Query**, paste the following query in the query editor, and then click on **Run** button.
 
-   Below query processes the user's text input to extract product keywords and invokes Azure OpenAI endpoint to generate vector embedding for the same. This vector is then compared with the embeddings from the dbo.Product_Embeddings table, to find the top 10 products based on their similarity (vector_distance function).
+   Following query processes the user's text input to extract product keywords and invokes Azure OpenAI endpoint to generate vector embedding for the same. This vector is then compared with the embeddings from the dbo.Product_Embeddings table, to find the top 10 products based on their similarity (vector_distance function).
 
 ```
     CREATE OR ALTER PROCEDURE [dbo].[find_relevant_products]
