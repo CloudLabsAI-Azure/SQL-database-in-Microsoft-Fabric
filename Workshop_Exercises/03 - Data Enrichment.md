@@ -440,7 +440,7 @@ Now, this is something exciting! This section shows how easy it is to create Sho
 
     ![](../media/fabcondatabase.png)
 
-    > **Note:** If the ```SalesMetricsTable``` table is not visible in Fabcon_database, click on the ellipsis (...) and select Refresh.
+    > **Note:** If the ``SalesMetricsTable`` table is not visible in Fabcon_database, click on the ellipsis (...) and select Refresh.
 
     ![](../media/refresh1.png)
  
