@@ -166,11 +166,11 @@ In this task, we will use **Dataflow Gen2** to ingest data and efficiently copy 
 
    ![](../media/new2.png)
 
-2. Search for **database** and select the **Fabcon_database**.
+2. Search for **SQL Database** and select the **Fabcon_database**.
 
    ![](../media/database2.png)
 
-3. Click on the **refresh** icon to see the tables loaded in Schema.
+3. Click on the **Refresh** icon to see the tables loaded in Schema.
 
    ![](../media/refresh.png)
 
