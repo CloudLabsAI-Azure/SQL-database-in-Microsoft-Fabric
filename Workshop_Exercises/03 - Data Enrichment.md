@@ -73,7 +73,7 @@ Now, this is something exciting! This section shows how easy it is to create Sho
 
 9.  In the **Authentication kind** dropdown, select **Organizational Account**.
 
-10. Ensure You are signedin as <inject key="Username" enableCopy="false"/>
+10. Ensure You are signed in as <inject key="AzureAdUserEmail" enableCopy="false"/>
 
 11. Click on the **Next** button.
   
