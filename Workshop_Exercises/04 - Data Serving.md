@@ -1,6 +1,6 @@
 ## Exercise 4: Data Serving
 
-In this exercise, you will create a **semantic model** from the data previously loaded into the **SQL Database in Microsoft Fabric**. You will then use **Copilot** to gain insights and generate a report, enhancing data-driven decision-making. It’s like having a business analyst at your beck and call, who does not take coffee breaks, fall sick and is available 24 hours!
+In this exercise, you will create a **semantic model** from the data previously loaded into the **SQL Database in Microsoft Fabric**. You will then use **Copilot** to gain insights and generate a report, enhancing data-driven decision-making. It’s like having a Business Analyst at your beck and call, who does not take coffee breaks, fall sick and is available 24 hours!
 
 ---
 >**Note:** Follow the steps provided in the task below. The Click-by-Click is available as a backup option in case of any technical issues preventing you from performing the lab in the actual environment.Before starting this exercise, open a backup Click-by-Click using the following hyperlink in a new tab, then return to the browser.
