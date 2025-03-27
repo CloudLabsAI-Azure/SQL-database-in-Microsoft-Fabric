@@ -19,11 +19,11 @@ Let's first create a view using a simple analytical T-SQL query. The new view, `
 
    ![](../media/new2.png)
 
-    >**Note:** When the Unsaved changes pop-up appears, select Don't Save.
+    >**Note:** When the Unsaved changes pop-up appears, select **Don't Save**.
 
       ![](../media/dontsave.png)
 
-2. Search for **database** and select the **Fabcon_database**.
+2. Search for **SQL Database** and select the **Fabcon_database**.
 
    ![](../media/database2.png)
 
@@ -101,17 +101,17 @@ Let's first create a view using a simple analytical T-SQL query. The new view, `
 
    Your API for GraphQL is now ready to accept connections and requests. You can use the API editor to test and prototype GraphQL queries and the Schema explorer to verify the data types and fields exposed in the API.
 
-#### Activity: Use the Endpoint in an existing application for Dynamic Data Access.
+#### Activity: Use the Endpoint in an existing application for Dynamic Data Access
 
-   You have been asked to create an application that shows all affected Suppliers if a Location has a supply chain break due to natural disasters or other interruptions. This code shows how to create an ASP.NET application that uses a GraphQL Query to access a Query in the SQL in Fabric GraphQL endpoint you created in the previous task.
+   You have been asked to create an application that shows all affected suppliers if a location has a supply chain break due to natural disasters or other interruptions. This code shows how to create an ASP.NET application that uses a GraphQL Query to access a Query in the SQL in Fabric GraphQL endpoint you created in the previous task.
 
    This activity requires the .NET SDK and Azure CLI as prerequisites, which have already been installed on our Jump VM.
 
-1. In the search bar, type **PowerShell ISE** and open it.
+1. In the **Search** bar, type **PowerShell ISE** and click on **Open**.
 
    ![](../media/f38.png)
 
-2. Click on **New script** from the ribbon and paste the below **PowerShell** script then click on the **Run** button.
+2. Click on **New script** from the ribbon and paste the following **PowerShell** script then click on the **Run** button.
 
    ![](../media/g14.png)
 
@@ -260,7 +260,7 @@ function RefreshTokens() {
 
 -->
 
-4. After successful login, a localhost URL will be generated. Copy that URL.
+4. After successful login, a localhost URL will be generated. **Copy** that **URL**.
 
     ![](../media/f43.png)
 
