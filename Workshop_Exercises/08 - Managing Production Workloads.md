@@ -6,7 +6,7 @@ In this exercise, we will explore different **SQL Database performance metrics**
 
 #### Activity: Analyze metrics like CPU usage, connections, and query performance.
 
-The Performance Dashboard in Fabric SQL database displays the performance status of the database and offers varying levels of metrics visibility.
+The Performance Dashboard in Microsoft Fabric SQL database displays the performance status of the database and offers varying levels of metrics visibility.
 
 You can use the Performance Dashboard to view database performance metrics, to identify performance bottlenecks, and find solutions to performance issues.
 
@@ -14,7 +14,7 @@ You can use the Performance Dashboard to view database performance metrics, to i
 
    ![](../media/new2.png)
 
-2. Search for **database** and select the **Fabcon_database**.
+2. Search for **SQL Database** and select the **Fabcon_database**.
 
    ![](../media/database2.1.png)
 
@@ -26,7 +26,7 @@ You can use the Performance Dashboard to view database performance metrics, to i
 
    ![](../media/f87.png)
 
-    When the database reaches a critical state of **CPU consumption** (or any other factor which raises an alert), you can see Unhealthy points marked on the CPU consumption tab's graph, marking points where the CPU consumption has crossed the threshold value. The time interval is configurable and defaults to 24 hours.
+    When the database reaches a critical state of **CPU consumption** (or any other factor which raises an alert), you can see unhealthy points marked on the CPU consumption tab's graph, marking points where the CPU consumption has crossed the threshold value. The time interval is configurable and defaults to 24 hours.
 
     In the following image, the CPU consumption graph indicates when the database reached a critical state.
 
@@ -78,7 +78,7 @@ In the SQL Database Engine, blocking occurs when one session holds a lock on a s
 
 - **Allocated size**
 
-The Allocated size tab provides a history of the size of the database. The Largest Database tables (current) table identifies of the tables which have the greatest number of records and consume the maximum space.
+The Allocated size tab provides a history of the size of the database. The Largest Database tables (current) table identifies the tables which have the greatest number of records and consume the maximum space.
 
 1. Click on **Allocated size** tab.
 
@@ -120,7 +120,7 @@ Generate performance optimization suggestions.
 ![](../media/task8.2.1.png)
 -->
 
-### Task 8.2: Deploy and Version-Control Workloads(Click By Click)
+### Task 8.2: Deploy and Version-Control Workloads(Click-by-Click)
 
 #### Activity: Integrate with Git repositories for version control
 
