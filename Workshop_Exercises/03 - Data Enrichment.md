@@ -18,7 +18,7 @@ Now, let's see how each department can easily create a Lakehouse in the Contoso 
 
    ![](../media/new2.png)
 
-2. Click on **+ New item** then search and select **Lakehouse** under the **Store data** option.
+2. Click on **+ New item** then **Search** and select **Lakehouse** under the **Store data** option.
 
    ![](../media/lakehouse1.png)
 
@@ -62,12 +62,12 @@ Now, this is something exciting! This section shows how easy it is to create Sho
 
 3. Select the **Create new Connection** radio button.
 
-4. In the screen below, we need to enter the connection details for the ADLS Gen2 shortcut.
+4. In the following screen, we need to enter the connection details for the **ADLS Gen2** shortcut.
 
    ![task-1.3-ext-shortcut11.png](../media/lakehouse4.png)
 
 
-5. Paste the below endpoint  under the URL field.
+5. Paste the following endpoint under the URL field:
 
    **URL:** <inject key="StorageEndpoint" enableCopy="true"/>
 
@@ -90,7 +90,7 @@ Now, this is something exciting! This section shows how easy it is to create Sho
 -->
 
 
-9. Click on the **data** directory, select the checkbox, and then click the Next button.
+9. Click on the **data** directory, select the **Checkbox**, and then click the **Next** button.
 
     ![task-wb6.png](../media/f4.png)
 
@@ -118,19 +118,20 @@ Now, this is something exciting! This section shows how easy it is to create Sho
 
    ![](../media/f7.png)
 
-3. If pop-up appears On the  **Name** field, enter ``Dataflow2`` and click on **create**
+3. If pop-up appears on the  **Name** field, enter ``Dataflow2`` and click on **create**.
 
    ![](../media/f57.png)
 
    > **Note:** If the pop-up does not appear, wait for 30 seconds for Dataflow Gen 2 to be created.
 
-4. Click on the **Get data** icon (**do not click on the dropdown arrow at the bottom of the icon**).
+4. Click on the **Get data** icon (**do not click on the dropdown arrow**).
 
    ![](../media/dfgen2.3.png)
 
     >**Note:** If the **Get Data** icon is not visible, expand **New Query** and select the **Get Data** option.
 
     ![](../media/new3.png)
+   
 5. When prompted to **Choose data source**, select **Lakehouse** under **OneLake catalog** .
 
    ![](../media/f9.png)
@@ -151,7 +152,7 @@ Now, this is something exciting! This section shows how easy it is to create Sho
 
    > **Let's use Copilot to perform data cleansing.**
 
-9. Click on the **Copilot** button, paste the following **prompt** provided in the textbox and click on **Send** icon.
+9. Click on the **Copilot** button, paste the following **prompt** provided in the textbox and click on **Send** button.
 
     ```
     In the table sales_data csv, apply first row as headers.
@@ -159,7 +160,7 @@ Now, this is something exciting! This section shows how easy it is to create Sho
 
     ![alt text](../media/g16.png)
 
-    **Note :** If the Copilot option is not visible, click on the arrow to reveal it.
+    >**Note :** If the Copilot option is not visible, click on the arrow to reveal it.
 
     ![alt text](../media/copilotarrow.png)
 
@@ -173,7 +174,7 @@ Now, this is something exciting! This section shows how easy it is to create Sho
 
     > **Let's use Copilot to remove empty rows.**
 
-11. Similarly, paste the prompt below in Copilot and click on the **send** icon.
+11. Similarly, paste the following prompt in the Copilot chat box and click on the **Send** button.
 
     ```
     Remove empty rows from GrossRevenue and NetRevenue columns.
@@ -191,11 +192,11 @@ Now, this is something exciting! This section shows how easy it is to create Sho
 
     ![](../media/datadestination2.png)
 
-14. On **Connect to data destination** and click on the **Next** button.
+14. On **Connect to data destination** pane, click on the **Next** button.
 
     ![](../media/datadestination3.png)
 
-15. Expand the **<inject key="WorkspaceName" enableCopy="false"/>**, click on **Fabcon_database**, enter ``sales_data`` in the **Table name** field, and then click the Next button.
+15. Expand the **<inject key="WorkspaceName" enableCopy="false"/>**, click on **Fabcon_database**, enter ``sales_data`` in the **Table name** field, and then click the **Next** button.
 
     ```
     sales_data
@@ -222,14 +223,14 @@ Now, this is something exciting! This section shows how easy it is to create Sho
 
     ![](../media/new2.png)
 
-2. Click on **+ New item** and select **Data pipeline** under **Get data**.
+2. Click on **+ New item** and under **Get data**, select **Data pipeline**.
 
    ![](../media/datapipeline2.png)
 
-3. In the name field, enter ``load transformed data into in the SQL Database`` and click on the **Create** button.
+3. In the name field, enter ``load transformed data into the SQL Database`` and click on the **Create** button.
 
     ```
-    load transformed data into in the SQL Database
+    load transformed data into the SQL Database
     ```
 
     ![](../media/f19.png)
@@ -256,7 +257,7 @@ Now, this is something exciting! This section shows how easy it is to create Sho
 
     ![](../media/f22.png)
 
-11. From the ribbon, click the **Save** button.
+11. On the ribbon, click the **Save** button.
 
     ![](../media/f71.png)
 
@@ -266,11 +267,11 @@ Now, this is something exciting! This section shows how easy it is to create Sho
  
  1. Click on the **<inject key="WorkspaceName" enableCopy="false"/>** workspace from the left menu.
  
-     ![](../media/new5u.png)
+    ![](../media/new5u.png)
  
  2. Click on the three dots next to **Fabcon_database** and click on **Settings**.
  
-    ![](../media/task_3.2.0.1.png)
+   ![](../media/task_3.2.0.1.png)
  
  3. Click on **Connection strings**, go to **JDBC** tab, copy the **JDBC URL** and save it in the notepad separately to use later.
  
