@@ -89,7 +89,7 @@ In this task, we will use **Dataflow Gen2** to ingest data and efficiently copy 
 
 #### Activity: Use Dataflow Gen2 to move data from Azure SQL DB to the SQL Database in Fabric.
 
-1. In the New SQL Database, under ```Build your data - Start getting data``` click on the **New Dataflow Gen2**.
+1. In the New SQL Database, under ```Build your database - Start getting data``` click on the **New Dataflow Gen2**.
 
    ![](../media/newdataflowgen.png)
 
