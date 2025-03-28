@@ -35,7 +35,7 @@ In this exercise, you will use **Copilot** to assist with T-SQL queries, includi
 
     >**Note:** 
     - Copilot responses may not match what is shown in the screenshot but will provide similar results.
-
+    - Provide a **space** after pasting **SELECT TOP(10)** to get suggestions from Copilot.
     - If the Copilot-suggested response is not visible, refresh Fabcon_database and try again.  
 
       ![](../media/new4u.png)
@@ -51,7 +51,7 @@ In this exercise, you will use **Copilot** to assist with T-SQL queries, includi
 
 ### Task 2.2: Fixing errors with Quick Actions
 
-1. Paste the following query with a syntax error and click on the **Run** icon.
+1. Paste the following query with a syntax error, **select it**, and click on the **Run** button.
 
     ```
     SELECT d.CalendarYear, SUM(f.SalesAmount) AS TotalSalesAmount
