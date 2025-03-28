@@ -258,7 +258,7 @@ For this workshop, the **On-Premises Data Gateway** is already provisioned for y
 1. Select the **Load to new table** radio button and wait for the **column mapping** to appear.
 2. Click on the **Next** button.
 
-   ![](../media/datapipeline13.png)
+   ![](../media/datades.png)
 
 3. Under Options, ensure that **Start data transfer immediately** remains **enabled** (default setting).
 
