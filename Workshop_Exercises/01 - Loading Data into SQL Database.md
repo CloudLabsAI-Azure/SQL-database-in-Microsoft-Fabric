@@ -38,10 +38,19 @@ In this task, we will use **Dataflow Gen2** to ingest data and efficiently copy 
     
     > **Note:** If any pop-up appears on *Premium Capacity Settings*, click on **Got it** button.
 
-    ![alt text](../media/f46.png)
+    ![alt text](../media/nameworkspace.png)
+
+5. Click on the **Advance** dropdown and scroll down to Fabric Capacity.
+
+   ![alt text](../media/advance.png)
+
+
+7. Click on the **Fabric Capacity** radio button, then under Capacity, select **fabconfabriccapacity - North Central US** from the dropdown if it is not already selected.
+8. Click on the **Apply** button.
+
+    ![alt text](../media/selectfabric.png)
 
     > **Note:** Wait for the Power BI Workspace to load.
-
     > **Note:** If the **Introducing Task Flows(preview)** pop-up appears, click **Got it**.
 
      ![alt text](../media/new2u.png)
