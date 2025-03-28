@@ -2,6 +2,12 @@
 
 In this exercise, you will use **Copilot** to assist with T-SQL queries, including **auto-suggestions**, **fixing error**, and **natural language query**, again contributing to Contoso developer efficiency!
 
+---
+>**Note:** Follow the steps provided in the task below. The Click-by-Click is available as a **backup option** in case of any technical issues preventing you from performing the lab in the actual environment.
+Before starting this exercise, open a backup Click-by-Click using the following hyperlink in a new tab, then return to the browser.
+[Click-by-Click](https://regale.cloud/microsoft/play/4486/02-introduction-to-copilot-for-sql-database#/0/0)
+---
+
 #### Task 2.1: Use Copilot in SQL Database
 
 #### Activity: Write SQL queries in the SQL query editor in Microsoft Fabric
