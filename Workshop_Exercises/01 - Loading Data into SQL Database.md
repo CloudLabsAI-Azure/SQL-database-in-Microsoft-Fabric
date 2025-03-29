@@ -45,7 +45,7 @@ In this task, we will use **Dataflow Gen2** to ingest data and efficiently copy 
    ![alt text](../media/advance.jpg)
 
 
-7. Click on the **Fabric Capacity** radio button, then under Capacity, select **fabconfabriccapacity - North Central US** from the dropdown if it is not already selected.
+7. Click on the **Fabric Capacity** radio button, then under **Capacity**, select **Fabric Capacity** from the dropdown if it is not already selected.
 8. Click on the **Apply** button.
 
     ![alt text](../media/selectfabric.jpg)
