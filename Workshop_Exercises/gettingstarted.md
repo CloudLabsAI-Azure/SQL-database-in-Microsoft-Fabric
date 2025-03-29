@@ -71,6 +71,6 @@
 
     ![](../media/2.png)
 
-This concludes the setup. You are now all set to explore the features and functionalities. Proceed to the next exercises, keeping the **Resource Group** tab open, and move forward with the next steps. **Happy Labbing!**
+This concludes the setup. You are now all set to explore the features and functionalities. Proceed to the next exercises, keeping the **Resource Group** tab open, and move forward with the next steps. 
 
  Move to the next page to continue!
